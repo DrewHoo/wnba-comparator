@@ -107,7 +107,7 @@ const urlProps = (url: URL) => {
 };
 
 /** Bump on any change to what the card draws or how a URL reads; it keys the edge cache. */
-const CARD_VERSION = '2026-10-20a';
+const CARD_VERSION = '2026-10-21a';
 
 const edge = (ttl: number) => ({ cf: { cacheEverything: true, cacheTtlByStatus: { '200-299': ttl, '400-599': 30 } } }) as RequestInit;
 // a fresh cache key each UTC day: GitHub Pages ignores query strings, and a
@@ -186,7 +186,12 @@ export default {
     // everything else: origin, with <head> rewritten where the URL says more
     // than the prerendered page could. A same-zone subrequest skips the
     // worker and lands on GitHub Pages (and lets `wrangler dev` hit the live site).
-    const res = await fetch(new Request(`${origin}${url.pathname}${url.search}`, request));
+    // the origin's body has to arrive plain for HTMLRewriter to read it, so the
+    // subrequest asks for no encoding (a local origin would gzip it and the
+    // rewrite would touch nothing)
+    const headers = new Headers(request.headers);
+    headers.delete('accept-encoding');
+    const res = await fetch(new Request(`${origin}${url.pathname}${url.search}`, { method: request.method, headers }));
     try {
       if (request.method !== 'GET') return res;
       if (!(res.headers.get('content-type') ?? '').includes('text/html')) return res;

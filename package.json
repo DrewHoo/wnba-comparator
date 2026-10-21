@@ -13,7 +13,8 @@
     "gen:og": "node scripts/gen-og.mjs",
     "gen:favicon": "node scripts/gen-favicon.mjs",
     "test": "vitest run",
-    "typecheck": "tsc -p .",
+    "typecheck": "tsc -p . && tsc -p tsconfig.worker.json",
+    "typecheck:worker": "tsc -p tsconfig.worker.json",
     "coverage": "node scripts/coverage-report.mjs",
     "receipts": "node scripts/check-receipts.mjs --pages data/research/positions/pages --offline data/research/positions/wikipedia.json data/research/positions/wayback.json data/research/positions/leads.json data/ref/positions.json",
     "merge:positions": "node scripts/merge-positions.mjs",
@@ -26,6 +27,7 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261021.1",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.0.4",
@@ -35,6 +37,7 @@
     "typescript": "^7.0.2",
     "vite": "^8.2.0",
     "vitest": "^5.0.2",
-    "workers-og": "^0.0.27"
+    "workers-og": "^0.0.27",
+    "wrangler": "4.151.3"
   }
 }

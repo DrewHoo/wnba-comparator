@@ -33,6 +33,13 @@ export interface Card {
 // that would open a tag or close an attribute are escaped
 const esc = (s: string) => s.replace(/</g, '&lt;').replace(/"/g, '&quot;');
 
+// the heading is one line inside the 720px column: Graduate runs about 0.62em
+// a character, so a long sentence ("MOST POINTS THROUGH THE FIRST 50 GAMES")
+// drops its size rather than leaving a word alone on a second line
+const HEADING_MAX = 34;
+const HEADING_MIN = 20;
+export const headingSize = (heading: string): number => Math.max(HEADING_MIN, Math.min(HEADING_MAX, Math.floor(720 / (0.62 * Math.max(1, heading.length)))));
+
 export function renderCard(card: Card): Response {
   const rows = card.rows.map((r) => `
     <div style="display:flex; flex-direction:row; align-items:center; gap:16px; padding:7px 10px; margin:0 -10px; border-bottom:1px dashed ${LINE}; ${r.hi ? `background-color: rgba(243,226,188,0.08); border-radius:6px;` : ''}">
@@ -51,8 +58,8 @@ export function renderCard(card: Card): Response {
   <div style="display:flex; flex-direction:column; align-items:center; width:1200px; height:630px; background-color:${BG}; padding:40px 0 32px;
               background-image: radial-gradient(circle at 600px -126px, rgba(243,226,188,0.13) 0%, rgba(243,226,188,0) 65%);">
     <div style="display:flex; font-family:'IBM Plex Mono'; font-weight:600; font-size:16px; letter-spacing:4px; color:${RUST};">WNBA COMPARATOR</div>
-    <div style="display:flex; font-family:'Graduate'; font-size:34px; color:${CREAM}; margin-top:10px; max-width:760px; text-align:center;">${esc(card.heading.toUpperCase())}</div>
-    <div style="display:flex; font-family:'Source Serif 4'; font-size:21px; color:${MUTED}; margin-top:2px; max-width:760px; text-align:center;">${esc(card.words)}</div>
+    <div style="display:flex; font-family:'Graduate'; font-size:${headingSize(card.heading)}px; color:${CREAM}; margin-top:10px; max-width:720px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${esc(card.heading.toUpperCase())}</div>
+    <div style="display:flex; font-family:'Source Serif 4'; font-size:21px; color:${MUTED}; margin-top:2px; max-width:720px; text-align:center;">${esc(card.words)}</div>
     <div style="display:flex; flex-direction:column; margin-top:12px; flex-grow:1; width:720px;">${rows}</div>
     <div style="display:flex; font-family:'IBM Plex Mono'; font-size:14px; letter-spacing:2px; color:${FAINT}; margin-top:10px;">${esc(card.footer.toUpperCase())}</div>
   </div>`;

@@ -1,0 +1,10 @@
+{
+  // the share worker, checked on its own: the Workers runtime types stand in
+  // for the DOM lib, which they can't share a program with
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "types": ["@cloudflare/workers-types"]
+  },
+  "include": ["workers/share/**/*.ts"]
+}
