@@ -129,9 +129,21 @@ ruling there usually holds here.
   40MB resident); that is inside a Worker's 128MB, and the per-isolate, per-day cache means
   one cold load. If the ledger doubles, give the worker a slimmer payload (the columns the
   stat catalog reads, nothing else) before anything else.
-- The worker isn't in `tsconfig.json`'s include (wrangler bundles it with esbuild, which
-  strips types without checking them), the same as Streak King's; `npm run worker:dev`
-  is the check, and a card that renders is the test.
+- The worker is typechecked by `tsconfig.worker.json` (the Workers runtime types can't
+  share a program with the DOM lib, so it is its own config; `workers/share/env.d.ts`
+  declares the `.ttf` imports). `npm run worker:dev` plus a card that renders is still
+  the real test: satori wants `display:flex` on every div with children, and `wrangler
+  dev` logs "initWasm() can be used only once" on a second render and still returns the
+  PNG. The worker's subrequest to the origin drops `accept-encoding`, or HTMLRewriter
+  gets a gzip body from a local preview and rewrites nothing.
+- The worker loads the ledger only for a crawler's request (the head rewrite) and for
+  a card; a browser gets the pure sentence as its title and the page sets `document.title`
+  itself once it hydrates, so a person never waits on the 8MB decode.
+- The finder's index (`public/players/index.json`) is gitignored and written by
+  `npm run index` (and first thing in `npm run build`); the dev server 404s it until
+  then and the finder says "loading…" forever. A Radix dropdown hands focus back to its
+  trigger when it closes, which scrolls the page to the dateline; the finder's menu
+  sets `onCloseAutoFocus` to prevent that so a pick can land on the row.
 
 - `rtk` rewrites `vitest` output and its parser fails on it; run
   `rtk proxy npx vitest run --reporter=verbose` to see which test failed and why.
