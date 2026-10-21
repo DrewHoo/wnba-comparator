@@ -1,0 +1,126 @@
+{{Short description|American basketball player (born 1973)}}
+{{Infobox basketball biography
+| name         = Markita Aldridge
+| image        = 
+| image_size   = 
+| caption      = 
+| position     = [[Shooting guard]]
+| height_ft     = 5
+| height_in    = 10
+| weight_lb    = 153
+| league       = 
+| team         = 
+| number       = 12
+| birth_date   = {{birth date and age|1973|9|15}}
+| birth_place  = [[Detroit, Michigan]], U.S.
+| high_school  = [[Martin Luther King High School (Detroit)|Martin Luther King]]<br>(Detroit, Michigan)
+| college      = [[Charlotte 49ers women's basketball|Charlotte]] (1991–1996)
+| draft_league = 
+| draft_year   = 
+| draft_round  = 
+| draft_pick   = 
+| draft_team   = 
+| career_start = 
+| career_end   = 
+| years1 = 1996–1997
+| team1 = [[Portland Power (basketball)|Portland Power]]
+| years2 = 1997–1998
+| team2 = [[Richmond Rage]]
+| years3 = 1998
+| team3 = [[Columbus Quest]]
+| years4 = {{WNBA Year|1999}}–{{WNBA Year|2001}}
+| team4 = [[Washington Mystics]]
+| medaltemplates =
+| wnba_profile    = Markita_Aldridge
+|bbr_wnba=aldrima01w
+}}
+'''Markita Uran Aldridge''' (born September 15, 1973) is an American former [[basketball]] [[shooting guard]]. Aldridge played three seasons with the [[Washington Mystics]] from 1999 to 2001. During her time with Washington, she averaged 2.3 points, one rebound, and one assist per game over 10.6 minutes.<ref name="bbr">{{cite web|url=https://www.basketball-reference.com/wnba/players/a/aldrima01w.html|title=Markita Aldridge|publisher=basketball-reference.com|accessdate=3 May 2018}}</ref>
+
+Aldridge attended [[University of North Carolina at Charlotte]], where she played with the [[Charlotte 49ers women's basketball|49ers]]. She graduated from Charlotte in 1996.<ref name="Knight">{{Cite news |last=Knight |first=Athelia |date=June 10, 1999 |title=Mystics' Holdsclaw Is the Future of WNBA |url=https://www.washingtonpost.com/wp-srv/sports/wnba/longterm/preview99/stories/profiles10.htm |access-date=3 May 2018 |work=[[The Washington Post]]}}</ref>
+
+==Career statistics==
+{{WNBA player statistics legend}}
+===WNBA===
+====Regular season====
+{{WNBA player statistics start}}
+|-
+| align="left" | [[1999 WNBA season|1999]]
+| align="left" | [[1999 Washington Mystics season|Washington]]
+|31||2||12.2||30.9||15.0||60.6||1.2||1.1||0.5||0.2||1.3||2.6	
+|-
+| align="left" | [[2000 WNBA season|2000]]
+| align="left" | [[2000 Washington Mystics season|Washington]]
+|29||0||9.4||46.3||50.0||31.8||0.8||1.0||0.3||0.1||0.9||2.2	
+|-
+| align="left" | [[2001 WNBA season|2001]]
+| align="left" | [[2001 Washington Mystics season|Washington]]
+|5||0||7.0||33.3||0.0||100.0||0.4||0.4||0.0||0.0||0.8||1.4	
+|-
+| align="left" | Career
+| align="left" | 3 years, 1 team
+|65||2||10.6||36.3||25.7||50.0||1.0||1.0||0.4||0.2||1.1||2.3	
+{{S-end}}
+
+====Playoffs====
+{{WNBA player statistics start}}
+|-
+| align="left" | [[2000 WNBA Playoffs|2000]]
+| align="left" | [[2000 Washington Mystics season|Washington]]
+|2||0||24.5||45.5||0.0||50.0||2.0||3.5||0.5	||0.0||0.5||7.0
+|-
+| align="left" | Career
+| align="left" | 1 year, 1 team
+|2||0||24.5||45.5||0.0||50.0||2.0||3.5||0.5	||0.0||0.5||7.0
+{{S-end}}
+
+
+=== College ===
+{{WNBA player statistics start}}
+|-
+| style="text-align:left;" | 1991–92
+| style="text-align:left;" | [[Charlotte 49ers women's basketball|Charlotte]]
+|'''28'''||-||-||38.6||30.8||62.9||4.4||4.6||1.5||0.7||-||11.2	
+|-
+| style="text-align:left;" | 1992–93
+| style="text-align:left;" | [[Charlotte 49ers women's basketball|Charlotte]]
+| style="text-align:center;" colspan="12" |''Did not play due to injury''
+|-
+| style="text-align:left;" | 1993–94
+| style="text-align:left;" | [[Charlotte 49ers women's basketball|Charlotte]]
+|21||-||-||46.7||'''31.4'''||48.5||5.0||4.1||'''2.3'''||0.4||-||'''15.3'''	
+|-
+| style="text-align:left;" | 1994–95
+| style="text-align:left;" | [[Charlotte 49ers women's basketball|Charlotte]]
+|26||-||-||'''47.5'''||14.3||58.8||'''7.3'''||3.7||1.4||1.0||-||'''15.3'''
+|-
+| style="text-align:left;" | 1995–96
+| style="text-align:left;" | [[Charlotte 49ers women's basketball|Charlotte]]
+|'''28'''||-||-||47.4||0.0||'''67.9'''||6.5||'''4.6'''||1.2||'''1.3'''||-||14.5
+|-
+| style="text-align:center;" colspan=2 | '''Career'''
+|103||-||-||45.2||26.4||60.2||5.8||4.3||1.6||0.9||-||14.0	
+|- class="sortbottom"
+|style="text-align:center;" colspan="14"|Statistics retrieved from [[Sports-Reference]].<ref>{{cite web|url=https://www.sports-reference.com/cbb/players/Markita-Aldridge-1.html|title=Markita Aldridge College Stats|publisher=[[Sports-Reference]]|accessdate=July 7, 2024}}</ref>
+{{s-end}}
+
+==Personal life==
+In March 2017, Aldridge became the first former WNBA player appointed to the finance committee of the [[National Basketball Retired Players Association]], which is the official alumni organization for multiple professional basketball leagues in the United States.<ref>{{cite news|url=http://www.legendsofbasketball.com/former-wnba-great-markita-aldridge-woods-becomes-first-woman-on-nbrpa-finance-committee/|title=MARKITA ALDRIDGE-WOODS BECOMES FIRST WOMAN ON NBRPA FINANCE COMMITTEE|date=March 23, 2017|publisher=legendsofbasketball.com|accessdate=3 May 2018|archive-date=5 October 2018|archive-url=https://web.archive.org/web/20181005153725/https://www.legendsofbasketball.com/former-wnba-great-markita-aldridge-woods-becomes-first-woman-on-nbrpa-finance-committee/|url-status=dead}}</ref>
+
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:Aldridge, Markita}}
+[[Category:1973 births]]
+[[Category:Living people]]
+[[Category:American women's basketball players]]
+[[Category:Basketball players from Detroit]]
+[[Category:Charlotte 49ers women's basketball players]]
+[[Category:Columbus Quest players]]
+[[Category:Portland Power players]]
+[[Category:Richmond Rage players]]
+[[Category:Shooting guards]]
+[[Category:Martin Luther King Jr. Senior High School alumni]]
+[[Category:Washington Mystics players]]
+
+
+{{US-women-basketball-bio-stub}}

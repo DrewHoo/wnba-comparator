@@ -1,0 +1,75 @@
+// The words a shared address unfurls with, and the rows its card draws.
+// Pure, so the share worker (workers/share) and the tests say the same
+// thing; the worker adds the data.
+import type { Board, Query, Row } from './query.ts'
+import { DEFAULT_QUERY } from './query.ts'
+import { statByKey } from './stats.ts'
+import { queryWords, rowName, rowWords, rankWords, seqWords, testsWords } from './words.ts'
+
+export const SITE = 'WNBA Comparator'
+
+/** whether the address says more than the root page does: any slot off its default, or a player open */
+export function isShared(q: Query, open: string | null): boolean {
+  if (open) return true
+  const d = DEFAULT_QUERY
+  return q.pos !== d.pos || q.stat !== d.stat || q.how !== d.how || q.n !== d.n || q.seq !== d.seq || q.scope !== d.scope || q.since !== d.since || q.dir !== d.dir || q.tests.length > 0
+}
+
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1)
+
+/** "Players with the most points through their first 100 games · WNBA Comparator" */
+export function shareTitle(q: Query): string {
+  return `${cap(queryWords(q))} · ${SITE}`
+}
+
+/** the description: the leader when the board is known, the open player's claim when one is */
+export function shareDescription(q: Query, board: Board | null, open: Row | null, firstSeason: number): string {
+  const since = q.since ?? firstSeason
+  const unit = q.seq === 'teamGames' ? 'player-season' : 'career'
+  const parts: string[] = []
+  if (open) parts.push(`${open.player.name} has ${rowWords(open, q)}${open.complete && open.value != null && board ? `, ${rankWords(open, board.ranked.length)}` : ''}.`)
+  else if (board?.ranked[0] && board.ranked[0].value != null) parts.push(`${rowName(board.ranked[0])} leads with ${rowWords(board.ranked[0], q)}.`)
+  parts.push(`Every WNBA ${unit} since ${since} ranked at the same point: ${queryWords(q)}. Open a row to read it against a peer.`)
+  return parts.join(' ')
+}
+
+/** what the card's heading says: "MOST POINTS THROUGH THE FIRST 100 GAMES" */
+export function cardHeading(q: Query): string {
+  const stat = statByKey(q.stat)
+  const win = q.seq === 'teamGames' ? `a team's first ${q.n} games` : `the first ${q.n} ${seqWords(q.seq, q.n)}`
+  if (q.how === 'sum') return `${q.dir} ${stat.noun} through ${win}`
+  if (q.how === 'reach') return `${q.dir === 'fewest' ? 'fastest' : 'slowest'} to ${q.n.toLocaleString('en-US')} ${stat.noun}`
+  const t = testsWords(q.tests)
+  if (q.how === 'every') return `${t} in each of ${win}`
+  if (q.how === 'streak') return `longest streak of ${t} in ${win}`
+  return `${q.dir} games of ${t} in ${win}`
+}
+
+export interface CardRow {
+  rank: string
+  name: string
+  /** "2013–2016", or "thru 93" for a row still inside the window */
+  span: string
+  value: string
+  /** the row still inside the window: the value in rust */
+  live: boolean
+  /** the open player's row */
+  hi: boolean
+}
+
+/** the card's rows: the top of the board, with the open player's row in place of the last when she is further down */
+export function cardRows(board: Board, q: Query, open: string | null, n = 6): CardRow[] {
+  const all = [...board.ranked, ...board.onTheWay]
+  const top = board.ranked.slice(0, n)
+  const openRow = open ? all.find((r) => r.key === open) ?? null : null
+  if (openRow && !top.includes(openRow)) top.splice(Math.max(0, Math.min(top.length, n - 1)), top.length >= n ? 1 : 0, openRow)
+  const way = (r: Row) => r.season == null && !r.complete
+  return top.map((r, i) => ({
+    rank: r.complete && r.value != null ? `${r.tied ? 'T' : ''}${r.rank}` : '—',
+    name: rowName(r),
+    span: way(r) ? `thru ${r.reached}` : r.season != null ? `${r.reached} of ${q.n}` : r.from === r.to ? String(r.from) : `${r.from}–${r.to}`,
+    value: r.value == null ? '—' : q.how === 'reach' ? `${r.value}` : r.value.toLocaleString('en-US'),
+    live: way(r),
+    hi: r.key === open,
+  }))
+}

@@ -1,0 +1,64 @@
+{{short description|New Zealand basketball player}}
+{{Use dmy dates|date=September 2014}}
+{{Use New Zealand English|date=September 2014}}
+{{Infobox basketball biography
+| name = Megan Compain
+| image = Megan Compain of the first WSLA intake (cropped) 01.jpg
+| caption = Compain in 2018
+| position = [[Guard (basketball)|Guard]]
+| height_cm = 175
+| weight_kg = 
+| league = 
+| team = 
+| number = 
+| birth_date = {{Birth date and age|df=yes|1975|9|18}}
+| birth_place = 
+| high_school = 
+| career_start = 
+| career_end = 
+| years1 = 
+| team1 = 
+| highlights =
+| medaltemplates =
+}}
+'''Megan Helen Compain''' (born 18 September 1975) is a New Zealand former [[basketball]] player who competed in the [[2000 Summer Olympics]] and in the [[2004 Summer Olympics]].<ref name="sref">{{cite Sports-Reference |url=https://www.sports-reference.com/olympics/athletes/co/megan-compain-1.html|archive-url=https://web.archive.org/web/20200418031354/https://www.sports-reference.com/olympics/athletes/co/megan-compain-1.html|url-status=dead|archive-date=18 April 2020|access-date=12 July 2012}}</ref> As of 2024, she was a Basketball New Zealand board member.<ref>[https://nz.basketball/about-us/board-members/ Meet our Board]</ref> She played for the [[Utah Starzz]] during the 1997 season, becoming the first New Zealander to play in the WNBA.<ref>Tunnicliffe, Bridget - [https://www.msn.com/en-nz/news/national/proud-moment-megan-compain-hails-charlisse-leger-walker-s-historic-wnba-draft/ar-AA20PNCW 'Proud moment': Megan Compain hails Charlisse Leger-Walker’s historic WNBA draft]. Radio New Zealand (RNZ via msn.com), April 14, 2026.</ref>
+
+==Biography==
+She was born 18 September 1975 in [[Whanganui]], New Zealand.<ref name="Olympedia">{{cite web |title=Megan Compain |url=http://www.olympedia.org/athletes/89816 |publisher=Olympedia |access-date=25 June 2021}}</ref> As an exchange student she attended [[Middle Township High School]] in New Jersey.<ref>Staff. [http://www.pressofatlanticcity.com/test/article_927cb8b0-1d24-515c-a7a5-181efb854de4.html "New Jersey Olympians in other sports"], ''[[The Press of Atlantic City]]'', 28 August 2009. Accessed 22 September 2011. "Megan Compain. Sport: Basketball (New Zealand) – New Jersey Ties: Compain attended Middle Township High School as an exchange student through 1993 and played for the girls' basketball team during her junior and senior years."</ref> She competed in the [[2000 Summer Olympics]] and in the [[2004 Summer Olympics]].
+
+== Career statistics ==
+{{WNBA player statistics legend}}
+
+===WNBA===
+Source<ref>{{cite web|url=https://www.basketball-reference.com/wnba/players/c/compame01w.html|title=Megan Compain WNBA stats|website=[[Basketball Reference]]|publisher=Sports Reference LLC|accessdate=2 September 2024}}</ref>
+
+====Regular season====
+{{WNBA player statistics start}}
+|-
+| align="left" | [[1997 WNBA season|1997]]
+| align="left" | [[1997 Utah Starzz season|Utah]]
+|5||0||3.8||.286||.250||&ndash;||1.0||.4||.8||.2||1.2||1.0
+{{S-end}}
+
+==References==
+{{Reflist}}
+
+{{2000 New Zealand Olympic team}}
+{{2004 New Zealand Olympic team}}
+
+{{DEFAULTSORT:Compain, Megan}}
+[[Category:1975 births]]
+[[Category:Living people]]
+[[Category:New Zealand women's basketball players]]
+[[Category:21st-century New Zealand sportswomen]]
+[[Category:Basketball players at the 2000 Summer Olympics]]
+[[Category:Basketball players at the 2004 Summer Olympics]]
+[[Category:New Zealand expatriate basketball people in the United States]]
+[[Category:Olympic basketball players for New Zealand]]
+[[Category:Saint Joseph's Hawks women's basketball players]]
+[[Category:Middle Township High School alumni]]
+[[Category:Sportspeople from Whanganui]]
+[[Category:Utah Starzz players]]
+
+
+{{NewZealand-basketball-bio-stub}}

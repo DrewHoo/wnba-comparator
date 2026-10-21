@@ -1,0 +1,5181 @@
+{
+ "note": "players in src/data/players.json with no position from ESPN (box rows, bios, crosswalk); the research worklist",
+ "generated": "2026-10-20",
+ "players": [
+  {
+   "id": "201067",
+   "name": "Camille Smith",
+   "first": 2007,
+   "last": 2019,
+   "games": 468,
+   "starts": 14,
+   "pts": 3852,
+   "teams": [
+    "SAN",
+    "ATL",
+    "SEA",
+    "CON",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100533",
+   "name": "DeMya Walker",
+   "first": 2000,
+   "last": 2012,
+   "games": 367,
+   "starts": 145,
+   "pts": 2686,
+   "teams": [
+    "POR",
+    "SAC",
+    "CON",
+    "WAS",
+    "NYL"
+   ]
+  },
+  {
+   "id": "200691",
+   "name": "Mistie Bass",
+   "first": 2006,
+   "last": 2016,
+   "games": 309,
+   "starts": 53,
+   "pts": 1375,
+   "teams": [
+    "HOU",
+    "CHI",
+    "CON",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100092",
+   "name": "Merlakia Jones",
+   "first": 1997,
+   "last": 2004,
+   "games": 269,
+   "starts": 15,
+   "pts": 2511,
+   "teams": [
+    "CLE",
+    "DET"
+   ]
+  },
+  {
+   "id": "100044",
+   "name": "Lady Grooms",
+   "first": 1997,
+   "last": 2004,
+   "games": 260,
+   "starts": 7,
+   "pts": 1150,
+   "teams": [
+    "UTA",
+    "SAC"
+   ]
+  },
+  {
+   "id": "100421",
+   "name": "Kedra Holland-Corn",
+   "first": 1999,
+   "last": 2006,
+   "games": 247,
+   "starts": 22,
+   "pts": 2093,
+   "teams": [
+    "SAC",
+    "DET",
+    "HOU"
+   ]
+  },
+  {
+   "id": "100031",
+   "name": "Bridget Pettis",
+   "first": 1997,
+   "last": 2006,
+   "games": 240,
+   "starts": 0,
+   "pts": 1526,
+   "teams": [
+    "PHO",
+    "IND"
+   ]
+  },
+  {
+   "id": "100016",
+   "name": "Ruthie Bolton",
+   "first": 1997,
+   "last": 2004,
+   "games": 239,
+   "starts": 4,
+   "pts": 2314,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100030",
+   "name": "Jennifer Gillom",
+   "first": 1997,
+   "last": 2003,
+   "games": 231,
+   "starts": 8,
+   "pts": 3035,
+   "teams": [
+    "PHO",
+    "LAS"
+   ]
+  },
+  {
+   "id": "100105",
+   "name": "Sophia Witherspoon",
+   "first": 1997,
+   "last": 2003,
+   "games": 226,
+   "starts": 1,
+   "pts": 2299,
+   "teams": [
+    "NYL",
+    "POR",
+    "LAS"
+   ]
+  },
+  {
+   "id": "100104",
+   "name": "Sue Wicks",
+   "first": 1997,
+   "last": 2002,
+   "games": 211,
+   "starts": 0,
+   "pts": 941,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100359",
+   "name": "Debbie Black",
+   "first": 1999,
+   "last": 2004,
+   "games": 208,
+   "starts": 3,
+   "pts": 789,
+   "teams": [
+    "UTA",
+    "MIA",
+    "CON"
+   ]
+  },
+  {
+   "id": "100058",
+   "name": "Vicky Bullett",
+   "first": 1997,
+   "last": 2002,
+   "games": 200,
+   "starts": 0,
+   "pts": 2128,
+   "teams": [
+    "CHA",
+    "WAS"
+   ]
+  },
+  {
+   "id": "100100",
+   "name": "Adrienne Johnson",
+   "first": 1997,
+   "last": 2003,
+   "games": 189,
+   "starts": 4,
+   "pts": 1056,
+   "teams": [
+    "CLE",
+    "ORL",
+    "CON"
+   ]
+  },
+  {
+   "id": "100204",
+   "name": "Rita Williams",
+   "first": 1998,
+   "last": 2003,
+   "games": 189,
+   "starts": 0,
+   "pts": 1206,
+   "teams": [
+    "WAS",
+    "IND",
+    "HOU",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100242",
+   "name": "LaTonya Johnson",
+   "first": 1998,
+   "last": 2004,
+   "games": 186,
+   "starts": 0,
+   "pts": 708,
+   "teams": [
+    "UTA",
+    "SAN",
+    "HOU"
+   ]
+  },
+  {
+   "id": "100037",
+   "name": "Marlies Askamp",
+   "first": 1997,
+   "last": 2002,
+   "games": 182,
+   "starts": 0,
+   "pts": 1050,
+   "teams": [
+    "PHO",
+    "MIA",
+    "LAS"
+   ]
+  },
+  {
+   "id": "100060",
+   "name": "Rhonda Mapp",
+   "first": 1997,
+   "last": 2003,
+   "games": 175,
+   "starts": 3,
+   "pts": 1456,
+   "teams": [
+    "CHA",
+    "LAS"
+   ]
+  },
+  {
+   "id": "100048",
+   "name": "Jessie Hicks",
+   "first": 1997,
+   "last": 2004,
+   "games": 172,
+   "starts": 9,
+   "pts": 715,
+   "teams": [
+    "UTA",
+    "ORL",
+    "CON",
+    "SAN"
+   ]
+  },
+  {
+   "id": "100077",
+   "name": "Tammy Jackson",
+   "first": 1997,
+   "last": 2002,
+   "games": 161,
+   "starts": 0,
+   "pts": 474,
+   "teams": [
+    "HOU",
+    "WAS"
+   ]
+  },
+  {
+   "id": "101026",
+   "name": "Katie Mattera",
+   "first": 2005,
+   "last": 2009,
+   "games": 161,
+   "starts": 0,
+   "pts": 1057,
+   "teams": [
+    "SAN",
+    "DET",
+    "ATL",
+    "CHI"
+   ]
+  },
+  {
+   "id": "202623",
+   "name": "Aneika Morello",
+   "first": 2012,
+   "last": 2017,
+   "games": 161,
+   "starts": 0,
+   "pts": 699,
+   "teams": [
+    "ATL",
+    "CON"
+   ]
+  },
+  {
+   "id": "100336",
+   "name": "Sonja Henning",
+   "first": 1999,
+   "last": 2003,
+   "games": 160,
+   "starts": 0,
+   "pts": 509,
+   "teams": [
+    "HOU",
+    "SEA",
+    "WAS",
+    "IND"
+   ]
+  },
+  {
+   "id": "100338",
+   "name": "Jennifer Rizzotti",
+   "first": 1999,
+   "last": 2003,
+   "games": 157,
+   "starts": 0,
+   "pts": 476,
+   "teams": [
+    "HOU",
+    "CLE"
+   ]
+  },
+  {
+   "id": "100216",
+   "name": "Alicia Thompson",
+   "first": 1998,
+   "last": 2005,
+   "games": 153,
+   "starts": 3,
+   "pts": 802,
+   "teams": [
+    "NYL",
+    "IND",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100532",
+   "name": "Stacey Thomas",
+   "first": 2000,
+   "last": 2005,
+   "games": 152,
+   "starts": 1,
+   "pts": 441,
+   "teams": [
+    "POR",
+    "PHO",
+    "DET",
+    "MIN"
+   ]
+  },
+  {
+   "id": "100428",
+   "name": "Mery Andrade",
+   "first": 1999,
+   "last": 2004,
+   "games": 149,
+   "starts": 0,
+   "pts": 605,
+   "teams": [
+    "CLE",
+    "CHA"
+   ]
+  },
+  {
+   "id": "100478",
+   "name": "Nicky McCrimmon",
+   "first": 2000,
+   "last": 2003,
+   "games": 148,
+   "starts": 1,
+   "pts": 316,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100231",
+   "name": "Adia Barnes",
+   "first": 1998,
+   "last": 2004,
+   "games": 144,
+   "starts": 15,
+   "pts": 514,
+   "teams": [
+    "SAC",
+    "MIN",
+    "CLE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100073",
+   "name": "Cynthia Cooper",
+   "first": 1997,
+   "last": 2003,
+   "games": 143,
+   "starts": 0,
+   "pts": 3044,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100759",
+   "name": "Kayte Christensen",
+   "first": 2002,
+   "last": 2007,
+   "games": 143,
+   "starts": 21,
+   "pts": 463,
+   "teams": [
+    "PHO",
+    "HOU",
+    "CHI"
+   ]
+  },
+  {
+   "id": "100180",
+   "name": "Pollyanna Johns Kimbrough",
+   "first": 1998,
+   "last": 2004,
+   "games": 142,
+   "starts": 2,
+   "pts": 444,
+   "teams": [
+    "CHA",
+    "CLE",
+    "MIA",
+    "HOU"
+   ]
+  },
+  {
+   "id": "100394",
+   "name": "Gordana Grubin",
+   "first": 1999,
+   "last": 2005,
+   "games": 138,
+   "starts": 0,
+   "pts": 1044,
+   "teams": [
+    "LAS",
+    "IND",
+    "PHO",
+    "HOU"
+   ]
+  },
+  {
+   "id": "100250",
+   "name": "Korie Hlede",
+   "first": 1998,
+   "last": 2002,
+   "games": 137,
+   "starts": 0,
+   "pts": 1193,
+   "teams": [
+    "DET",
+    "UTA",
+    "NYL"
+   ]
+  },
+  {
+   "id": "100429",
+   "name": "Alisa Burras",
+   "first": 1999,
+   "last": 2003,
+   "games": 137,
+   "starts": 0,
+   "pts": 864,
+   "teams": [
+    "CLE",
+    "POR",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100398",
+   "name": "Tonya Edwards",
+   "first": 1999,
+   "last": 2002,
+   "games": 137,
+   "starts": 0,
+   "pts": 1161,
+   "teams": [
+    "MIN",
+    "PHO",
+    "CHA"
+   ]
+  },
+  {
+   "id": "100650",
+   "name": "Niele Ivey",
+   "first": 2001,
+   "last": 2005,
+   "games": 134,
+   "starts": 21,
+   "pts": 408,
+   "teams": [
+    "IND",
+    "DET",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100395",
+   "name": "Clarisse Machanguana",
+   "first": 1999,
+   "last": 2002,
+   "games": 131,
+   "starts": 0,
+   "pts": 539,
+   "teams": [
+    "LAS",
+    "CHA",
+    "ORL"
+   ]
+  },
+  {
+   "id": "100492",
+   "name": "Edwina Brown",
+   "first": 2000,
+   "last": 2006,
+   "games": 130,
+   "starts": 1,
+   "pts": 662,
+   "teams": [
+    "DET",
+    "PHO",
+    "HOU"
+   ]
+  },
+  {
+   "id": "100107",
+   "name": "Kisha Ford",
+   "first": 1997,
+   "last": 2001,
+   "games": 129,
+   "starts": 0,
+   "pts": 442,
+   "teams": [
+    "NYL",
+    "ORL",
+    "MIA"
+   ]
+  },
+  {
+   "id": "100400",
+   "name": "Kristin Folkl",
+   "first": 1999,
+   "last": 2002,
+   "games": 128,
+   "starts": 0,
+   "pts": 734,
+   "teams": [
+    "MIN",
+    "POR"
+   ]
+  },
+  {
+   "id": "100529",
+   "name": "Sylvia Crawley",
+   "first": 2000,
+   "last": 2003,
+   "games": 128,
+   "starts": 3,
+   "pts": 1050,
+   "teams": [
+    "POR",
+    "SAN"
+   ]
+  },
+  {
+   "id": "100029",
+   "name": "Michele Timms",
+   "first": 1997,
+   "last": 2001,
+   "games": 124,
+   "starts": 0,
+   "pts": 925,
+   "teams": [
+    "PHO",
+    "NYL"
+   ]
+  },
+  {
+   "id": "100182",
+   "name": "Tracy Reid",
+   "first": 1998,
+   "last": 2003,
+   "games": 124,
+   "starts": 0,
+   "pts": 905,
+   "teams": [
+    "CHA",
+    "MIA",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100063",
+   "name": "Sharon Manning",
+   "first": 1997,
+   "last": 2000,
+   "games": 121,
+   "starts": 0,
+   "pts": 556,
+   "teams": [
+    "CHA",
+    "MIA"
+   ]
+  },
+  {
+   "id": "101021",
+   "name": "Sandora Irvin",
+   "first": 2005,
+   "last": 2011,
+   "games": 120,
+   "starts": 2,
+   "pts": 200,
+   "teams": [
+    "PHO",
+    "SAN",
+    "CHI",
+    "ATL"
+   ]
+  },
+  {
+   "id": "100530",
+   "name": "Lynn Pride",
+   "first": 2000,
+   "last": 2003,
+   "games": 118,
+   "starts": 0,
+   "pts": 430,
+   "teams": [
+    "POR",
+    "MIN",
+    "LAS"
+   ]
+  },
+  {
+   "id": "100422",
+   "name": "Kate Starbird",
+   "first": 1999,
+   "last": 2004,
+   "games": 116,
+   "starts": 0,
+   "pts": 380,
+   "teams": [
+    "SAC",
+    "UTA",
+    "SEA",
+    "IND"
+   ]
+  },
+  {
+   "id": "100091",
+   "name": "Eva Nemcova",
+   "first": 1997,
+   "last": 2001,
+   "games": 114,
+   "starts": 0,
+   "pts": 1325,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100215",
+   "name": "Vanessa Nygaard",
+   "first": 1999,
+   "last": 2003,
+   "games": 112,
+   "starts": 3,
+   "pts": 501,
+   "teams": [
+    "CLE",
+    "POR",
+    "MIA",
+    "LAS"
+   ]
+  },
+  {
+   "id": "100504",
+   "name": "Kelley Gibson",
+   "first": 2000,
+   "last": 2003,
+   "games": 107,
+   "starts": 0,
+   "pts": 187,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100009",
+   "name": "Katrina Colleton",
+   "first": 1997,
+   "last": 2001,
+   "games": 106,
+   "starts": 0,
+   "pts": 508,
+   "teams": [
+    "LAS",
+    "MIA"
+   ]
+  },
+  {
+   "id": "100353",
+   "name": "Andrea Nagy",
+   "first": 1999,
+   "last": 2002,
+   "games": 106,
+   "starts": 0,
+   "pts": 335,
+   "teams": [
+    "WAS",
+    "NYL",
+    "SAC"
+   ]
+  },
+  {
+   "id": "100364",
+   "name": "Dalma Ivanyi",
+   "first": 1999,
+   "last": 2006,
+   "games": 106,
+   "starts": 14,
+   "pts": 227,
+   "teams": [
+    "UTA",
+    "PHO",
+    "SAN"
+   ]
+  },
+  {
+   "id": "100237",
+   "name": "Tricia Bader Binford",
+   "first": 1998,
+   "last": 2002,
+   "games": 105,
+   "starts": 0,
+   "pts": 135,
+   "teams": [
+    "UTA",
+    "CLE"
+   ]
+  },
+  {
+   "id": "100088",
+   "name": "Michelle Edwards",
+   "first": 1997,
+   "last": 2001,
+   "games": 104,
+   "starts": 0,
+   "pts": 789,
+   "teams": [
+    "CLE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100557",
+   "name": "Tonya Massaline",
+   "first": 2000,
+   "last": 2003,
+   "games": 103,
+   "starts": 0,
+   "pts": 273,
+   "teams": [
+    "WAS",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100022",
+   "name": "Chantel Tremitiere",
+   "first": 1997,
+   "last": 2000,
+   "games": 102,
+   "starts": 0,
+   "pts": 438,
+   "teams": [
+    "SAC",
+    "CHA",
+    "UTA",
+    "IND"
+   ]
+  },
+  {
+   "id": "100386",
+   "name": "Claudia Neves",
+   "first": 1999,
+   "last": 2002,
+   "games": 102,
+   "starts": 0,
+   "pts": 391,
+   "teams": [
+    "DET",
+    "MIA"
+   ]
+  },
+  {
+   "id": "100555",
+   "name": "Tausha Mills",
+   "first": 2000,
+   "last": 2007,
+   "games": 101,
+   "starts": 1,
+   "pts": 278,
+   "teams": [
+    "WAS",
+    "SAN",
+    "DET"
+   ]
+  },
+  {
+   "id": "100102",
+   "name": "Kym Hampton",
+   "first": 1997,
+   "last": 1999,
+   "games": 98,
+   "starts": 0,
+   "pts": 920,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "200675",
+   "name": "Lisa Willis",
+   "first": 2006,
+   "last": 2009,
+   "games": 97,
+   "starts": 2,
+   "pts": 404,
+   "teams": [
+    "LAS",
+    "NYL",
+    "SAC"
+   ]
+  },
+  {
+   "id": "100225",
+   "name": "Brandy Reed",
+   "first": 1998,
+   "last": 2002,
+   "games": 95,
+   "starts": 0,
+   "pts": 1223,
+   "teams": [
+    "PHO",
+    "MIN"
+   ]
+  },
+  {
+   "id": "100294",
+   "name": "Cass Bauer-Bilodeau",
+   "first": 1999,
+   "last": 2002,
+   "games": 94,
+   "starts": 0,
+   "pts": 167,
+   "teams": [
+    "CHA",
+    "WAS",
+    "SAC"
+   ]
+  },
+  {
+   "id": "100004",
+   "name": "Penny Toler",
+   "first": 1997,
+   "last": 1999,
+   "games": 92,
+   "starts": 0,
+   "pts": 891,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100011",
+   "name": "Linda Burgess",
+   "first": 1997,
+   "last": 2000,
+   "games": 92,
+   "starts": 0,
+   "pts": 530,
+   "teams": [
+    "LAS",
+    "SAC"
+   ]
+  },
+  {
+   "id": "100340",
+   "name": "Kara Wolters",
+   "first": 1999,
+   "last": 2002,
+   "games": 92,
+   "starts": 0,
+   "pts": 575,
+   "teams": [
+    "HOU",
+    "IND",
+    "SAC"
+   ]
+  },
+  {
+   "id": "201898",
+   "name": "Shalee Lehning",
+   "first": 2009,
+   "last": 2011,
+   "games": 92,
+   "starts": 53,
+   "pts": 283,
+   "teams": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "100549",
+   "name": "Amy Herrig",
+   "first": 2000,
+   "last": 2002,
+   "games": 89,
+   "starts": 0,
+   "pts": 284,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100481",
+   "name": "Marla Brumfield",
+   "first": 2000,
+   "last": 2003,
+   "games": 88,
+   "starts": 0,
+   "pts": 191,
+   "teams": [
+    "MIN",
+    "MIA",
+    "CHA"
+   ]
+  },
+  {
+   "id": "100694",
+   "name": "Helen Luz",
+   "first": 2001,
+   "last": 2003,
+   "games": 88,
+   "starts": 0,
+   "pts": 428,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "201489",
+   "name": "Olayinka Sanni",
+   "first": 2008,
+   "last": 2011,
+   "games": 88,
+   "starts": 9,
+   "pts": 273,
+   "teams": [
+    "DET",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100187",
+   "name": "Suzie McConnell Serio",
+   "first": 1998,
+   "last": 2000,
+   "games": 87,
+   "starts": 0,
+   "pts": 573,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100357",
+   "name": "Monica Maxwell",
+   "first": 1999,
+   "last": 2002,
+   "games": 87,
+   "starts": 0,
+   "pts": 448,
+   "teams": [
+    "WAS",
+    "IND"
+   ]
+  },
+  {
+   "id": "100062",
+   "name": "Tora Suber",
+   "first": 1997,
+   "last": 1999,
+   "games": 86,
+   "starts": 0,
+   "pts": 355,
+   "teams": [
+    "CHA",
+    "ORL"
+   ]
+  },
+  {
+   "id": "100065",
+   "name": "Andrea Congreaves",
+   "first": 1997,
+   "last": 1999,
+   "games": 86,
+   "starts": 0,
+   "pts": 512,
+   "teams": [
+    "CHA",
+    "ORL"
+   ]
+  },
+  {
+   "id": "100087",
+   "name": "Janice Braxton",
+   "first": 1997,
+   "last": 1999,
+   "games": 84,
+   "starts": 0,
+   "pts": 765,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100007",
+   "name": "Jamila Wideman",
+   "first": 1997,
+   "last": 2000,
+   "games": 84,
+   "starts": 0,
+   "pts": 188,
+   "teams": [
+    "LAS",
+    "CLE",
+    "POR"
+   ]
+  },
+  {
+   "id": "100269",
+   "name": "Carla Boyd",
+   "first": 1998,
+   "last": 2001,
+   "games": 84,
+   "starts": 0,
+   "pts": 497,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100570",
+   "name": "Michelle Marciniak",
+   "first": 2000,
+   "last": 2002,
+   "games": 84,
+   "starts": 0,
+   "pts": 389,
+   "teams": [
+    "POR",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100446",
+   "name": "Summer Erb",
+   "first": 2000,
+   "last": 2002,
+   "games": 84,
+   "starts": 0,
+   "pts": 249,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100411",
+   "name": "Carla McGhee",
+   "first": 1999,
+   "last": 2002,
+   "games": 83,
+   "starts": 0,
+   "pts": 156,
+   "teams": [
+    "ORL"
+   ]
+  },
+  {
+   "id": "100179",
+   "name": "Charmin Smith",
+   "first": 1999,
+   "last": 2003,
+   "games": 81,
+   "starts": 1,
+   "pts": 120,
+   "teams": [
+    "MIN",
+    "SEA",
+    "PHO"
+   ]
+  },
+  {
+   "id": "1629476",
+   "name": "Asia (AD) Durr",
+   "first": 2019,
+   "last": 2023,
+   "games": 81,
+   "starts": 17,
+   "pts": 526,
+   "teams": [
+    "NYL",
+    "ATL"
+   ]
+  },
+  {
+   "id": "100487",
+   "name": "Kate Paye",
+   "first": 2000,
+   "last": 2002,
+   "games": 79,
+   "starts": 0,
+   "pts": 168,
+   "teams": [
+    "MIN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100728",
+   "name": "Shaunzinski Gortman",
+   "first": 2002,
+   "last": 2006,
+   "games": 79,
+   "starts": 0,
+   "pts": 197,
+   "teams": [
+    "MIN",
+    "WAS",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100035",
+   "name": "Umeki Webb",
+   "first": 1997,
+   "last": 2000,
+   "games": 78,
+   "starts": 0,
+   "pts": 364,
+   "teams": [
+    "PHO",
+    "MIA"
+   ]
+  },
+  {
+   "id": "100746",
+   "name": "Linda Frohlich",
+   "first": 2002,
+   "last": 2007,
+   "games": 76,
+   "starts": 0,
+   "pts": 173,
+   "teams": [
+    "NYL",
+    "IND",
+    "SAC"
+   ]
+  },
+  {
+   "id": "100045",
+   "name": "Dena Head",
+   "first": 1997,
+   "last": 2000,
+   "games": 75,
+   "starts": 0,
+   "pts": 289,
+   "teams": [
+    "UTA",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100388",
+   "name": "Elena Tornikidou",
+   "first": 1999,
+   "last": 2001,
+   "games": 75,
+   "starts": 0,
+   "pts": 657,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100521",
+   "name": "Tiffany McCain",
+   "first": 2000,
+   "last": 2002,
+   "games": 75,
+   "starts": 0,
+   "pts": 161,
+   "teams": [
+    "ORL"
+   ]
+  },
+  {
+   "id": "100851",
+   "name": "Teana Miller",
+   "first": 2003,
+   "last": 2007,
+   "games": 75,
+   "starts": 2,
+   "pts": 253,
+   "teams": [
+    "CHA",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100748",
+   "name": "Felicia Ragland",
+   "first": 2002,
+   "last": 2005,
+   "games": 74,
+   "starts": 9,
+   "pts": 271,
+   "teams": [
+    "SEA",
+    "PHO",
+    "HOU"
+   ]
+  },
+  {
+   "id": "100482",
+   "name": "Grace Daley",
+   "first": 2000,
+   "last": 2003,
+   "games": 73,
+   "starts": 0,
+   "pts": 265,
+   "teams": [
+    "MIN",
+    "NYL",
+    "HOU",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100085",
+   "name": "Yolanda Moore",
+   "first": 1997,
+   "last": 1999,
+   "games": 72,
+   "starts": 0,
+   "pts": 161,
+   "teams": [
+    "HOU",
+    "ORL"
+   ]
+  },
+  {
+   "id": "100230",
+   "name": "Quacy Barnes",
+   "first": 1998,
+   "last": 2002,
+   "games": 71,
+   "starts": 0,
+   "pts": 296,
+   "teams": [
+    "SAC",
+    "SEA",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100255",
+   "name": "Rachael Sporn",
+   "first": 1998,
+   "last": 2001,
+   "games": 71,
+   "starts": 0,
+   "pts": 283,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100514",
+   "name": "Cintia dos Santos",
+   "first": 2000,
+   "last": 2002,
+   "games": 71,
+   "starts": 0,
+   "pts": 351,
+   "teams": [
+    "ORL"
+   ]
+  },
+  {
+   "id": "100707",
+   "name": "Georgia Schweitzer",
+   "first": 2001,
+   "last": 2003,
+   "games": 70,
+   "starts": 0,
+   "pts": 223,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "100183",
+   "name": "Cindy Blodgett",
+   "first": 1998,
+   "last": 2001,
+   "games": 68,
+   "starts": 0,
+   "pts": 169,
+   "teams": [
+    "CLE",
+    "SAC"
+   ]
+  },
+  {
+   "id": "100541",
+   "name": "Jamie Redd",
+   "first": 2000,
+   "last": 2002,
+   "games": 68,
+   "starts": 0,
+   "pts": 423,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100348",
+   "name": "Markita Aldridge",
+   "first": 1999,
+   "last": 2001,
+   "games": 67,
+   "starts": 0,
+   "pts": 165,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100458",
+   "name": "Vicki Hall",
+   "first": 2000,
+   "last": 2002,
+   "games": 67,
+   "starts": 0,
+   "pts": 276,
+   "teams": [
+    "CLE",
+    "IND",
+    "LAS"
+   ]
+  },
+  {
+   "id": "100221",
+   "name": "Michelle Brogan",
+   "first": 1998,
+   "last": 2000,
+   "games": 66,
+   "starts": 0,
+   "pts": 582,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100083",
+   "name": "Kim Perrot",
+   "first": 1997,
+   "last": 1998,
+   "games": 65,
+   "starts": 0,
+   "pts": 472,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100626",
+   "name": "Jae Kingi-Cross",
+   "first": 2001,
+   "last": 2006,
+   "games": 65,
+   "starts": 1,
+   "pts": 217,
+   "teams": [
+    "DET",
+    "PHO",
+    "SAN"
+   ]
+  },
+  {
+   "id": "100389",
+   "name": "Val Whiting",
+   "first": 1999,
+   "last": 2002,
+   "games": 64,
+   "starts": 0,
+   "pts": 310,
+   "teams": [
+    "DET",
+    "MIN"
+   ]
+  },
+  {
+   "id": "100430",
+   "name": "Tracy Henderson",
+   "first": 1999,
+   "last": 2003,
+   "games": 63,
+   "starts": 0,
+   "pts": 110,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100518",
+   "name": "Nadine Malcolm",
+   "first": 2001,
+   "last": 2002,
+   "games": 63,
+   "starts": 0,
+   "pts": 430,
+   "teams": [
+    "IND"
+   ]
+  },
+  {
+   "id": "100860",
+   "name": "Aiysha Smith",
+   "first": 2003,
+   "last": 2004,
+   "games": 63,
+   "starts": 3,
+   "pts": 234,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100374",
+   "name": "Penny Moore",
+   "first": 1997,
+   "last": 1999,
+   "games": 62,
+   "starts": 0,
+   "pts": 382,
+   "teams": [
+    "CHA",
+    "WAS"
+   ]
+  },
+  {
+   "id": "100476",
+   "name": "Vedrana Grgin Fonseca",
+   "first": 2000,
+   "last": 2002,
+   "games": 62,
+   "starts": 0,
+   "pts": 157,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100033",
+   "name": "Toni Foster",
+   "first": 1997,
+   "last": 1999,
+   "games": 61,
+   "starts": 0,
+   "pts": 367,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100485",
+   "name": "Maylana Martin",
+   "first": 2000,
+   "last": 2001,
+   "games": 61,
+   "starts": 0,
+   "pts": 227,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "100089",
+   "name": "Isabelle Fijalkowski",
+   "first": 1997,
+   "last": 2000,
+   "games": 60,
+   "starts": 0,
+   "pts": 768,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100248",
+   "name": "Cindy Brown",
+   "first": 1998,
+   "last": 1999,
+   "games": 60,
+   "starts": 0,
+   "pts": 532,
+   "teams": [
+    "DET",
+    "UTA"
+   ]
+  },
+  {
+   "id": "100211",
+   "name": "Amaya Valdemoro",
+   "first": 1998,
+   "last": 2000,
+   "games": 60,
+   "starts": 0,
+   "pts": 141,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100553",
+   "name": "Keisha Anderson",
+   "first": 2000,
+   "last": 2002,
+   "games": 59,
+   "starts": 0,
+   "pts": 96,
+   "teams": [
+    "WAS",
+    "CHA"
+   ]
+  },
+  {
+   "id": "100050",
+   "name": "Kim Williams",
+   "first": 1997,
+   "last": 1998,
+   "games": 58,
+   "starts": 0,
+   "pts": 453,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100108",
+   "name": "Rhonda Blades",
+   "first": 1997,
+   "last": 1998,
+   "games": 58,
+   "starts": 0,
+   "pts": 146,
+   "teams": [
+    "NYL",
+    "DET"
+   ]
+  },
+  {
+   "id": "100020",
+   "name": "Pam McGee",
+   "first": 1997,
+   "last": 1998,
+   "games": 57,
+   "starts": 0,
+   "pts": 488,
+   "teams": [
+    "SAC",
+    "LAS"
+   ]
+  },
+  {
+   "id": "100399",
+   "name": "Trisha Fallon",
+   "first": 1999,
+   "last": 2001,
+   "games": 57,
+   "starts": 0,
+   "pts": 399,
+   "teams": [
+    "MIN",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100536",
+   "name": "Katy Steding",
+   "first": 2000,
+   "last": 2001,
+   "games": 57,
+   "starts": 0,
+   "pts": 193,
+   "teams": [
+    "SAC",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100866",
+   "name": "Tai Dillard",
+   "first": 2003,
+   "last": 2005,
+   "games": 57,
+   "starts": 0,
+   "pts": 87,
+   "teams": [
+    "SAN"
+   ]
+  },
+  {
+   "id": "100916",
+   "name": "Jessica Brungo",
+   "first": 2004,
+   "last": 2006,
+   "games": 57,
+   "starts": 0,
+   "pts": 60,
+   "teams": [
+    "CON"
+   ]
+  },
+  {
+   "id": "100368",
+   "name": "Angie Braziel",
+   "first": 1999,
+   "last": 2001,
+   "games": 56,
+   "starts": 0,
+   "pts": 211,
+   "teams": [
+    "CHA",
+    "IND"
+   ]
+  },
+  {
+   "id": "100534",
+   "name": "Stacy Clinesmith",
+   "first": 2000,
+   "last": 2002,
+   "games": 56,
+   "starts": 0,
+   "pts": 106,
+   "teams": [
+    "SAC",
+    "DET"
+   ]
+  },
+  {
+   "id": "100635",
+   "name": "Jaynetta Saunders",
+   "first": 2001,
+   "last": 2002,
+   "games": 56,
+   "starts": 0,
+   "pts": 167,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100090",
+   "name": "Lynette Woodard",
+   "first": 1997,
+   "last": 1998,
+   "games": 55,
+   "starts": 0,
+   "pts": 312,
+   "teams": [
+    "CLE",
+    "DET"
+   ]
+  },
+  {
+   "id": "100747",
+   "name": "Andrea Gardner",
+   "first": 2002,
+   "last": 2008,
+   "games": 55,
+   "starts": 0,
+   "pts": 119,
+   "teams": [
+    "UTA",
+    "WAS"
+   ]
+  },
+  {
+   "id": "100676",
+   "name": "Jackie Stiles",
+   "first": 2001,
+   "last": 2002,
+   "games": 53,
+   "starts": 0,
+   "pts": 603,
+   "teams": [
+    "POR"
+   ]
+  },
+  {
+   "id": "100156",
+   "name": "Heidi Burge",
+   "first": 1997,
+   "last": 1998,
+   "games": 52,
+   "starts": 0,
+   "pts": 288,
+   "teams": [
+    "LAS",
+    "WAS"
+   ]
+  },
+  {
+   "id": "100670",
+   "name": "Kristen Veal",
+   "first": 2001,
+   "last": 2002,
+   "games": 52,
+   "starts": 0,
+   "pts": 187,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "200678",
+   "name": "Tamara James",
+   "first": 2006,
+   "last": 2007,
+   "games": 52,
+   "starts": 9,
+   "pts": 224,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100207",
+   "name": "Monica Lamb",
+   "first": 1998,
+   "last": 2000,
+   "games": 51,
+   "starts": 0,
+   "pts": 229,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100017",
+   "name": "Bridgette Gordon",
+   "first": 1997,
+   "last": 1998,
+   "games": 50,
+   "starts": 0,
+   "pts": 424,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100047",
+   "name": "Tammi Reiss",
+   "first": 1997,
+   "last": 1998,
+   "games": 50,
+   "starts": 0,
+   "pts": 361,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100677",
+   "name": "LaQuanda Quick",
+   "first": 2001,
+   "last": 2003,
+   "games": 49,
+   "starts": 0,
+   "pts": 161,
+   "teams": [
+    "POR",
+    "SAN"
+   ]
+  },
+  {
+   "id": "100923",
+   "name": "Shereka Wright",
+   "first": 2004,
+   "last": 2005,
+   "games": 49,
+   "starts": 5,
+   "pts": 151,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100849",
+   "name": "DeTrina White",
+   "first": 2004,
+   "last": 2005,
+   "games": 49,
+   "starts": 2,
+   "pts": 100,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100490",
+   "name": "Shanele Stires",
+   "first": 2000,
+   "last": 2002,
+   "games": 48,
+   "starts": 0,
+   "pts": 92,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "100471",
+   "name": "Danielle McCulley",
+   "first": 2000,
+   "last": 2003,
+   "games": 48,
+   "starts": 0,
+   "pts": 207,
+   "teams": [
+    "IND",
+    "SEA"
+   ]
+  },
+  {
+   "id": "101012",
+   "name": "Laura Summerton",
+   "first": 2005,
+   "last": 2006,
+   "games": 48,
+   "starts": 3,
+   "pts": 95,
+   "teams": [
+    "CON"
+   ]
+  },
+  {
+   "id": "100052",
+   "name": "Deborah Carter",
+   "first": 1997,
+   "last": 1998,
+   "games": 47,
+   "starts": 0,
+   "pts": 182,
+   "teams": [
+    "UTA",
+    "WAS"
+   ]
+  },
+  {
+   "id": "100402",
+   "name": "Andrea Lloyd-Curry",
+   "first": 1999,
+   "last": 2000,
+   "games": 46,
+   "starts": 0,
+   "pts": 289,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "100739",
+   "name": "Lucienne Berthieu",
+   "first": 2002,
+   "last": 2004,
+   "games": 46,
+   "starts": 3,
+   "pts": 133,
+   "teams": [
+    "CLE",
+    "HOU"
+   ]
+  },
+  {
+   "id": "100086",
+   "name": "Tiffany Woosley",
+   "first": 1997,
+   "last": 1998,
+   "games": 45,
+   "starts": 0,
+   "pts": 98,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "101036",
+   "name": "Angelina Williams",
+   "first": 2005,
+   "last": 2006,
+   "games": 44,
+   "starts": 0,
+   "pts": 91,
+   "teams": [
+    "PHO",
+    "DET"
+   ]
+  },
+  {
+   "id": "100084",
+   "name": "Fran Harris",
+   "first": 1997,
+   "last": 1998,
+   "games": 43,
+   "starts": 0,
+   "pts": 175,
+   "teams": [
+    "HOU",
+    "UTA"
+   ]
+  },
+  {
+   "id": "100201",
+   "name": "Alessandra Santos de Olive",
+   "first": 1998,
+   "last": 2001,
+   "games": 42,
+   "starts": 0,
+   "pts": 243,
+   "teams": [
+    "WAS",
+    "IND",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100500",
+   "name": "Elena Shakirova",
+   "first": 2000,
+   "last": 2002,
+   "games": 42,
+   "starts": 0,
+   "pts": 96,
+   "teams": [
+    "HOU",
+    "CHA"
+   ]
+  },
+  {
+   "id": "100344",
+   "name": "Carolyn Young",
+   "first": 2001,
+   "last": 2002,
+   "games": 42,
+   "starts": 0,
+   "pts": 194,
+   "teams": [
+    "POR"
+   ]
+  },
+  {
+   "id": "100369",
+   "name": "Niesa Johnson",
+   "first": 1999,
+   "last": 2000,
+   "games": 41,
+   "starts": 0,
+   "pts": 75,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100987",
+   "name": "Laura Macchi",
+   "first": 2004,
+   "last": 2005,
+   "games": 41,
+   "starts": 14,
+   "pts": 224,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "201478",
+   "name": "Morenike Atunrase",
+   "first": 2008,
+   "last": 2008,
+   "games": 41,
+   "starts": 0,
+   "pts": 81,
+   "teams": [
+    "SAN"
+   ]
+  },
+  {
+   "id": "100023",
+   "name": "Tajama Abraham",
+   "first": 1997,
+   "last": 1998,
+   "games": 40,
+   "starts": 0,
+   "pts": 140,
+   "teams": [
+    "SAC",
+    "DET"
+   ]
+  },
+  {
+   "id": "100106",
+   "name": "Trena Trice-Hill",
+   "first": 1997,
+   "last": 1998,
+   "games": 40,
+   "starts": 0,
+   "pts": 164,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100406",
+   "name": "Sonja Tate",
+   "first": 1999,
+   "last": 2000,
+   "games": 40,
+   "starts": 0,
+   "pts": 170,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "100695",
+   "name": "Audrey Sauret",
+   "first": 2001,
+   "last": 2002,
+   "games": 40,
+   "starts": 0,
+   "pts": 100,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100038",
+   "name": "Tara Williams",
+   "first": 1997,
+   "last": 2000,
+   "games": 39,
+   "starts": 0,
+   "pts": 117,
+   "teams": [
+    "PHO",
+    "POR"
+   ]
+  },
+  {
+   "id": "100749",
+   "name": "Lindsey Yamasaki",
+   "first": 2002,
+   "last": 2003,
+   "games": 39,
+   "starts": 1,
+   "pts": 68,
+   "teams": [
+    "MIA",
+    "NYL"
+   ]
+  },
+  {
+   "id": "201053",
+   "name": "Ashley Shields",
+   "first": 2007,
+   "last": 2008,
+   "games": 39,
+   "starts": 1,
+   "pts": 163,
+   "teams": [
+    "HOU",
+    "DET"
+   ]
+  },
+  {
+   "id": "201510",
+   "name": "A'Quonesia Franklin",
+   "first": 2008,
+   "last": 2009,
+   "games": 39,
+   "starts": 0,
+   "pts": 55,
+   "teams": [
+    "SAC",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100074",
+   "name": "Wanda Guyton",
+   "first": 1997,
+   "last": 1999,
+   "games": 38,
+   "starts": 0,
+   "pts": 196,
+   "teams": [
+    "HOU",
+    "DET"
+   ]
+  },
+  {
+   "id": "100224",
+   "name": "Andrea Kuklova",
+   "first": 1998,
+   "last": 1999,
+   "games": 38,
+   "starts": 0,
+   "pts": 106,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100210",
+   "name": "Polina Tzekova",
+   "first": 1999,
+   "last": 1999,
+   "games": 38,
+   "starts": 0,
+   "pts": 226,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100427",
+   "name": "Trisha Stafford-Odom",
+   "first": 2001,
+   "last": 2002,
+   "games": 38,
+   "starts": 0,
+   "pts": 125,
+   "teams": [
+    "HOU",
+    "MIA"
+   ]
+  },
+  {
+   "id": "101035",
+   "name": "Jacqueline Batteast",
+   "first": 2005,
+   "last": 2006,
+   "games": 38,
+   "starts": 1,
+   "pts": 36,
+   "teams": [
+    "MIN",
+    "DET"
+   ]
+  },
+  {
+   "id": "100019",
+   "name": "Mikiko Hagiwara",
+   "first": 1997,
+   "last": 1998,
+   "games": 37,
+   "starts": 0,
+   "pts": 100,
+   "teams": [
+    "SAC",
+    "PHO"
+   ]
+  },
+  {
+   "id": "101103",
+   "name": "Francesca Zara",
+   "first": 2005,
+   "last": 2005,
+   "games": 37,
+   "starts": 4,
+   "pts": 101,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100178",
+   "name": "Sonia Chase",
+   "first": 1998,
+   "last": 1999,
+   "games": 36,
+   "starts": 0,
+   "pts": 45,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100483",
+   "name": "Keitha Dickerson",
+   "first": 2000,
+   "last": 2001,
+   "games": 36,
+   "starts": 0,
+   "pts": 142,
+   "teams": [
+    "MIN",
+    "UTA"
+   ]
+  },
+  {
+   "id": "100403",
+   "name": "Angie Potthoff",
+   "first": 1999,
+   "last": 2000,
+   "games": 35,
+   "starts": 0,
+   "pts": 127,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "100760",
+   "name": "Edniesha Curry",
+   "first": 2003,
+   "last": 2005,
+   "games": 35,
+   "starts": 0,
+   "pts": 56,
+   "teams": [
+    "PHO",
+    "LAS"
+   ]
+  },
+  {
+   "id": "100967",
+   "name": "Mandisa Stevenson",
+   "first": 2004,
+   "last": 2006,
+   "games": 35,
+   "starts": 1,
+   "pts": 47,
+   "teams": [
+    "SAN",
+    "SEA",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100006",
+   "name": "Haixia Zheng",
+   "first": 1997,
+   "last": 1998,
+   "games": 34,
+   "starts": 0,
+   "pts": 304,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100786",
+   "name": "Anastasia Kostaki",
+   "first": 2006,
+   "last": 2006,
+   "games": 34,
+   "starts": 0,
+   "pts": 72,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100049",
+   "name": "Raegan Scott",
+   "first": 1997,
+   "last": 1998,
+   "games": 33,
+   "starts": 0,
+   "pts": 59,
+   "teams": [
+    "UTA",
+    "CLE"
+   ]
+  },
+  {
+   "id": "100560",
+   "name": "Shantia Owens",
+   "first": 2000,
+   "last": 2002,
+   "games": 33,
+   "starts": 0,
+   "pts": 131,
+   "teams": [
+    "MIA",
+    "CHA"
+   ]
+  },
+  {
+   "id": "100652",
+   "name": "Camille Cooper",
+   "first": 2001,
+   "last": 2002,
+   "games": 33,
+   "starts": 0,
+   "pts": 56,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "202654",
+   "name": "Porsha Phillips",
+   "first": 2011,
+   "last": 2011,
+   "games": 33,
+   "starts": 1,
+   "pts": 57,
+   "teams": [
+    "SAN"
+   ]
+  },
+  {
+   "id": "100257",
+   "name": "Mfon Udoka",
+   "first": 1998,
+   "last": 2004,
+   "games": 32,
+   "starts": 0,
+   "pts": 86,
+   "teams": [
+    "DET",
+    "HOU",
+    "LAS"
+   ]
+  },
+  {
+   "id": "100503",
+   "name": "Andrea Garner",
+   "first": 2000,
+   "last": 2000,
+   "games": 32,
+   "starts": 0,
+   "pts": 99,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100559",
+   "name": "Milena Flores",
+   "first": 2000,
+   "last": 2000,
+   "games": 32,
+   "starts": 0,
+   "pts": 112,
+   "teams": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "100447",
+   "name": "Tiffany Travis",
+   "first": 2000,
+   "last": 2000,
+   "games": 32,
+   "starts": 0,
+   "pts": 173,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100391",
+   "name": "Nina Bjedov",
+   "first": 1999,
+   "last": 1999,
+   "games": 31,
+   "starts": 0,
+   "pts": 130,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100390",
+   "name": "Oksana Zakaluzhnaya",
+   "first": 2000,
+   "last": 2002,
+   "games": 31,
+   "starts": 0,
+   "pts": 97,
+   "teams": [
+    "DET",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100744",
+   "name": "Brandi McCain",
+   "first": 2002,
+   "last": 2002,
+   "games": 31,
+   "starts": 0,
+   "pts": 83,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100852",
+   "name": "Jocelyn Penn",
+   "first": 2003,
+   "last": 2004,
+   "games": 31,
+   "starts": 0,
+   "pts": 90,
+   "teams": [
+    "WAS",
+    "SAN"
+   ]
+  },
+  {
+   "id": "100934",
+   "name": "Tasha Butts",
+   "first": 2004,
+   "last": 2004,
+   "games": 31,
+   "starts": 0,
+   "pts": 76,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "100194",
+   "name": "Keri Chaconas",
+   "first": 1998,
+   "last": 1998,
+   "games": 30,
+   "starts": 0,
+   "pts": 144,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100181",
+   "name": "Christy Smith",
+   "first": 1998,
+   "last": 1999,
+   "games": 30,
+   "starts": 0,
+   "pts": 105,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100253",
+   "name": "Razija Brcaninovic",
+   "first": 1998,
+   "last": 1998,
+   "games": 30,
+   "starts": 0,
+   "pts": 272,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100601",
+   "name": "Elisa Aguilar",
+   "first": 2002,
+   "last": 2002,
+   "games": 30,
+   "starts": 0,
+   "pts": 43,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100950",
+   "name": "Kaayla Chones",
+   "first": 2004,
+   "last": 2006,
+   "games": 30,
+   "starts": 1,
+   "pts": 42,
+   "teams": [
+    "WAS",
+    "SEA"
+   ]
+  },
+  {
+   "id": "100452",
+   "name": "E.C. Hill",
+   "first": 2000,
+   "last": 2001,
+   "games": 29,
+   "starts": 0,
+   "pts": 39,
+   "teams": [
+    "CHA",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100351",
+   "name": "Joy Holmes",
+   "first": 2000,
+   "last": 2000,
+   "games": 29,
+   "starts": 0,
+   "pts": 91,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100005",
+   "name": "Daedra Charles",
+   "first": 1997,
+   "last": 1997,
+   "games": 28,
+   "starts": 0,
+   "pts": 64,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100155",
+   "name": "Nicole Levesque",
+   "first": 1997,
+   "last": 1997,
+   "games": 28,
+   "starts": 0,
+   "pts": 112,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100176",
+   "name": "Sandra VanEmbricqs",
+   "first": 1998,
+   "last": 1998,
+   "games": 28,
+   "starts": 0,
+   "pts": 94,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100354",
+   "name": "Heather Owen",
+   "first": 1999,
+   "last": 2000,
+   "games": 28,
+   "starts": 0,
+   "pts": 38,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100594",
+   "name": "Michelle Cleary",
+   "first": 2000,
+   "last": 2001,
+   "games": 28,
+   "starts": 0,
+   "pts": 61,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "201481",
+   "name": "Quianna Chaney",
+   "first": 2008,
+   "last": 2008,
+   "games": 28,
+   "starts": 0,
+   "pts": 68,
+   "teams": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "100053",
+   "name": "Karen Booker",
+   "first": 1997,
+   "last": 1998,
+   "games": 27,
+   "starts": 0,
+   "pts": 60,
+   "teams": [
+    "UTA",
+    "HOU"
+   ]
+  },
+  {
+   "id": "100034",
+   "name": "Tia Jackson",
+   "first": 1997,
+   "last": 1997,
+   "games": 27,
+   "starts": 0,
+   "pts": 74,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100738",
+   "name": "Lenae Williams",
+   "first": 2002,
+   "last": 2002,
+   "games": 27,
+   "starts": 0,
+   "pts": 73,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100235",
+   "name": "Franthea Price",
+   "first": 1998,
+   "last": 1998,
+   "games": 26,
+   "starts": 0,
+   "pts": 127,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100208",
+   "name": "Nyree Roberts",
+   "first": 1998,
+   "last": 1999,
+   "games": 26,
+   "starts": 0,
+   "pts": 33,
+   "teams": [
+    "HOU",
+    "WAS"
+   ]
+  },
+  {
+   "id": "100246",
+   "name": "Gergana Branzova",
+   "first": 1998,
+   "last": 1998,
+   "games": 26,
+   "starts": 0,
+   "pts": 69,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100509",
+   "name": "Marina Ferragut",
+   "first": 2000,
+   "last": 2000,
+   "games": 26,
+   "starts": 0,
+   "pts": 56,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100218",
+   "name": "Towana Alhaleem",
+   "first": 2001,
+   "last": 2001,
+   "games": 26,
+   "starts": 0,
+   "pts": 49,
+   "teams": [
+    "ORL"
+   ]
+  },
+  {
+   "id": "100947",
+   "name": "Toccara Williams",
+   "first": 2004,
+   "last": 2004,
+   "games": 26,
+   "starts": 3,
+   "pts": 55,
+   "teams": [
+    "SAN"
+   ]
+  },
+  {
+   "id": "100202",
+   "name": "Adrienne Shuler",
+   "first": 1998,
+   "last": 1998,
+   "games": 25,
+   "starts": 0,
+   "pts": 89,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100365",
+   "name": "Krystyna Lara",
+   "first": 1999,
+   "last": 1999,
+   "games": 25,
+   "starts": 0,
+   "pts": 62,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100093",
+   "name": "Tina Nicholson",
+   "first": 1997,
+   "last": 1997,
+   "games": 24,
+   "starts": 0,
+   "pts": 48,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100223",
+   "name": "Pauline Jordan",
+   "first": 1998,
+   "last": 1998,
+   "games": 24,
+   "starts": 0,
+   "pts": 74,
+   "teams": [
+    "PHO",
+    "SAC"
+   ]
+  },
+  {
+   "id": "100519",
+   "name": "Jannon Roland",
+   "first": 2000,
+   "last": 2000,
+   "games": 24,
+   "starts": 0,
+   "pts": 35,
+   "teams": [
+    "ORL"
+   ]
+  },
+  {
+   "id": "100082",
+   "name": "Nekeshia Henderson",
+   "first": 2001,
+   "last": 2001,
+   "games": 24,
+   "starts": 0,
+   "pts": 26,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100437",
+   "name": "Valerie Still",
+   "first": 1999,
+   "last": 1999,
+   "games": 23,
+   "starts": 0,
+   "pts": 31,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100554",
+   "name": "Beth Cunningham",
+   "first": 2000,
+   "last": 2000,
+   "games": 23,
+   "starts": 0,
+   "pts": 66,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100681",
+   "name": "Maren Walseth",
+   "first": 2001,
+   "last": 2002,
+   "games": 23,
+   "starts": 0,
+   "pts": 17,
+   "teams": [
+    "SAC",
+    "WAS"
+   ]
+  },
+  {
+   "id": "201544",
+   "name": "Yuko Oga",
+   "first": 2008,
+   "last": 2008,
+   "games": 23,
+   "starts": 0,
+   "pts": 56,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "202316",
+   "name": "Taylor Lilley",
+   "first": 2010,
+   "last": 2010,
+   "games": 23,
+   "starts": 1,
+   "pts": 72,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100021",
+   "name": "Denique Graves",
+   "first": 1997,
+   "last": 1997,
+   "games": 22,
+   "starts": 0,
+   "pts": 16,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100213",
+   "name": "Elisabeth Cebrian",
+   "first": 1998,
+   "last": 1998,
+   "games": 22,
+   "starts": 0,
+   "pts": 38,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100193",
+   "name": "La'Shawn Brown",
+   "first": 1998,
+   "last": 1998,
+   "games": 22,
+   "starts": 0,
+   "pts": 43,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100551",
+   "name": "Naomi Mulitauaopele",
+   "first": 2000,
+   "last": 2000,
+   "games": 22,
+   "starts": 0,
+   "pts": 99,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100451",
+   "name": "Jamie Cassidy",
+   "first": 2000,
+   "last": 2000,
+   "games": 22,
+   "starts": 0,
+   "pts": 74,
+   "teams": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "100799",
+   "name": "Susanna Bonfiglio",
+   "first": 2002,
+   "last": 2002,
+   "games": 22,
+   "starts": 0,
+   "pts": 105,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100918",
+   "name": "Candace Futrell",
+   "first": 2004,
+   "last": 2004,
+   "games": 22,
+   "starts": 0,
+   "pts": 44,
+   "teams": [
+    "CON"
+   ]
+  },
+  {
+   "id": "202256",
+   "name": "Alison Lacey",
+   "first": 2010,
+   "last": 2010,
+   "games": 22,
+   "starts": 0,
+   "pts": 16,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "202278",
+   "name": "Abi Olajuwon",
+   "first": 2010,
+   "last": 2011,
+   "games": 22,
+   "starts": 0,
+   "pts": 22,
+   "teams": [
+    "CHI",
+    "TUL"
+   ]
+  },
+  {
+   "id": "100036",
+   "name": "Monique Ambers",
+   "first": 1997,
+   "last": 2002,
+   "games": 21,
+   "starts": 0,
+   "pts": 14,
+   "teams": [
+    "PHO",
+    "SAC"
+   ]
+  },
+  {
+   "id": "100425",
+   "name": "Venus Lacy",
+   "first": 1999,
+   "last": 2000,
+   "games": 21,
+   "starts": 0,
+   "pts": 38,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100542",
+   "name": "Charisse Sampson",
+   "first": 2000,
+   "last": 2000,
+   "games": 21,
+   "starts": 0,
+   "pts": 78,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100558",
+   "name": "Jameka Jones",
+   "first": 2000,
+   "last": 2000,
+   "games": 21,
+   "starts": 0,
+   "pts": 70,
+   "teams": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "100547",
+   "name": "Stacy Frese",
+   "first": 2000,
+   "last": 2000,
+   "games": 21,
+   "starts": 0,
+   "pts": 62,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "202262",
+   "name": "Ashley Houts",
+   "first": 2010,
+   "last": 2010,
+   "games": 21,
+   "starts": 0,
+   "pts": 17,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "202264",
+   "name": "Chanel Mokango",
+   "first": 2010,
+   "last": 2010,
+   "games": 21,
+   "starts": 0,
+   "pts": 9,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100067",
+   "name": "Katasha Artis",
+   "first": 1997,
+   "last": 1997,
+   "games": 20,
+   "starts": 0,
+   "pts": 16,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100070",
+   "name": "Tia Paschal",
+   "first": 1998,
+   "last": 1998,
+   "games": 20,
+   "starts": 0,
+   "pts": 27,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100168",
+   "name": "Erin Alexander",
+   "first": 1998,
+   "last": 1998,
+   "games": 20,
+   "starts": 0,
+   "pts": 39,
+   "teams": [
+    "LAS",
+    "UTA"
+   ]
+  },
+  {
+   "id": "100174",
+   "name": "Eugenia Rycraw",
+   "first": 1998,
+   "last": 1998,
+   "games": 20,
+   "starts": 0,
+   "pts": 46,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100508",
+   "name": "Jessica Bibby",
+   "first": 2000,
+   "last": 2000,
+   "games": 20,
+   "starts": 0,
+   "pts": 23,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100525",
+   "name": "Rankica Sarenac",
+   "first": 2000,
+   "last": 2000,
+   "games": 20,
+   "starts": 0,
+   "pts": 64,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100543",
+   "name": "Robin Threatt-Elliott",
+   "first": 2000,
+   "last": 2000,
+   "games": 20,
+   "starts": 0,
+   "pts": 155,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100538",
+   "name": "Katrina Hibbert",
+   "first": 2000,
+   "last": 2000,
+   "games": 20,
+   "starts": 0,
+   "pts": 53,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100516",
+   "name": "Amber Hall",
+   "first": 2002,
+   "last": 2002,
+   "games": 20,
+   "starts": 0,
+   "pts": 30,
+   "teams": [
+    "POR"
+   ]
+  },
+  {
+   "id": "100680",
+   "name": "Jackie Moore",
+   "first": 2002,
+   "last": 2002,
+   "games": 20,
+   "starts": 0,
+   "pts": 42,
+   "teams": [
+    "IND"
+   ]
+  },
+  {
+   "id": "100827",
+   "name": "Courtney Coleman",
+   "first": 2003,
+   "last": 2003,
+   "games": 20,
+   "starts": 0,
+   "pts": 36,
+   "teams": [
+    "CON"
+   ]
+  },
+  {
+   "id": "201095",
+   "name": "Claire Coggins",
+   "first": 2007,
+   "last": 2007,
+   "games": 20,
+   "starts": 0,
+   "pts": 49,
+   "teams": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "201070",
+   "name": "Stephanie Raymond",
+   "first": 2007,
+   "last": 2007,
+   "games": 20,
+   "starts": 0,
+   "pts": 61,
+   "teams": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "100024",
+   "name": "Corissa Yasen",
+   "first": 1997,
+   "last": 1997,
+   "games": 19,
+   "starts": 0,
+   "pts": 52,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100686",
+   "name": "Michaela Pavlickova",
+   "first": 2001,
+   "last": 2003,
+   "games": 19,
+   "starts": 0,
+   "pts": 7,
+   "teams": [
+    "UTA",
+    "PHO"
+   ]
+  },
+  {
+   "id": "100730",
+   "name": "Danielle Crockrom",
+   "first": 2002,
+   "last": 2002,
+   "games": 19,
+   "starts": 0,
+   "pts": 31,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100741",
+   "name": "Jill Chapman-Daily",
+   "first": 2002,
+   "last": 2002,
+   "games": 19,
+   "starts": 0,
+   "pts": 22,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "201517",
+   "name": "Kimberly Beck",
+   "first": 2008,
+   "last": 2008,
+   "games": 19,
+   "starts": 0,
+   "pts": 17,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100512",
+   "name": "Shea Mahoney",
+   "first": 2000,
+   "last": 2002,
+   "games": 18,
+   "starts": 0,
+   "pts": 32,
+   "teams": [
+    "NYL",
+    "PHO"
+   ]
+  },
+  {
+   "id": "101000",
+   "name": "Miao Li jie",
+   "first": 2005,
+   "last": 2005,
+   "games": 18,
+   "starts": 0,
+   "pts": 31,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "101062",
+   "name": "Natalia Vodopyanova",
+   "first": 2005,
+   "last": 2005,
+   "games": 18,
+   "starts": 0,
+   "pts": 25,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100548",
+   "name": "Katryna Gaither",
+   "first": 2000,
+   "last": 2002,
+   "games": 17,
+   "starts": 0,
+   "pts": 20,
+   "teams": [
+    "UTA",
+    "IND",
+    "LAS",
+    "WAS"
+   ]
+  },
+  {
+   "id": "100479",
+   "name": "Paige Sauer",
+   "first": 2000,
+   "last": 2002,
+   "games": 17,
+   "starts": 0,
+   "pts": 24,
+   "teams": [
+    "LAS",
+    "CLE"
+   ]
+  },
+  {
+   "id": "100472",
+   "name": "Texlin Quinney",
+   "first": 2000,
+   "last": 2000,
+   "games": 17,
+   "starts": 0,
+   "pts": 15,
+   "teams": [
+    "IND"
+   ]
+  },
+  {
+   "id": "100655",
+   "name": "Wendi Willits",
+   "first": 2001,
+   "last": 2001,
+   "games": 17,
+   "starts": 0,
+   "pts": 17,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100668",
+   "name": "Jaclyn Johnson",
+   "first": 2001,
+   "last": 2001,
+   "games": 17,
+   "starts": 0,
+   "pts": 35,
+   "teams": [
+    "ORL"
+   ]
+  },
+  {
+   "id": "100876",
+   "name": "Sun Min Jung",
+   "first": 2003,
+   "last": 2003,
+   "games": 17,
+   "starts": 0,
+   "pts": 30,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100881",
+   "name": "Michelle Greco",
+   "first": 2004,
+   "last": 2004,
+   "games": 17,
+   "starts": 0,
+   "pts": 31,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "201057",
+   "name": "Kamesha Hairston",
+   "first": 2007,
+   "last": 2007,
+   "games": 17,
+   "starts": 0,
+   "pts": 32,
+   "teams": [
+    "CON"
+   ]
+  },
+  {
+   "id": "100688",
+   "name": "Cara Consuegra",
+   "first": 2001,
+   "last": 2001,
+   "games": 16,
+   "starts": 0,
+   "pts": 5,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100653",
+   "name": "Nicole Levandusky",
+   "first": 2001,
+   "last": 2001,
+   "games": 16,
+   "starts": 0,
+   "pts": 20,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100945",
+   "name": "Nuria Martinez",
+   "first": 2005,
+   "last": 2010,
+   "games": 16,
+   "starts": 0,
+   "pts": 27,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "100283",
+   "name": "Leila de Souza Sobral",
+   "first": 1998,
+   "last": 1998,
+   "games": 15,
+   "starts": 0,
+   "pts": 25,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100380",
+   "name": "Amanda Wilson",
+   "first": 1999,
+   "last": 2000,
+   "games": 15,
+   "starts": 0,
+   "pts": 14,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100517",
+   "name": "Romana Hamzova",
+   "first": 2000,
+   "last": 2000,
+   "games": 15,
+   "starts": 0,
+   "pts": 7,
+   "teams": [
+    "ORL"
+   ]
+  },
+  {
+   "id": "200707",
+   "name": "Christelle N'Garsanet",
+   "first": 2006,
+   "last": 2006,
+   "games": 15,
+   "starts": 0,
+   "pts": 27,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "201520",
+   "name": "Krystal Vaughn",
+   "first": 2008,
+   "last": 2008,
+   "games": 15,
+   "starts": 0,
+   "pts": 12,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "202655",
+   "name": "Ta'Shia Phillips",
+   "first": 2011,
+   "last": 2011,
+   "games": 15,
+   "starts": 0,
+   "pts": 22,
+   "teams": [
+    "WAS",
+    "NYL"
+   ]
+  },
+  {
+   "id": "100161",
+   "name": "Laure Savasta",
+   "first": 1997,
+   "last": 1997,
+   "games": 14,
+   "starts": 0,
+   "pts": 33,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100417",
+   "name": "Heather Quella",
+   "first": 1999,
+   "last": 1999,
+   "games": 14,
+   "starts": 0,
+   "pts": 10,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100377",
+   "name": "Clarissa Davis-Wrightsil",
+   "first": 1999,
+   "last": 1999,
+   "games": 14,
+   "starts": 0,
+   "pts": 130,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100754",
+   "name": "TaKeisha Lewis",
+   "first": 2002,
+   "last": 2002,
+   "games": 14,
+   "starts": 0,
+   "pts": 18,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100856",
+   "name": "Petra Ujhelyi",
+   "first": 2003,
+   "last": 2003,
+   "games": 14,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100079",
+   "name": "Catarina Pollini",
+   "first": 1997,
+   "last": 1997,
+   "games": 13,
+   "starts": 0,
+   "pts": 22,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100018",
+   "name": "Judy Mosley-McAfee",
+   "first": 1997,
+   "last": 1997,
+   "games": 13,
+   "starts": 0,
+   "pts": 58,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100055",
+   "name": "Greta Koss",
+   "first": 1997,
+   "last": 1997,
+   "games": 13,
+   "starts": 0,
+   "pts": 44,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100360",
+   "name": "Michelle Campbell",
+   "first": 1999,
+   "last": 2000,
+   "games": 13,
+   "starts": 0,
+   "pts": 14,
+   "teams": [
+    "UTA",
+    "WAS"
+   ]
+  },
+  {
+   "id": "100383",
+   "name": "Lesley Brown",
+   "first": 1999,
+   "last": 1999,
+   "games": 13,
+   "starts": 0,
+   "pts": 19,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "101034",
+   "name": "Yolanda Paige",
+   "first": 2005,
+   "last": 2005,
+   "games": 13,
+   "starts": 0,
+   "pts": 16,
+   "teams": [
+    "IND"
+   ]
+  },
+  {
+   "id": "100441",
+   "name": "Angela Aycock",
+   "first": 1999,
+   "last": 2000,
+   "games": 12,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "PHO",
+    "SEA",
+    "MIN"
+   ]
+  },
+  {
+   "id": "100510",
+   "name": "Olga Firsova",
+   "first": 2000,
+   "last": 2000,
+   "games": 12,
+   "starts": 0,
+   "pts": 18,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100671",
+   "name": "Ilona Korstine",
+   "first": 2001,
+   "last": 2001,
+   "games": 12,
+   "starts": 0,
+   "pts": 21,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100527",
+   "name": "Mactabene Amachree",
+   "first": 2001,
+   "last": 2005,
+   "games": 12,
+   "starts": 0,
+   "pts": 11,
+   "teams": [
+    "NYL",
+    "SEA",
+    "WAS"
+   ]
+  },
+  {
+   "id": "100737",
+   "name": "Zuzana Klimesova",
+   "first": 2002,
+   "last": 2003,
+   "games": 12,
+   "starts": 0,
+   "pts": 7,
+   "teams": [
+    "IND"
+   ]
+  },
+  {
+   "id": "100424",
+   "name": "Nevriye Yilmaz",
+   "first": 2003,
+   "last": 2004,
+   "games": 12,
+   "starts": 0,
+   "pts": 33,
+   "teams": [
+    "PHO",
+    "SAN"
+   ]
+  },
+  {
+   "id": "200693",
+   "name": "Brooke Queenan",
+   "first": 2006,
+   "last": 2008,
+   "games": 12,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "CON",
+    "CHI"
+   ]
+  },
+  {
+   "id": "201514",
+   "name": "Chioma Nnamaka",
+   "first": 2008,
+   "last": 2008,
+   "games": 12,
+   "starts": 0,
+   "pts": 16,
+   "teams": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "100212",
+   "name": "Albena Branzova",
+   "first": 1998,
+   "last": 1998,
+   "games": 11,
+   "starts": 0,
+   "pts": 23,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100678",
+   "name": "Jenny Mowe",
+   "first": 2001,
+   "last": 2003,
+   "games": 11,
+   "starts": 0,
+   "pts": 7,
+   "teams": [
+    "POR",
+    "LAS"
+   ]
+  },
+  {
+   "id": "200740",
+   "name": "Sabrina Palie",
+   "first": 2006,
+   "last": 2006,
+   "games": 11,
+   "starts": 0,
+   "pts": 12,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100665",
+   "name": "Katie Cronin",
+   "first": 2006,
+   "last": 2006,
+   "games": 11,
+   "starts": 0,
+   "pts": 24,
+   "teams": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "201475",
+   "name": "Kristen O'Neill",
+   "first": 2008,
+   "last": 2008,
+   "games": 11,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "202665",
+   "name": "Chastity Reed",
+   "first": 2011,
+   "last": 2011,
+   "games": 11,
+   "starts": 1,
+   "pts": 38,
+   "teams": [
+    "TUL"
+   ]
+  },
+  {
+   "id": "100095",
+   "name": "Jenny Boucek",
+   "first": 1997,
+   "last": 1997,
+   "games": 10,
+   "starts": 0,
+   "pts": 18,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100064",
+   "name": "Debra Williams",
+   "first": 1997,
+   "last": 1997,
+   "games": 10,
+   "starts": 0,
+   "pts": 27,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100251",
+   "name": "Aneta Kausaite",
+   "first": 1998,
+   "last": 1998,
+   "games": 10,
+   "starts": 0,
+   "pts": 14,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100186",
+   "name": "Tanja Kostic",
+   "first": 1998,
+   "last": 2000,
+   "games": 10,
+   "starts": 0,
+   "pts": 12,
+   "teams": [
+    "CLE",
+    "MIA"
+   ]
+  },
+  {
+   "id": "100663",
+   "name": "Katarina Lazic",
+   "first": 2001,
+   "last": 2001,
+   "games": 10,
+   "starts": 0,
+   "pts": 17,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100836",
+   "name": "Jordan Adams",
+   "first": 2003,
+   "last": 2003,
+   "games": 10,
+   "starts": 0,
+   "pts": 33,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "100913",
+   "name": "Isabel Sanchez",
+   "first": 2004,
+   "last": 2004,
+   "games": 10,
+   "starts": 0,
+   "pts": 22,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100921",
+   "name": "Jenni Benningfield",
+   "first": 2005,
+   "last": 2005,
+   "games": 10,
+   "starts": 0,
+   "pts": 9,
+   "teams": [
+    "IND"
+   ]
+  },
+  {
+   "id": "101064",
+   "name": "Caity Matter",
+   "first": 2005,
+   "last": 2005,
+   "games": 10,
+   "starts": 0,
+   "pts": 9,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "202285",
+   "name": "Joy Cheek",
+   "first": 2010,
+   "last": 2011,
+   "games": 10,
+   "starts": 0,
+   "pts": 18,
+   "teams": [
+    "IND",
+    "WAS"
+   ]
+  },
+  {
+   "id": "100109",
+   "name": "Jasmina Perazic-Gipe",
+   "first": 1997,
+   "last": 1997,
+   "games": 9,
+   "starts": 0,
+   "pts": 10,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100094",
+   "name": "Anita Maxwell",
+   "first": 1997,
+   "last": 1997,
+   "games": 9,
+   "starts": 0,
+   "pts": 19,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100177",
+   "name": "Kelly Boucher",
+   "first": 1998,
+   "last": 1998,
+   "games": 9,
+   "starts": 0,
+   "pts": 10,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100286",
+   "name": "Michelle Reed",
+   "first": 1998,
+   "last": 1998,
+   "games": 9,
+   "starts": 0,
+   "pts": 14,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100214",
+   "name": "Nadine Domond",
+   "first": 1998,
+   "last": 1998,
+   "games": 9,
+   "starts": 0,
+   "pts": 27,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100289",
+   "name": "Margo Graham",
+   "first": 1998,
+   "last": 1998,
+   "games": 9,
+   "starts": 0,
+   "pts": 18,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100439",
+   "name": "Mila Nikolich",
+   "first": 1999,
+   "last": 1999,
+   "games": 9,
+   "starts": 0,
+   "pts": 12,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100535",
+   "name": "Rhonda Banchero",
+   "first": 2000,
+   "last": 2000,
+   "games": 9,
+   "starts": 0,
+   "pts": 6,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100454",
+   "name": "Larecha Jones",
+   "first": 2000,
+   "last": 2000,
+   "games": 9,
+   "starts": 0,
+   "pts": 19,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100477",
+   "name": "Nicole Kubik",
+   "first": 2000,
+   "last": 2001,
+   "games": 9,
+   "starts": 0,
+   "pts": 10,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100175",
+   "name": "Rehema Stephens",
+   "first": 1998,
+   "last": 1998,
+   "games": 8,
+   "starts": 0,
+   "pts": 26,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100096",
+   "name": "Donna Harrington",
+   "first": 2000,
+   "last": 2000,
+   "games": 8,
+   "starts": 0,
+   "pts": 8,
+   "teams": [
+    "IND"
+   ]
+  },
+  {
+   "id": "100733",
+   "name": "LaNeishea Caufield",
+   "first": 2002,
+   "last": 2002,
+   "games": 8,
+   "starts": 0,
+   "pts": 19,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100803",
+   "name": "Begona Garcia",
+   "first": 2002,
+   "last": 2002,
+   "games": 8,
+   "starts": 0,
+   "pts": 8,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100870",
+   "name": "Chandra Johnson",
+   "first": 2003,
+   "last": 2003,
+   "games": 8,
+   "starts": 0,
+   "pts": 6,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "201063",
+   "name": "Shay Doron",
+   "first": 2007,
+   "last": 2007,
+   "games": 8,
+   "starts": 2,
+   "pts": 10,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "201513",
+   "name": "Charel Allen",
+   "first": 2008,
+   "last": 2008,
+   "games": 8,
+   "starts": 0,
+   "pts": 16,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "201486",
+   "name": "Lauren Ervin",
+   "first": 2009,
+   "last": 2009,
+   "games": 8,
+   "starts": 0,
+   "pts": 16,
+   "teams": [
+    "CON"
+   ]
+  },
+  {
+   "id": "100197",
+   "name": "Angela Jackson",
+   "first": 1998,
+   "last": 1998,
+   "games": 7,
+   "starts": 0,
+   "pts": 10,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100355",
+   "name": "Jennifer Whittle",
+   "first": 1999,
+   "last": 2001,
+   "games": 7,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100847",
+   "name": "Leigh Aziz",
+   "first": 2003,
+   "last": 2003,
+   "games": 7,
+   "starts": 0,
+   "pts": 10,
+   "teams": [
+    "IND"
+   ]
+  },
+  {
+   "id": "100927",
+   "name": "Stacy Stephens",
+   "first": 2004,
+   "last": 2004,
+   "games": 7,
+   "starts": 1,
+   "pts": 4,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "101004",
+   "name": "Marlous Nieuwveen",
+   "first": 2005,
+   "last": 2005,
+   "games": 7,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "200720",
+   "name": "Brittany Wilkins",
+   "first": 2006,
+   "last": 2008,
+   "games": 7,
+   "starts": 0,
+   "pts": 6,
+   "teams": [
+    "SAC",
+    "SAN"
+   ]
+  },
+  {
+   "id": "202637",
+   "name": "Angie Bjorklund",
+   "first": 2011,
+   "last": 2011,
+   "games": 7,
+   "starts": 0,
+   "pts": 8,
+   "teams": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "100071",
+   "name": "Susie Hopson-Shelton",
+   "first": 1997,
+   "last": 1997,
+   "games": 6,
+   "starts": 0,
+   "pts": 16,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100028",
+   "name": "Danielle Viglione",
+   "first": 1997,
+   "last": 1997,
+   "games": 6,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100270",
+   "name": "Angela Hamblin",
+   "first": 1998,
+   "last": 1998,
+   "games": 6,
+   "starts": 0,
+   "pts": 6,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100290",
+   "name": "Leslie Johnson",
+   "first": 1998,
+   "last": 1998,
+   "games": 6,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100599",
+   "name": "Stacey Ford",
+   "first": 2001,
+   "last": 2002,
+   "games": 6,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "NYL",
+    "SAC"
+   ]
+  },
+  {
+   "id": "100743",
+   "name": "Davalyn Cunningham",
+   "first": 2002,
+   "last": 2002,
+   "games": 6,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "ORL"
+   ]
+  },
+  {
+   "id": "100861",
+   "name": "Zuzana Zirkova",
+   "first": 2003,
+   "last": 2003,
+   "games": 6,
+   "starts": 0,
+   "pts": 11,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100833",
+   "name": "Sonja Mallory",
+   "first": 2003,
+   "last": 2003,
+   "games": 6,
+   "starts": 0,
+   "pts": 10,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100984",
+   "name": "Giuliana Mendiola",
+   "first": 2004,
+   "last": 2004,
+   "games": 6,
+   "starts": 0,
+   "pts": 10,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "201115",
+   "name": "Amy Sanders",
+   "first": 2007,
+   "last": 2007,
+   "games": 6,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "200714",
+   "name": "Lindsay Bowen",
+   "first": 2007,
+   "last": 2007,
+   "games": 6,
+   "starts": 1,
+   "pts": 9,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "201529",
+   "name": "Adrianne Ross",
+   "first": 2008,
+   "last": 2008,
+   "games": 6,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "SAN"
+   ]
+  },
+  {
+   "id": "100081",
+   "name": "Pietra Gay",
+   "first": 1997,
+   "last": 1997,
+   "games": 5,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100158",
+   "name": "Marcie Alberts",
+   "first": 1997,
+   "last": 1997,
+   "games": 5,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100026",
+   "name": "Yvette Angel",
+   "first": 1997,
+   "last": 1997,
+   "games": 5,
+   "starts": 0,
+   "pts": 17,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100051",
+   "name": "Megan Compain",
+   "first": 1997,
+   "last": 1997,
+   "games": 5,
+   "starts": 0,
+   "pts": 5,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100938",
+   "name": "Amisha Carter",
+   "first": 2004,
+   "last": 2005,
+   "games": 5,
+   "starts": 0,
+   "pts": 1,
+   "teams": [
+    "DET",
+    "NYL"
+   ]
+  },
+  {
+   "id": "100948",
+   "name": "Catrina Frierson",
+   "first": 2004,
+   "last": 2004,
+   "games": 5,
+   "starts": 0,
+   "pts": 7,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "100998",
+   "name": "Sui Fei Fei",
+   "first": 2005,
+   "last": 2005,
+   "games": 5,
+   "starts": 0,
+   "pts": 7,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "101057",
+   "name": "Cisti Greenwalt",
+   "first": 2006,
+   "last": 2006,
+   "games": 5,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "200692",
+   "name": "Willnett Crockett",
+   "first": 2008,
+   "last": 2008,
+   "games": 5,
+   "starts": 1,
+   "pts": 9,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100162",
+   "name": "Margo Clark",
+   "first": 1997,
+   "last": 1997,
+   "games": 4,
+   "starts": 0,
+   "pts": 7,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100431",
+   "name": "Jennifer Howard",
+   "first": 1999,
+   "last": 1999,
+   "games": 4,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100468",
+   "name": "Usha Gilmore",
+   "first": 2000,
+   "last": 2000,
+   "games": 4,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "IND"
+   ]
+  },
+  {
+   "id": "100339",
+   "name": "LaCharlotte Smith",
+   "first": 2000,
+   "last": 2000,
+   "games": 4,
+   "starts": 0,
+   "pts": 5,
+   "teams": [
+    "ORL"
+   ]
+  },
+  {
+   "id": "100664",
+   "name": "Hajdana Radunovic",
+   "first": 2001,
+   "last": 2001,
+   "games": 4,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100657",
+   "name": "Levys Torres",
+   "first": 2001,
+   "last": 2001,
+   "games": 4,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "100979",
+   "name": "Tera Bjorklund",
+   "first": 2004,
+   "last": 2004,
+   "games": 4,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "200687",
+   "name": "Ambrosia Anderson",
+   "first": 2006,
+   "last": 2006,
+   "games": 4,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "CON",
+    "NYL"
+   ]
+  },
+  {
+   "id": "201922",
+   "name": "Kristi Cirone",
+   "first": 2009,
+   "last": 2009,
+   "games": 4,
+   "starts": 0,
+   "pts": 7,
+   "teams": [
+    "CON"
+   ]
+  },
+  {
+   "id": "201885",
+   "name": "Whitney Boddie",
+   "first": 2009,
+   "last": 2009,
+   "games": 4,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "202276",
+   "name": "Gabriela Marginean",
+   "first": 2010,
+   "last": 2010,
+   "games": 4,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "202639",
+   "name": "Felicia Chester-Wootton",
+   "first": 2011,
+   "last": 2011,
+   "games": 4,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "203030",
+   "name": "Julie Wojta",
+   "first": 2012,
+   "last": 2013,
+   "games": 4,
+   "starts": 0,
+   "pts": 6,
+   "teams": [
+    "MIN",
+    "SAN"
+   ]
+  },
+  {
+   "id": "100057",
+   "name": "Molly Tuter",
+   "first": 1997,
+   "last": 1997,
+   "games": 3,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100515",
+   "name": "Cornelia Gayden",
+   "first": 2000,
+   "last": 2000,
+   "games": 3,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "ORL"
+   ]
+  },
+  {
+   "id": "100511",
+   "name": "Desiree Francis",
+   "first": 2000,
+   "last": 2000,
+   "games": 3,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100497",
+   "name": "Madinah Slaise",
+   "first": 2000,
+   "last": 2000,
+   "games": 3,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100408",
+   "name": "Kym Hope",
+   "first": 2000,
+   "last": 2000,
+   "games": 3,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "UTA"
+   ]
+  },
+  {
+   "id": "100691",
+   "name": "Tamara Stocks",
+   "first": 2001,
+   "last": 2001,
+   "games": 3,
+   "starts": 0,
+   "pts": 3,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100545",
+   "name": "Dana Wynne",
+   "first": 2001,
+   "last": 2001,
+   "games": 3,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "SAC"
+   ]
+  },
+  {
+   "id": "100373",
+   "name": "Itoro Umoh-Coleman",
+   "first": 2003,
+   "last": 2003,
+   "games": 3,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "100840",
+   "name": "Gwen Slaughter",
+   "first": 2004,
+   "last": 2004,
+   "games": 3,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "100958",
+   "name": "Monique Coker",
+   "first": 2004,
+   "last": 2004,
+   "games": 3,
+   "starts": 0,
+   "pts": 3,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "101078",
+   "name": "Susan King-Borchardt",
+   "first": 2005,
+   "last": 2005,
+   "games": 3,
+   "starts": 0,
+   "pts": 3,
+   "teams": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "201061",
+   "name": "Dee Davis",
+   "first": 2007,
+   "last": 2007,
+   "games": 3,
+   "starts": 0,
+   "pts": 6,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "201106",
+   "name": "Chrissy Givens",
+   "first": 2008,
+   "last": 2008,
+   "games": 3,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "202629",
+   "name": "Miranda Ayim",
+   "first": 2011,
+   "last": 2011,
+   "games": 3,
+   "starts": 0,
+   "pts": 8,
+   "teams": [
+    "TUL"
+   ]
+  },
+  {
+   "id": "100010",
+   "name": "Travesa Gant",
+   "first": 1997,
+   "last": 1997,
+   "games": 2,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100110",
+   "name": "Cassandra Crumpton-Moorer",
+   "first": 1997,
+   "last": 1997,
+   "games": 2,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100506",
+   "name": "Renee Robinson",
+   "first": 2000,
+   "last": 2000,
+   "games": 2,
+   "starts": 0,
+   "pts": 4,
+   "teams": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "100674",
+   "name": "Carolyn Moos",
+   "first": 2002,
+   "last": 2002,
+   "games": 2,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "100736",
+   "name": "Gergana Slavtcheva",
+   "first": 2003,
+   "last": 2003,
+   "games": 2,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100925",
+   "name": "Jennifer Smith",
+   "first": 2005,
+   "last": 2005,
+   "games": 2,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "200648",
+   "name": "Emilie Gomis",
+   "first": 2006,
+   "last": 2006,
+   "games": 2,
+   "starts": 0,
+   "pts": 3,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "100997",
+   "name": "Irina Osipova",
+   "first": 2006,
+   "last": 2006,
+   "games": 2,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "100712",
+   "name": "Dalivorka Vilipic",
+   "first": 2006,
+   "last": 2006,
+   "games": 2,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "201104",
+   "name": "Martina Weber",
+   "first": 2007,
+   "last": 2007,
+   "games": 2,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "NYL"
+   ]
+  },
+  {
+   "id": "201068",
+   "name": "Tyresa Smith",
+   "first": 2007,
+   "last": 2007,
+   "games": 2,
+   "starts": 2,
+   "pts": 1,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "201531",
+   "name": "Marcedes Walker",
+   "first": 2008,
+   "last": 2008,
+   "games": 2,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "201551",
+   "name": "Kamela Gissendanner",
+   "first": 2008,
+   "last": 2008,
+   "games": 2,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "201491",
+   "name": "Val Berezhynska",
+   "first": 2008,
+   "last": 2008,
+   "games": 2,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "SAN"
+   ]
+  },
+  {
+   "id": "100066",
+   "name": "Milica Vukadinovic",
+   "first": 1997,
+   "last": 1997,
+   "games": 1,
+   "starts": 0,
+   "pts": 3,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100041",
+   "name": "Ryneldi Becenti",
+   "first": 1997,
+   "last": 1997,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100014",
+   "name": "Kim Gessig",
+   "first": 1997,
+   "last": 1997,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "LAS"
+   ]
+  },
+  {
+   "id": "100432",
+   "name": "Kellie Jolly Harper",
+   "first": 1999,
+   "last": 1999,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100379",
+   "name": "Merlelynn Lang-Harris",
+   "first": 1999,
+   "last": 1999,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100464",
+   "name": "Beverly Williams",
+   "first": 2000,
+   "last": 2000,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "IND"
+   ]
+  },
+  {
+   "id": "100636",
+   "name": "Angelina Wolvert",
+   "first": 2001,
+   "last": 2001,
+   "games": 1,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "100629",
+   "name": "Reshea Bristol",
+   "first": 2001,
+   "last": 2001,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "CHA"
+   ]
+  },
+  {
+   "id": "100675",
+   "name": "Pat Luckey",
+   "first": 2001,
+   "last": 2001,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "PHO"
+   ]
+  },
+  {
+   "id": "100797",
+   "name": "Claudia Neves",
+   "first": 2002,
+   "last": 2002,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "201087",
+   "name": "Cori Chambers",
+   "first": 2007,
+   "last": 2007,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "CON"
+   ]
+  },
+  {
+   "id": "201504",
+   "name": "Wanisha Smith",
+   "first": 2008,
+   "last": 2008,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "201902",
+   "name": "Britany Miller",
+   "first": 2009,
+   "last": 2009,
+   "games": 1,
+   "starts": 0,
+   "pts": 0,
+   "teams": [
+    "DET"
+   ]
+  },
+  {
+   "id": "201890",
+   "name": "Tenae Davis-Cain",
+   "first": 2009,
+   "last": 2009,
+   "games": 1,
+   "starts": 0,
+   "pts": 2,
+   "teams": [
+    "DET"
+   ]
+  }
+ ]
+}

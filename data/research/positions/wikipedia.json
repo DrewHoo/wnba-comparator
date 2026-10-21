@@ -1,0 +1,1010 @@
+{
+ "note": "scripted Wikipedia pass over the residual worklist, 2026-10-20: the infobox position line of the article the API search returned, kept only when the article has a basketball infobox, mentions the WNBA and names the player",
+ "rows": [
+  {
+   "id": "100348",
+   "name": "Markita Aldridge",
+   "pos": "G",
+   "label": "[[Shooting guard]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Markita+Aldridge&action=raw",
+     "quote": "| position     = [[Shooting guard]]",
+     "note": "the infobox position line of the article \"Markita Aldridge\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100208",
+   "name": "Nyree Roberts",
+   "pos": "C",
+   "label": "[[Center (basketball)|Center]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Nyree+Roberts&action=raw",
+     "quote": "| position        = [[Center (basketball)|Center]]",
+     "note": "the infobox position line of the article \"Nyree Roberts\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100947",
+   "name": "Toccara Williams",
+   "pos": "G",
+   "label": "[[Point guard]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Toccara+Williams&action=raw",
+     "quote": "| position        = [[Point guard]]",
+     "note": "the infobox position line of the article \"Toccara Williams\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100551",
+   "name": "Naomi Mulitauaopele",
+   "pos": "C",
+   "label": "[[Center (basketball)|Center]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Naomi+Mulitauaopele&action=raw",
+     "quote": "| position        = [[Center (basketball)|Center]]",
+     "note": "the infobox position line of the article \"Naomi Mulitauaopele\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100542",
+   "name": "Charisse Sampson",
+   "pos": "G",
+   "label": "[[Guard (basketball)|Guard]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Charisse+Sampson&action=raw",
+     "quote": "| position        = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Charisse Sampson\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "202637",
+   "name": "Angie Bjorklund",
+   "pos": "F",
+   "label": "[[Forward (basketball)|Forward]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Angie+Bjorklund&action=raw",
+     "quote": "| position = [[Forward (basketball)|Forward]]",
+     "note": "the infobox position line of the article \"Angie Bjorklund\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100743",
+   "name": "Davalyn Cunningham",
+   "pos": "F",
+   "label": "[[Forward (basketball)|Forward]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Davalyn+Cunningham&action=raw",
+     "quote": "| position = [[Forward (basketball)|Forward]]",
+     "note": "the infobox position line of the article \"Davalyn Cunningham\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201115",
+   "name": "Amy Sanders",
+   "pos": "G",
+   "label": "[[Guard (basketball)|Guard]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Amy+Sanders&action=raw",
+     "quote": "| position = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Amy Sanders\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100158",
+   "name": "Marcie Alberts",
+   "pos": "G",
+   "label": "[[Guard (basketball)|Guard]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Marcie+Alberts&action=raw",
+     "quote": "| position     = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Marcie Alberts\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201885",
+   "name": "Whitney Boddie",
+   "pos": "G",
+   "label": "[[Guard (basketball)|Guard]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Whitney+Boddie&action=raw",
+     "quote": "| position = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Whitney Boddie\" (wikitext); matched to the player by name and a WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "202276",
+   "name": "Gabriela Marginean",
+   "pos": "F",
+   "label": "[[Forward (basketball)|Forward]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Gabriela+M%C4%83rginean&action=raw",
+     "quote": "| position = [[Forward (basketball)|Forward]]",
+     "note": "the infobox position line of the article \"Gabriela M\u0103rginean\" (wikitext); matched to the player by name and a WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100187",
+   "name": "Suzie McConnell Serio",
+   "pos": "G",
+   "label": "[[Guard (basketball)|Guard]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Suzie+McConnell-Serio&action=raw",
+     "quote": "| player_positions = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Suzie McConnell-Serio\" (wikitext); matched to the player by name and a WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100051",
+   "name": "Megan Compain",
+   "pos": "G",
+   "label": "[[Guard (basketball)|Guard]]",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Megan+Compain&action=raw",
+     "quote": "| position = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Megan Compain\" (wikitext); matched to the player by name and a WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  }
+ ],
+ "rejections": [],
+ "tried": [
+  {
+   "source": "en.wikipedia.org API search (name variants, with WNBA / basketball) + action=raw; basketball-biography and college-coach infoboxes",
+   "outcome": "13 of 92 players have an article with an infobox position; 79 do not"
+  }
+ ],
+ "leads": [],
+ "unverified": [
+  {
+   "id": "100557",
+   "name": "Tonya Massaline",
+   "games": 103,
+   "seasons": "2000-2003",
+   "teams": [
+    "WAS",
+    "SEA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Tonya Massaline'] with WNBA / basketball: candidates ['Tonya Washington', '2000 WNBA draft']; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100677",
+   "name": "LaQuanda Quick",
+   "games": 49,
+   "seasons": "2001-2003",
+   "teams": [
+    "POR",
+    "SAN"
+   ],
+   "what_i_tried": "Wikipedia API search for ['LaQuanda Quick'] with WNBA / basketball: candidates ['LaQuanda Barksdale', 'Las Vegas Aces', 'San Antonio Stars', 'West Forsyth High School (North Carolina)']; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100594",
+   "name": "Michelle Cleary",
+   "games": 28,
+   "seasons": "2000-2001",
+   "teams": [
+    "PHO"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Michelle Cleary'] with WNBA / basketball: candidates ['List of WNBA players born outside the United States', 'Michelle Chandler', 'List of Australian WNBA players', 'List of WNBA regular season records']; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100202",
+   "name": "Adrienne Shuler",
+   "games": 25,
+   "seasons": "1998-1998",
+   "teams": [
+    "WAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Adrienne Shuler'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100558",
+   "name": "Jameka Jones",
+   "games": 21,
+   "seasons": "2000-2000",
+   "teams": [
+    "MIA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Jameka Jones'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100827",
+   "name": "Courtney Coleman",
+   "games": 20,
+   "seasons": "2003-2003",
+   "teams": [
+    "CON"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Courtney Coleman'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100512",
+   "name": "Shea Mahoney",
+   "games": 18,
+   "seasons": "2000-2002",
+   "teams": [
+    "NYL",
+    "PHO"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Shea Mahoney'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100668",
+   "name": "Jaclyn Johnson",
+   "games": 17,
+   "seasons": "2001-2001",
+   "teams": [
+    "ORL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Jaclyn Johnson'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100283",
+   "name": "Leila de Souza Sobral",
+   "games": 15,
+   "seasons": "1998-1998",
+   "teams": [
+    "WAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Leila de Souza Sobral', 'Leila Sobral', 'Leila de'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100377",
+   "name": "Clarissa Davis-Wrightsil",
+   "games": 14,
+   "seasons": "1999-1999",
+   "teams": [
+    "PHO"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Clarissa Davis-Wrightsil', 'Clarissa Davis Wrightsil', 'Clarissa Wrightsil'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100079",
+   "name": "Catarina Pollini",
+   "games": 13,
+   "seasons": "1997-1997",
+   "teams": [
+    "HOU"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Catarina Pollini'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100018",
+   "name": "Judy Mosley-McAfee",
+   "games": 13,
+   "seasons": "1997-1997",
+   "teams": [
+    "SAC"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Judy Mosley-McAfee', 'Judy Mosley McAfee', 'Judy McAfee'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "101034",
+   "name": "Yolanda Paige",
+   "games": 13,
+   "seasons": "2005-2005",
+   "teams": [
+    "IND"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Yolanda Paige'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100671",
+   "name": "Ilona Korstine",
+   "games": 12,
+   "seasons": "2001-2001",
+   "teams": [
+    "PHO"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Ilona Korstine'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100527",
+   "name": "Mactabene Amachree",
+   "games": 12,
+   "seasons": "2001-2005",
+   "teams": [
+    "NYL",
+    "SEA",
+    "WAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Mactabene Amachree'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100737",
+   "name": "Zuzana Klimesova",
+   "games": 12,
+   "seasons": "2002-2003",
+   "teams": [
+    "IND"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Zuzana Klimesova'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "201514",
+   "name": "Chioma Nnamaka",
+   "games": 12,
+   "seasons": "2008-2008",
+   "teams": [
+    "ATL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Chioma Nnamaka'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100212",
+   "name": "Albena Branzova",
+   "games": 11,
+   "seasons": "1998-1998",
+   "teams": [
+    "NYL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Albena Branzova'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100678",
+   "name": "Jenny Mowe",
+   "games": 11,
+   "seasons": "2001-2003",
+   "teams": [
+    "POR",
+    "LAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Jenny Mowe'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "200740",
+   "name": "Sabrina Palie",
+   "games": 11,
+   "seasons": "2006-2006",
+   "teams": [
+    "DET"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Sabrina Palie'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "202665",
+   "name": "Chastity Reed",
+   "games": 11,
+   "seasons": "2011-2011",
+   "teams": [
+    "TUL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Chastity Reed'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100064",
+   "name": "Debra Williams",
+   "games": 10,
+   "seasons": "1997-1997",
+   "teams": [
+    "CHA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Debra Williams'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100109",
+   "name": "Jasmina Perazic-Gipe",
+   "games": 9,
+   "seasons": "1997-1997",
+   "teams": [
+    "NYL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Jasmina Perazic-Gipe', 'Jasmina Perazic Gipe', 'Jasmina Gipe'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100094",
+   "name": "Anita Maxwell",
+   "games": 9,
+   "seasons": "1997-1997",
+   "teams": [
+    "CLE"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Anita Maxwell'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100177",
+   "name": "Kelly Boucher",
+   "games": 9,
+   "seasons": "1998-1998",
+   "teams": [
+    "CHA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Kelly Boucher'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100535",
+   "name": "Rhonda Banchero",
+   "games": 9,
+   "seasons": "2000-2000",
+   "teams": [
+    "SAC"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Rhonda Banchero'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100175",
+   "name": "Rehema Stephens",
+   "games": 8,
+   "seasons": "1998-1998",
+   "teams": [
+    "SAC"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Rehema Stephens'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100733",
+   "name": "LaNeishea Caufield",
+   "games": 8,
+   "seasons": "2002-2002",
+   "teams": [
+    "UTA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['LaNeishea Caufield'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100803",
+   "name": "Begona Garcia",
+   "games": 8,
+   "seasons": "2002-2002",
+   "teams": [
+    "DET"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Begona Garcia'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "201486",
+   "name": "Lauren Ervin",
+   "games": 8,
+   "seasons": "2009-2009",
+   "teams": [
+    "CON"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Lauren Ervin'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100197",
+   "name": "Angela Jackson",
+   "games": 7,
+   "seasons": "1998-1998",
+   "teams": [
+    "WAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Angela Jackson'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100355",
+   "name": "Jennifer Whittle",
+   "games": 7,
+   "seasons": "1999-2001",
+   "teams": [
+    "WAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Jennifer Whittle'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100927",
+   "name": "Stacy Stephens",
+   "games": 7,
+   "seasons": "2004-2004",
+   "teams": [
+    "DET"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Stacy Stephens'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "101004",
+   "name": "Marlous Nieuwveen",
+   "games": 7,
+   "seasons": "2005-2005",
+   "teams": [
+    "LAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Marlous Nieuwveen'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100599",
+   "name": "Stacey Ford",
+   "games": 6,
+   "seasons": "2001-2002",
+   "teams": [
+    "NYL",
+    "SAC"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Stacey Ford'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100861",
+   "name": "Zuzana Zirkova",
+   "games": 6,
+   "seasons": "2003-2003",
+   "teams": [
+    "WAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Zuzana Zirkova'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100984",
+   "name": "Giuliana Mendiola",
+   "games": 6,
+   "seasons": "2004-2004",
+   "teams": [
+    "SAC"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Giuliana Mendiola'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "201529",
+   "name": "Adrianne Ross",
+   "games": 6,
+   "seasons": "2008-2008",
+   "teams": [
+    "SAN"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Adrianne Ross'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100081",
+   "name": "Pietra Gay",
+   "games": 5,
+   "seasons": "1997-1997",
+   "teams": [
+    "HOU"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Pietra Gay'] with WNBA / basketball: candidates ['1997 WNBA draft', 'List of suicides (2000\u2013present)', '2008 Centrobasket Women', 'Maya Soetoro-Ng']; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100026",
+   "name": "Yvette Angel",
+   "games": 5,
+   "seasons": "1997-1997",
+   "teams": [
+    "SAC"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Yvette Angel'] with WNBA / basketball: candidates ['Yvette Angel', 'Deaths in 2026', 'List of WNBA players', 'Will Trent']; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100938",
+   "name": "Amisha Carter",
+   "games": 5,
+   "seasons": "2004-2005",
+   "teams": [
+    "DET",
+    "NYL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Amisha Carter'] with WNBA / basketball: candidates ['New York Liberty', 'List of WNBA players', '2004 WNBA draft', '2005 New York Liberty season']; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100948",
+   "name": "Catrina Frierson",
+   "games": 5,
+   "seasons": "2004-2004",
+   "teams": [
+    "SEA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Catrina Frierson'] with WNBA / basketball: candidates ['Trina Frierson']; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "101057",
+   "name": "Cisti Greenwalt",
+   "games": 5,
+   "seasons": "2006-2006",
+   "teams": [
+    "SEA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Cisti Greenwalt'] with WNBA / basketball: candidates ['List of WNBA players', 'Chicago Sky', '2005 Sacramento Monarchs season', 'List of Texas Tech Lady Raiders in the WNBA draft']; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "200692",
+   "name": "Willnett Crockett",
+   "games": 5,
+   "seasons": "2008-2008",
+   "teams": [
+    "PHO"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Willnett Crockett'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100162",
+   "name": "Margo Clark",
+   "games": 4,
+   "seasons": "1997-1997",
+   "teams": [
+    "SAC"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Margo Clark'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100431",
+   "name": "Jennifer Howard",
+   "games": 4,
+   "seasons": "1999-1999",
+   "teams": [
+    "CLE"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Jennifer Howard'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100468",
+   "name": "Usha Gilmore",
+   "games": 4,
+   "seasons": "2000-2000",
+   "teams": [
+    "IND"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Usha Gilmore'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100979",
+   "name": "Tera Bjorklund",
+   "games": 4,
+   "seasons": "2004-2004",
+   "teams": [
+    "CHA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Tera Bjorklund'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "200687",
+   "name": "Ambrosia Anderson",
+   "games": 4,
+   "seasons": "2006-2006",
+   "teams": [
+    "CON",
+    "NYL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Ambrosia Anderson'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "201922",
+   "name": "Kristi Cirone",
+   "games": 4,
+   "seasons": "2009-2009",
+   "teams": [
+    "CON"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Kristi Cirone'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "202639",
+   "name": "Felicia Chester-Wootton",
+   "games": 4,
+   "seasons": "2011-2011",
+   "teams": [
+    "NYL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Felicia Chester-Wootton', 'Felicia Chester Wootton', 'Felicia Wootton'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "203030",
+   "name": "Julie Wojta",
+   "games": 4,
+   "seasons": "2012-2013",
+   "teams": [
+    "MIN",
+    "SAN"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Julie Wojta'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100057",
+   "name": "Molly Tuter",
+   "games": 3,
+   "seasons": "1997-1997",
+   "teams": [
+    "PHO"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Molly Tuter'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100515",
+   "name": "Cornelia Gayden",
+   "games": 3,
+   "seasons": "2000-2000",
+   "teams": [
+    "ORL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Cornelia Gayden'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100497",
+   "name": "Madinah Slaise",
+   "games": 3,
+   "seasons": "2000-2000",
+   "teams": [
+    "DET"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Madinah Slaise'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100373",
+   "name": "Itoro Umoh-Coleman",
+   "games": 3,
+   "seasons": "2003-2003",
+   "teams": [
+    "HOU"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Itoro Umoh-Coleman', 'Itoro Umoh Coleman', 'Itoro Coleman'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "101078",
+   "name": "Susan King-Borchardt",
+   "games": 3,
+   "seasons": "2005-2005",
+   "teams": [
+    "MIN"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Susan King-Borchardt', 'Susan King Borchardt', 'Susan Borchardt'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "201061",
+   "name": "Dee Davis",
+   "games": 3,
+   "seasons": "2007-2007",
+   "teams": [
+    "HOU"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Dee Davis'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "201106",
+   "name": "Chrissy Givens",
+   "games": 3,
+   "seasons": "2008-2008",
+   "teams": [
+    "DET"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Chrissy Givens'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "202629",
+   "name": "Miranda Ayim",
+   "games": 3,
+   "seasons": "2011-2011",
+   "teams": [
+    "TUL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Miranda Ayim'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100010",
+   "name": "Travesa Gant",
+   "games": 2,
+   "seasons": "1997-1997",
+   "teams": [
+    "LAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Travesa Gant'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100506",
+   "name": "Renee Robinson",
+   "games": 2,
+   "seasons": "2000-2000",
+   "teams": [
+    "WAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Renee Robinson'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100674",
+   "name": "Carolyn Moos",
+   "games": 2,
+   "seasons": "2002-2002",
+   "teams": [
+    "MIA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Carolyn Moos'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "200648",
+   "name": "Emilie Gomis",
+   "games": 2,
+   "seasons": "2006-2006",
+   "teams": [
+    "NYL"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Emilie Gomis'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100997",
+   "name": "Irina Osipova",
+   "games": 2,
+   "seasons": "2006-2006",
+   "teams": [
+    "DET"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Irina Osipova'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100712",
+   "name": "Dalivorka Vilipic",
+   "games": 2,
+   "seasons": "2006-2006",
+   "teams": [
+    "LAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Dalivorka Vilipic'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "201531",
+   "name": "Marcedes Walker",
+   "games": 2,
+   "seasons": "2008-2008",
+   "teams": [
+    "HOU"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Marcedes Walker'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "201551",
+   "name": "Kamela Gissendanner",
+   "games": 2,
+   "seasons": "2008-2008",
+   "teams": [
+    "LAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Kamela Gissendanner'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100066",
+   "name": "Milica Vukadinovic",
+   "games": 1,
+   "seasons": "1997-1997",
+   "teams": [
+    "CHA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Milica Vukadinovic'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100041",
+   "name": "Ryneldi Becenti",
+   "games": 1,
+   "seasons": "1997-1997",
+   "teams": [
+    "PHO"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Ryneldi Becenti'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100014",
+   "name": "Kim Gessig",
+   "games": 1,
+   "seasons": "1997-1997",
+   "teams": [
+    "LAS"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Kim Gessig'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100432",
+   "name": "Kellie Jolly Harper",
+   "games": 1,
+   "seasons": "1999-1999",
+   "teams": [
+    "CLE"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Kellie Jolly Harper', 'Kellie Harper', 'Kellie Jolly'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100379",
+   "name": "Merlelynn Lang-Harris",
+   "games": 1,
+   "seasons": "1999-1999",
+   "teams": [
+    "PHO"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Merlelynn Lang-Harris', 'Merlelynn Lang Harris', 'Merlelynn Harris'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100464",
+   "name": "Beverly Williams",
+   "games": 1,
+   "seasons": "2000-2000",
+   "teams": [
+    "IND"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Beverly Williams'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100636",
+   "name": "Angelina Wolvert",
+   "games": 1,
+   "seasons": "2001-2001",
+   "teams": [
+    "CLE"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Angelina Wolvert'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100629",
+   "name": "Reshea Bristol",
+   "games": 1,
+   "seasons": "2001-2001",
+   "teams": [
+    "CHA"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Reshea Bristol'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "100675",
+   "name": "Pat Luckey",
+   "games": 1,
+   "seasons": "2001-2001",
+   "teams": [
+    "PHO"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Pat Luckey'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "201504",
+   "name": "Wanisha Smith",
+   "games": 1,
+   "seasons": "2008-2008",
+   "teams": [
+    "DET"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Wanisha Smith'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  },
+  {
+   "id": "201902",
+   "name": "Britany Miller",
+   "games": 1,
+   "seasons": "2009-2009",
+   "teams": [
+    "DET"
+   ],
+   "what_i_tried": "Wikipedia API search for ['Britany Miller'] with WNBA / basketball: candidates []; none had a basketball or coach infobox with a position, a WNBA mention and her name"
+  }
+ ]
+}

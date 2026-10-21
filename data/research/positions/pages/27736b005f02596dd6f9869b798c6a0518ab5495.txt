@@ -1,0 +1,108 @@
+{{short description|American basketball player}}
+{{Infobox basketball biography
+| name            = Naomi Mulitauaopele
+| image           = 
+| width           = 
+| caption         = 
+| number          = 34
+| position        = [[Center (basketball)|Center]]
+| height_ft       = 6
+| height_in       = 3
+| weight_lb       = 
+| birth_date      = {{birth date and age|mf=yes|1976|03|06}}
+| birth_place     = [[Seattle, Washington]], U.S.
+| death_date      = 
+| death_place     = 
+| high_school     = [[Chief Sealth International High School|Chief Sealth]] (Seattle, Washington)
+| college         = [[Stanford Cardinal women's basketball|Stanford]]
+| draft_league    = WNBA
+| draft_year      = 2000
+| draft_round     = 1
+| draft_pick      = 12
+| draft_team      = [[Utah Starzz]]
+| career_start    = 
+| career_end      = 
+| years1          = ?–?
+| team1           = [[Seattle Reign (basketball)|Seattle Reign]]
+| years2          = 2000
+| team2           = [[Utah Starzz]]
+| highlights      = 
+| stats_league    = WNBA
+| stat1label      = Points
+| stat1value      = 99 (4.5 ppg)
+| stat2label      = Rebounds
+| stat2value      = 34 (1.5 rpg)
+| stat3label      = 
+| stat3value      = 
+| bbr             = mulitna01
+| letter          = m
+}}
+
+'''Naomi Mulitauaopele''' (born March 6, 1976) is an American former professional [[basketball]] player.
+
+==High school==
+Mulitauaopele played basketball at [[Chief Sealth International High School]] in [[Seattle]], [[Washington (state)|Washington]]. Coming out of high school, she was considered the state's top player.
+
+==Career stats==
+
+{{WNBA player statistics legend}}
+
+===WNBA===
+
+Source<ref>{{Cite web|url=https://www.basketball-reference.com/wnba/players/m/mulitna01w.html|title=Naomi Mulitauaopele WNBA Stats|website=Basketball-Reference.com|access-date=2016-05-04}}</ref>
+
+====Regular season====
+{{WNBA player statistics start}}
+|-
+| [[2000 WNBA season|2000]] || [[2000 Utah Starzz season|Utah]] || 22 || 3 || 13.2 || .594 || .667 || .750 || 1.5 || .3 || .2 || .3 || 1.4 || 4.5
+|}
+=== College ===
+{{WNBA player statistics start}}
+|-
+| style="text-align:left;" | 1994–95 
+| style="text-align:left;" | [[1994–95 Stanford Cardinal women's basketball team|Stanford]]
+|'''33'''||-||-||58.2||0.0||63.0||3.0||0.6||0.5||0.6||-||7.3
+|-
+| style="text-align:left;" | 1995–96 
+| style="text-align:left;" | [[1995–96 Stanford Cardinal women's basketball team|Stanford]]
+|32||-||-||49.5||0.0||'''74.8'''||5.5||0.8||'''0.9'''||0.4||-||'''11.9'''
+|-
+| style="text-align:left;" | 1996–97 
+| style="text-align:left;" | [[1996–97 Stanford Cardinal women's basketball team|Stanford]]
+|26||-||-||'''99.1'''||0.0||67.7||5.5||'''0.9'''||0.5||'''0.8'''||-||10.2
+|-
+| style="text-align:center;" colspan=2 | '''Career'''
+|91||-||-||62.0||0.0||70.7||4.6||0.8||0.6||0.6||-||9.7	
+|- class="sortbottom"
+|style="text-align:center;" colspan="14"|Statistics retrieved from [[Sports-Reference]].<ref>{{cite web|url=https://www.sports-reference.com/cbb/players/Naomi-Mulitauaopele-1.html|title= Naomi Mulitauaopele College Stats|publisher=[[Sports-Reference]]|accessdate=April 11, 2024}}</ref>
+|}
+
+==International career==
+After the WNBA, Mulitauaopele played professionally in Turkey, Korea, and Spain.
+
+==Personal life==
+Mulitauaopele is the niece of [[Manu Tuiasosopo]], a former NFL player.<ref>{{Cite web|url=http://old.seattletimes.com/html/sports/2001800155_flashback25.html|title=Flashback: Naomi Mulitauaopele, Chief Sealth, Class of 1994|last=Befidi|first=Jeannine|date=2003-11-25|website=[[The Seattle Times]]|access-date=2016-05-04}}</ref>
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://samoanbios.com/naomi-mulitauaopele-tagaleoo/ Naomi Mulitauaopele-Tagaleo’o]
+*[http://www.wnba.com/playerfile/naomi_mulitauaopele/ WNBA.com: Naomi Mulitauaopele Player Info]
+
+{{2000 WNBA draft}}
+
+{{DEFAULTSORT:Mulitauaopele, Naomi}}
+[[Category:1976 births]]
+[[Category:Living people]]
+[[Category:American women's basketball players]]
+[[Category:Centers (basketball)]]
+[[Category:Samoan women's basketball players]]
+[[Category:Basketball players from Seattle]]
+[[Category:Stanford Cardinal women's basketball players]]
+[[Category:Utah Starzz draft picks]]
+[[Category:Utah Starzz players]]
+
+
+{{US-women-basketball-bio-stub}}
+{{1970s-US-basketball-bio-stub}}

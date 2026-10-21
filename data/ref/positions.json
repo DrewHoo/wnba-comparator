@@ -1,0 +1,1585 @@
+{
+ "version": 1,
+ "updated": "2026-10-21",
+ "note": "Researched positions for players ESPN and the WNBA Stats rosters both lack. A row gets in from data/research/positions/*.json through scripts/merge-positions.mjs, with its receipts (a URL and the verbatim line; scripts/check-receipts.mjs --pages data/research/positions/pages checks them). The build reads pos only, after ESPN and the rosters; a row for a player the bulk sources cover is kept but unused. grade: label (a position printed on a page), never inferred from play.",
+ "rows": [
+  {
+   "id": "100557",
+   "name": "Tonya Massaline",
+   "pos": "G",
+   "labels": [
+    "wayback: G-F"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20121026033433id_/http://www.wnba.com/playerfile/tonya_massaline/bio.html",
+     "quote": "Position: G-F",
+     "note": "wnba.com player file for Tonya Massaline (Wayback capture 20121026), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100187",
+   "name": "Suzie McConnell Serio",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard",
+    "wikipedia: [[Guard (basketball)|Guard]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980627114442id_/http://www.wnba.com:80/playerfile/head/suzie_mcconnell_serio.html",
+     "quote": "Position: Guard Born: 7/29/66",
+     "note": "wnba.com player file for Suzie McConnell Serio (Wayback capture 19980627), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Suzie+McConnell-Serio&action=raw",
+     "quote": "| player_positions = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Suzie McConnell-Serio\" (wikitext); matched to the player by name and a WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100348",
+   "name": "Markita Aldridge",
+   "pos": "G",
+   "labels": [
+    "wikipedia: [[Shooting guard]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Markita+Aldridge&action=raw",
+     "quote": "| position     = [[Shooting guard]]",
+     "note": "the infobox position line of the article \"Markita Aldridge\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100677",
+   "name": "LaQuanda Quick",
+   "pos": "G",
+   "labels": [
+    "wayback: G-F"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20030628170342id_/http://www.wnba.com:80/playerfile/laquanda_quick/bio.html",
+     "quote": "Position: G-F Born: 10/03/79",
+     "note": "wnba.com player file for LaQuanda Quick (Wayback capture 20030628), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100594",
+   "name": "Michelle Cleary",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000816213600id_/http://www.wnba.com:80/playerfile/head/michelle_cleary.html",
+     "quote": "Position: Guard Born: 7/16/74",
+     "note": "wnba.com player file for Michelle Cleary (Wayback capture 20000816), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100208",
+   "name": "Nyree Roberts",
+   "pos": "C",
+   "labels": [
+    "wikipedia: [[Center (basketball)|Center]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Nyree+Roberts&action=raw",
+     "quote": "| position        = [[Center (basketball)|Center]]",
+     "note": "the infobox position line of the article \"Nyree Roberts\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100947",
+   "name": "Toccara Williams",
+   "pos": "G",
+   "labels": [
+    "wikipedia: [[Point guard]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Toccara+Williams&action=raw",
+     "quote": "| position        = [[Point guard]]",
+     "note": "the infobox position line of the article \"Toccara Williams\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100202",
+   "name": "Adrienne Shuler",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000929154829id_/http://www.wnba.com:80/playerfile/head/adrienne_shuler.html",
+     "quote": "Position: Guard Born: 4/24/69",
+     "note": "wnba.com player file for Adrienne Shuler (Wayback capture 20000929), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100551",
+   "name": "Naomi Mulitauaopele",
+   "pos": "C",
+   "labels": [
+    "wikipedia: [[Center (basketball)|Center]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Naomi+Mulitauaopele&action=raw",
+     "quote": "| position        = [[Center (basketball)|Center]]",
+     "note": "the infobox position line of the article \"Naomi Mulitauaopele\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100558",
+   "name": "Jameka Jones",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000816214427id_/http://www.wnba.com:80/playerfile/head/jameka_jones.html",
+     "quote": "Position: Guard Born: 9/13/78",
+     "note": "wnba.com player file for Jameka Jones (Wayback capture 20000816), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100542",
+   "name": "Charisse Sampson",
+   "pos": "G",
+   "labels": [
+    "wikipedia: [[Guard (basketball)|Guard]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Charisse+Sampson&action=raw",
+     "quote": "| position        = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Charisse Sampson\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100827",
+   "name": "Courtney Coleman",
+   "pos": "C",
+   "labels": [
+    "wayback: C"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20030525212047id_/http://www.wnba.com:80/playerfile/courtney_coleman/bio.html",
+     "quote": "Position: C Born: 04/11/81",
+     "note": "wnba.com player file for Courtney Coleman (Wayback capture 20030525), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100512",
+   "name": "Shea Mahoney",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000816214527id_/http://www.wnba.com:80/playerfile/head/shea_mahoney.html",
+     "quote": "Position: Forward Born: 7/3/77",
+     "note": "wnba.com player file for Shea Mahoney (Wayback capture 20000816), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100668",
+   "name": "Jaclyn Johnson",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010702021354id_/http://www.wnba.com:80/playerfile/head/jaclyn_johnson.html",
+     "quote": "Position: Forward Born: 3/16/79",
+     "note": "wnba.com player file for Jaclyn Johnson (Wayback capture 20010702), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100283",
+   "name": "Leila de Souza Sobral",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010111181800id_/http://www.wnba.com:80/playerfile/head/leila_sobral.html",
+     "quote": "Position: Forward Born: 11/22/74",
+     "note": "wnba.com player file for Leila de Souza Sobral (Wayback capture 20010111), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100377",
+   "name": "Clarissa Davis-Wrightsil",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000919025237id_/http://www.wnba.com:80/playerfile/head/clarissa_davis-wrightsil.html",
+     "quote": "Position: Forward Born: 6/4/67",
+     "note": "wnba.com player file for Clarissa Davis-Wrightsil (Wayback capture 20000919), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100079",
+   "name": "Catarina Pollini",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208060540id_/http://www.wnba.com:80/playerfile/catarina_pollini.html",
+     "quote": "Position: Forward Born: 03/16/66",
+     "note": "wnba.com player file for Catarina Pollini (Wayback capture 19980208), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100018",
+   "name": "Judy Mosley-McAfee",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20020224153404id_/http://wnba.com:80/playerfile/head/judy_mosley-mcafee.html",
+     "quote": "Position: Forward Born: 3/17/68",
+     "note": "wnba.com player file for Judy Mosley-McAfee (Wayback capture 20020224), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "101034",
+   "name": "Yolanda Paige",
+   "pos": "G",
+   "labels": [
+    "wayback: G"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20110804011531id_/http://www.wnba.com/playerfile/yolanda_paige/bio.html",
+     "quote": "Position: G",
+     "note": "wnba.com player file for Yolanda Paige (Wayback capture 20110804), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100671",
+   "name": "Ilona Korstine",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010619161221id_/http://www.wnba.com:80/playerfile/head/ilona_korstine.html",
+     "quote": "Position: Guard Born: 4/30/80",
+     "note": "wnba.com player file for Ilona Korstine (Wayback capture 20010619), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100527",
+   "name": "Mactabene Amachree",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010430145846id_/http://wnba.com:80/playerfile/head/mactabene_amachree.html",
+     "quote": "Position: Forward Born: 1/30/78",
+     "note": "wnba.com player file for Mactabene Amachree (Wayback capture 20010430), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100737",
+   "name": "Zuzana Klimesova",
+   "pos": "F",
+   "labels": [
+    "wayback: F"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20021205003416id_/http://www.wnba.com:80/playerfile/zuzi_klimesova/bio.html",
+     "quote": "Position: F Born: 01/21/79",
+     "note": "wnba.com player file for Zuzana Klimesova (Wayback capture 20021205), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201514",
+   "name": "Chioma Nnamaka",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20080414215945id_/http://www.wnba.com:80/playerfile/chioma_nnamaka/index.html?",
+     "quote": "Add Widget Chioma Nnamaka # Guard - Atlanta Dream",
+     "note": "wnba.com player file for Chioma Nnamaka (Wayback capture 20080414), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "202665",
+   "name": "Chastity Reed",
+   "pos": "F",
+   "labels": [
+    "leads: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://www.basketball-reference.com/wnba/players/r/reedch01w.html",
+     "quote": "Chastity Reed Position: Forward",
+     "note": "Basketball-Reference's WNBA player page, the Position field under her name; a lead Drew gave on 2026-10-20. A combo like Guard-Forward folds to its first word.",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100212",
+   "name": "Albena Branzova",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980627113335id_/http://www.wnba.com:80/playerfile/head/albena_branzova.html",
+     "quote": "Position: Forward Born: 7/17/71",
+     "note": "wnba.com player file for Albena Branzova (Wayback capture 19980627), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100678",
+   "name": "Jenny Mowe",
+   "pos": "C",
+   "labels": [
+    "wayback: Center"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010619170231id_/http://www.wnba.com:80/playerfile/head/jenny_mowe.html",
+     "quote": "Position: Center Born: 2/25/78",
+     "note": "wnba.com player file for Jenny Mowe (Wayback capture 20010619), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "200740",
+   "name": "Sabrina Palie",
+   "pos": "G",
+   "labels": [
+    "wayback: G"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20060703195218id_/http://www.wnba.com:80/playerfile/sabrina_palie/index.html",
+     "quote": "Position: G",
+     "note": "wnba.com player file for Sabrina Palie (Wayback capture 20060703), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100064",
+   "name": "Debra Williams",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208065321id_/http://www.wnba.com:80/playerfile/debra_williams.html",
+     "quote": "Position: Guard Born: 09/23/72",
+     "note": "wnba.com player file for Debra Williams (Wayback capture 19980208), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100109",
+   "name": "Jasmina Perazic-Gipe",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard-Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208065224id_/http://www.wnba.com:80/playerfile/jasmina_perazic.html",
+     "quote": "Position: Guard-Forward Born: 12/06/60",
+     "note": "wnba.com player file for Jasmina Perazic-Gipe (Wayback capture 19980208), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100094",
+   "name": "Anita Maxwell",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208055958id_/http://www.wnba.com:80/playerfile/anita_maxwell.html",
+     "quote": "Position: Forward Born: 04/07/74",
+     "note": "wnba.com player file for Anita Maxwell (Wayback capture 19980208), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100535",
+   "name": "Rhonda Banchero",
+   "pos": "C",
+   "labels": [
+    "wayback: Center"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000819051751id_/http://www.wnba.com:80/playerfile/head/rhonda_banchero.html",
+     "quote": "Position: Center Born: 5/1/73",
+     "note": "wnba.com player file for Rhonda Banchero (Wayback capture 20000819), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100177",
+   "name": "Kelly Boucher",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980627113323id_/http://www.wnba.com:80/playerfile/head/kelly_boucher.html",
+     "quote": "Position: Forward Born: 1/13/68",
+     "note": "wnba.com player file for Kelly Boucher (Wayback capture 19980627), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100175",
+   "name": "Rehema Stephens",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010503185137id_/http://wnba.com:80/playerfile/head/rehema_stephens.html",
+     "quote": "Position: Guard Born: 12/28/69",
+     "note": "wnba.com player file for Rehema Stephens (Wayback capture 20010503), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100733",
+   "name": "LaNeishea Caufield",
+   "pos": "G",
+   "labels": [
+    "wayback: G"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20020809071845id_/http://www.wnba.com:80/playerfile/laneishea_caufield/bio.html",
+     "quote": "Position: G Born: 05/25/80",
+     "note": "wnba.com player file for LaNeishea Caufield (Wayback capture 20020809), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100803",
+   "name": "Begona Garcia",
+   "pos": "G",
+   "labels": [
+    "wayback: G"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20020607043149id_/http://www1.wnba.com:80/playerfile/begona_garcia/bio.html",
+     "quote": "Position: G Born: 09/03/76",
+     "note": "wnba.com player file for Begona Garcia (Wayback capture 20020607), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201486",
+   "name": "Lauren Ervin",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20090605030422id_/http://www.wnba.com:80/playerfile/lauren_ervin/bio.html",
+     "quote": "Add Widget Lauren Ervin #44 Forward - Connecticut Sun",
+     "note": "wnba.com player file for Lauren Ervin (Wayback capture 20090605), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100197",
+   "name": "Angela Jackson",
+   "pos": "C",
+   "labels": [
+    "wayback: Center"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010712170849id_/http://www.wnba.com:80/playerfile/head/angela_jackson.html",
+     "quote": "Position: Center Born: 3/30/76",
+     "note": "wnba.com player file for Angela Jackson (Wayback capture 20010712), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100355",
+   "name": "Jennifer Whittle",
+   "pos": "C",
+   "labels": [
+    "wayback: Center"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000823222018id_/http://www.wnba.com:80/playerfile/head/jennifer_whittle.html",
+     "quote": "Position: Center Born: 9/5/73",
+     "note": "wnba.com player file for Jennifer Whittle (Wayback capture 20000823), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100927",
+   "name": "Stacy Stephens",
+   "pos": "C",
+   "labels": [
+    "wayback: C"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20040513142249id_/http://www.wnba.com:80/playerfile/stacy_stephens/bio.html",
+     "quote": "Position: C Born: 01/21/82",
+     "note": "wnba.com player file for Stacy Stephens (Wayback capture 20040513), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "101004",
+   "name": "Marlous Nieuwveen",
+   "pos": "C",
+   "labels": [
+    "wayback: C"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20050525192409id_/http://www.wnba.com:80/playerfile/marlous_nieuwveen/index.html",
+     "quote": "Position: C",
+     "note": "wnba.com player file for Marlous Nieuwveen (Wayback capture 20050525), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "202637",
+   "name": "Angie Bjorklund",
+   "pos": "F",
+   "labels": [
+    "wikipedia: [[Forward (basketball)|Forward]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Angie+Bjorklund&action=raw",
+     "quote": "| position = [[Forward (basketball)|Forward]]",
+     "note": "the infobox position line of the article \"Angie Bjorklund\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100599",
+   "name": "Stacey Ford",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010430155915id_/http://wnba.com:80/playerfile/head/stacey_ford.html",
+     "quote": "Position: Forward Born: 1/14/69",
+     "note": "wnba.com player file for Stacey Ford (Wayback capture 20010430), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100861",
+   "name": "Zuzana Zirkova",
+   "pos": "G",
+   "labels": [
+    "wayback: G"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20040422080034id_/http://www.wnba.com:80/playerfile/zuzana_zirkova/bio.html",
+     "quote": "Position: G Born: 06/06/80",
+     "note": "wnba.com player file for Zuzana Zirkova (Wayback capture 20040422), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100984",
+   "name": "Giuliana Mendiola",
+   "pos": "G",
+   "labels": [
+    "wayback: G"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20040508001838id_/http://www.wnba.com:80/playerfile/giuliana_mendiola/bio.html",
+     "quote": "Position: G Born: 01/08/82",
+     "note": "wnba.com player file for Giuliana Mendiola (Wayback capture 20040508), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201529",
+   "name": "Adrianne Ross",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20080505162434id_/http://www.wnba.com:80/playerfile/adrianne_ross/index.html",
+     "quote": "Add Widget Adrianne Ross #32 Guard - San Antonio Silver Stars",
+     "note": "wnba.com player file for Adrianne Ross (Wayback capture 20080505), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100743",
+   "name": "Davalyn Cunningham",
+   "pos": "F",
+   "labels": [
+    "wikipedia: [[Forward (basketball)|Forward]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Davalyn+Cunningham&action=raw",
+     "quote": "| position = [[Forward (basketball)|Forward]]",
+     "note": "the infobox position line of the article \"Davalyn Cunningham\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201115",
+   "name": "Amy Sanders",
+   "pos": "G",
+   "labels": [
+    "wikipedia: [[Guard (basketball)|Guard]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Amy+Sanders&action=raw",
+     "quote": "| position = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Amy Sanders\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "101057",
+   "name": "Cisti Greenwalt",
+   "pos": "C",
+   "labels": [
+    "wayback: C"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20111121030120id_/http://www.wnba.com/playerfile/cisti_greenwalt/index.html?nav=page",
+     "quote": "Position: C",
+     "note": "wnba.com player file for Cisti Greenwalt (Wayback capture 20111121), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100081",
+   "name": "Pietra Gay",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard-Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208062146id_/http://www.wnba.com:80/playerfile/pietra_gay.html",
+     "quote": "Position: Guard-Forward Born: 08/21/74",
+     "note": "wnba.com player file for Pietra Gay (Wayback capture 19980208), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100026",
+   "name": "Yvette Angel",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208071607id_/http://www.wnba.com:80/playerfile/yvette_angel.html",
+     "quote": "Position: Guard Born: 10/14/63",
+     "note": "wnba.com player file for Yvette Angel (Wayback capture 19980208), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100051",
+   "name": "Megan Compain",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard",
+    "wikipedia: [[Guard (basketball)|Guard]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208065939id_/http://www.wnba.com:80/playerfile/megan_compain.html",
+     "quote": "Position: Guard Born: 09/18/75",
+     "note": "wnba.com player file for Megan Compain (Wayback capture 19980208), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Megan+Compain&action=raw",
+     "quote": "| position = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Megan Compain\" (wikitext); matched to the player by name and a WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100938",
+   "name": "Amisha Carter",
+   "pos": "F",
+   "labels": [
+    "wayback: F"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20040508224607id_/http://www.wnba.com:80/playerfile/amisha_carter/bio.html",
+     "quote": "Position: F Born: 06/21/82",
+     "note": "wnba.com player file for Amisha Carter (Wayback capture 20040508), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "200692",
+   "name": "Willnett Crockett",
+   "pos": "F",
+   "labels": [
+    "wayback: F"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20080408093207id_/http://www.wnba.com:80/playerfile/willnett_crockett/bio.html",
+     "quote": "Position: F",
+     "note": "wnba.com player file for Willnett Crockett (Wayback capture 20080408), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100948",
+   "name": "Catrina Frierson",
+   "pos": "F",
+   "labels": [
+    "wayback: F"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20040508224830id_/http://www.wnba.com:80/playerfile/trina_frierson/bio.html",
+     "quote": "Position: F Born: 10/13/80",
+     "note": "wnba.com player file for Catrina Frierson (Wayback capture 20040508), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100158",
+   "name": "Marcie Alberts",
+   "pos": "G",
+   "labels": [
+    "wikipedia: [[Guard (basketball)|Guard]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Marcie+Alberts&action=raw",
+     "quote": "| position     = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Marcie Alberts\" (wikitext); matched to the player by name and WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "202639",
+   "name": "Felicia Chester-Wootton",
+   "pos": "F",
+   "labels": [
+    "leads: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://www.wnba.com/player/202639/felicia-chester-wootton/profile",
+     "quote": "Felicia Chester-Wootton Forward",
+     "note": "WNBA.com's player profile, the position under her name in the header; a lead Drew gave on 2026-10-20. A combo like Guard-Forward folds to its first word.",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "203030",
+   "name": "Julie Wojta",
+   "pos": "G",
+   "labels": [
+    "leads: Guard-Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://www.wnba.com/player/203030",
+     "quote": "Julie Wojta Guard-Forward",
+     "note": "WNBA.com's player profile, the position under her name in the header; a lead Drew gave on 2026-10-20. A combo like Guard-Forward folds to its first word.",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100162",
+   "name": "Margo Clark",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208065927id_/http://www.wnba.com:80/playerfile/margo_clark.html",
+     "quote": "Position: Forward Born: 01/01/71",
+     "note": "wnba.com player file for Margo Clark (Wayback capture 19980208), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100431",
+   "name": "Jennifer Howard",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20001003105722id_/http://www.wnba.com:80/playerfile/head/jennifer_howard.html",
+     "quote": "Position: Guard Born: 1/21/75",
+     "note": "wnba.com player file for Jennifer Howard (Wayback capture 20001003), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100468",
+   "name": "Usha Gilmore",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010406105623id_/http://wnba.com:80/playerfile/head/usha_gilmore.html",
+     "quote": "Position: Guard Born: 8/24/78",
+     "note": "wnba.com player file for Usha Gilmore (Wayback capture 20010406), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100979",
+   "name": "Tera Bjorklund",
+   "pos": "C",
+   "labels": [
+    "wayback: C"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20040514191855id_/http://www.wnba.com:80/playerfile/tera_bjorklund/bio.html",
+     "quote": "Position: C Born: 06/29/82",
+     "note": "wnba.com player file for Tera Bjorklund (Wayback capture 20040514), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "200687",
+   "name": "Ambrosia Anderson",
+   "pos": "F",
+   "labels": [
+    "wayback: F"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20121026090411id_/http://www.wnba.com/playerfile/ambrosia_anderson/",
+     "quote": "Position: F",
+     "note": "wnba.com player file for Ambrosia Anderson (Wayback capture 20121026), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201922",
+   "name": "Kristi Cirone",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20090506101318id_/http://www.wnba.com:80/playerfile/kristi_cirone/index.html",
+     "quote": "Add Widget Kristi Cirone # Guard - Connecticut Sun",
+     "note": "wnba.com player file for Kristi Cirone (Wayback capture 20090506), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201885",
+   "name": "Whitney Boddie",
+   "pos": "G",
+   "labels": [
+    "wikipedia: [[Guard (basketball)|Guard]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Whitney+Boddie&action=raw",
+     "quote": "| position = [[Guard (basketball)|Guard]]",
+     "note": "the infobox position line of the article \"Whitney Boddie\" (wikitext); matched to the player by name and a WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "202276",
+   "name": "Gabriela Marginean",
+   "pos": "F",
+   "labels": [
+    "wikipedia: [[Forward (basketball)|Forward]]"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=Gabriela+M%C4%83rginean&action=raw",
+     "quote": "| position = [[Forward (basketball)|Forward]]",
+     "note": "the infobox position line of the article \"Gabriela Mărginean\" (wikitext); matched to the player by name and a WNBA mention",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "202629",
+   "name": "Miranda Ayim",
+   "pos": "F",
+   "labels": [
+    "leads: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://www.basketball-reference.com/wnba/players/a/ayimmi01w.html",
+     "quote": "Position: Forward",
+     "note": "Basketball-Reference's WNBA player page for Miranda Ayim, the Position field under her name; a lead Drew gave on 2026-10-20. Basketball-Reference is a receipts-only source here (its terms bar bulk use), one page per lead.",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100373",
+   "name": "Itoro Umoh-Coleman",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010430151241id_/http://wnba.com:80/playerfile/head/itoro_umoh.html",
+     "quote": "Position: Guard Born: 2/21/77",
+     "note": "wnba.com player file for Itoro Umoh-Coleman (Wayback capture 20010430), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "101078",
+   "name": "Susan King-Borchardt",
+   "pos": "G",
+   "labels": [
+    "wayback: G"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20121009142648id_/http://www.wnba.com/playerfile/susan_kingborchardt/bio.html",
+     "quote": "Position: G",
+     "note": "wnba.com player file for Susan King-Borchardt (Wayback capture 20121009), the Position field; the page names her in its title",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100057",
+   "name": "Molly Tuter",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208065850id_/http://www.wnba.com:80/playerfile/molly_tuter.html",
+     "quote": "Position: Guard Born: 08/25/75",
+     "note": "wnba.com player file for Molly Tuter (Wayback capture 19980208), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100515",
+   "name": "Cornelia Gayden",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000819033912id_/http://www.wnba.com:80/playerfile/head/cornelia_gayden.html",
+     "quote": "Position: Guard Born: 5/11/71",
+     "note": "wnba.com player file for Cornelia Gayden (Wayback capture 20000819), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100497",
+   "name": "Madinah Slaise",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000914191930id_/http://www.wnba.com:80/playerfile/head/madinah_slaise.html",
+     "quote": "Position: Guard Born: 9/22/78",
+     "note": "wnba.com player file for Madinah Slaise (Wayback capture 20000914), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201061",
+   "name": "Dee Davis",
+   "pos": "G",
+   "labels": [
+    "wayback: G"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20070509064054id_/http://www.wnba.com:80/playerfile/dee_davis/index.html",
+     "quote": "Position: G",
+     "note": "wnba.com player file for Dee Davis (Wayback capture 20070509), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201106",
+   "name": "Chrissy Givens",
+   "pos": "G",
+   "labels": [
+    "wayback: G"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20070509080931id_/http://www.wnba.com:80/playerfile/chrissy_givens/index.html?",
+     "quote": "Position: G",
+     "note": "wnba.com player file for Chrissy Givens (Wayback capture 20070509), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100010",
+   "name": "Travesa Gant",
+   "pos": "C",
+   "labels": [
+    "wayback: Center"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000929160431id_/http://www.wnba.com:80/playerfile/head/travesa_gant.html",
+     "quote": "Position: Center Born: 10/10/71",
+     "note": "wnba.com player file for Travesa Gant (Wayback capture 20000929), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100674",
+   "name": "Carolyn Moos",
+   "pos": "F",
+   "labels": [
+    "wayback: F-C"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20020628140456id_/http://www.wnba.com:80/playerfile/carolyn_moos/index.html",
+     "quote": "Position: F-C Born: 05/08/78",
+     "note": "wnba.com player file for Carolyn Moos (Wayback capture 20020628), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "200648",
+   "name": "Emilie Gomis",
+   "pos": "G",
+   "labels": [
+    "wayback: G"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20111121030703id_/http://www.wnba.com/playerfile/emilie_gomis/index.html?nav=page",
+     "quote": "Position: G",
+     "note": "wnba.com player file for Emilie Gomis (Wayback capture 20111121), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100997",
+   "name": "Irina Osipova",
+   "pos": "C",
+   "labels": [
+    "wayback: C"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20090402220741id_/http://www.wnba.com:80/playerfile/irina_osipova/bio.html",
+     "quote": "Position: C",
+     "note": "wnba.com player file for Irina Osipova (Wayback capture 20090402), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100712",
+   "name": "Dalivorka Vilipic",
+   "pos": "F",
+   "labels": [
+    "wayback: F"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20060705212445id_/http://www.wnba.com:80/playerfile/dalivorka_vilipic/index.html?",
+     "quote": "Position: F",
+     "note": "wnba.com player file for Dalivorka Vilipic (Wayback capture 20060705), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100506",
+   "name": "Renee Robinson",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20000816214945id_/http://www.wnba.com:80/playerfile/head/renee_robinson.html",
+     "quote": "Position: Guard Born: 6/15/78",
+     "note": "wnba.com player file for Renee Robinson (Wayback capture 20000816), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201531",
+   "name": "Marcedes Walker",
+   "pos": "C",
+   "labels": [
+    "wayback: Center"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20080506034150id_/http://www.wnba.com:80/playerfile/marcedes_walker/index.html",
+     "quote": "Add Widget Marcedes Walker #45 Center - Houston Comets",
+     "note": "wnba.com player file for Marcedes Walker (Wayback capture 20080506), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201551",
+   "name": "Kamela Gissendanner",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20080508234438id_/http://www.wnba.com:80/playerfile/kamela_gissendanner/index.html",
+     "quote": "Add Widget Kamela Gissendanner #25 Forward - Los Angeles Sparks",
+     "note": "wnba.com player file for Kamela Gissendanner (Wayback capture 20080508), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100066",
+   "name": "Milica Vukadinovic",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208053221id_/http://www.wnba.com:80/playerfile/milica_vukadinovic.html",
+     "quote": "Position: Guard Born: 11/18/68",
+     "note": "wnba.com player file for Milica Vukadinovic (Wayback capture 19980208), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100041",
+   "name": "Ryneldi Becenti",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010430031911id_/http://wnba.com:80/playerfile/head/ryneldi_becenti.html",
+     "quote": "Position: Guard Born: 8/11/71",
+     "note": "wnba.com player file for Ryneldi Becenti (Wayback capture 20010430), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100014",
+   "name": "Kim Gessig",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/19980208054656id_/http://www.wnba.com:80/playerfile/kim_gessig.html",
+     "quote": "Position: Forward Born: 12/29/70",
+     "note": "wnba.com player file for Kim Gessig (Wayback capture 19980208), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100432",
+   "name": "Kellie Jolly Harper",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20001003105709id_/http://www.wnba.com:80/playerfile/head/kellie_jolly.html",
+     "quote": "Position: Guard Born: 5/3/77",
+     "note": "wnba.com player file for Kellie Jolly Harper (Wayback capture 20001003), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100464",
+   "name": "Beverly Williams",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20001012053316id_/http://www.wnba.com:80/playerfile/head/beverly_williams.html",
+     "quote": "Position: Guard Born: 11/9/65",
+     "note": "wnba.com player file for Beverly Williams (Wayback capture 20001012), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100636",
+   "name": "Angelina Wolvert",
+   "pos": "F",
+   "labels": [
+    "wayback: F-C"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20020607122808id_/http://wnba.com:80/playerfile/angelina_wolvert/index.html?nav=page",
+     "quote": "Position: F-C Born: 12/08/78",
+     "note": "wnba.com player file for Angelina Wolvert (Wayback capture 20020607), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100629",
+   "name": "Reshea Bristol",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010702022454id_/http://www.wnba.com:80/playerfile/head/reshea_bristol.html",
+     "quote": "Position: Guard Born: 2/10/78",
+     "note": "wnba.com player file for Reshea Bristol (Wayback capture 20010702), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100675",
+   "name": "Pat Luckey",
+   "pos": "F",
+   "labels": [
+    "wayback: Forward"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010620135016id_/http://www.wnba.com:80/playerfile/head/pat_luckey.html",
+     "quote": "Position: Forward Born: 5/14/75",
+     "note": "wnba.com player file for Pat Luckey (Wayback capture 20010620), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "100379",
+   "name": "Merlelynn Lang-Harris",
+   "pos": "C",
+   "labels": [
+    "wayback: Center"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20010223124607id_/http://www.wnba.com:80/playerfile/head/merlelynn_lange-harris.html",
+     "quote": "Position: Center Born: 4/28/69",
+     "note": "wnba.com player file for Merlelynn Lang-Harris (Wayback capture 20010223), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201504",
+   "name": "Wanisha Smith",
+   "pos": "G",
+   "labels": [
+    "wayback: Guard"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20080513085419id_/http://www.wnba.com:80/playerfile/wanisha_smith/bio.html",
+     "quote": "Add Widget Wanisha Smith #23 Guard - Detroit Shock",
+     "note": "wnba.com player file for Wanisha Smith (Wayback capture 20080513), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "201902",
+   "name": "Britany Miller",
+   "pos": "C",
+   "labels": [
+    "wayback: Center"
+   ],
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "http://web.archive.org/web/20090623072534id_/http://www.wnba.com:80/playerfile/britany_miller/bio.html",
+     "quote": "Add Widget Britany Miller #33 Center - Detroit Shock",
+     "note": "wnba.com player file for Britany Miller (Wayback capture 20090623), the Position field; the page names her",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,211 @@
+{{Short description|American basketball player (born 1987)}}
+{{Infobox basketball biography
+| name = Whitney Boddie
+| image = 
+| team = 
+| number = 44
+| position = [[Guard (basketball)|Guard]]
+| height_ft = 5 | height_in = 8
+| weight_lbs = 145
+| birth_date = {{Birth date and age|1987|1|23|mf=y}}
+| birth_place = [[Florence, Alabama]], U.S.
+| high_school = [[Florence High School (Alabama)|Florence]] (Florence, Alabama)
+| college = [[Auburn Tigers women's basketball|Auburn]] (2005–2009)
+| draft_league = WNBA
+| draft_year = 2009
+| draft_round = 2
+| draft_pick = 20
+| draft_team = [[Sacramento Monarchs]]
+| career_start =
+| career_end = 
+| years1 = {{WNBA Year|2009}}
+| team1 = [[Sacramento Monarchs]]
+| highlights = 
+* First-team All-[[Southeastern Conference|SEC]] (2009)
+* [[List of NCAA Division I women's basketball season assists leaders|NCAA season assists leader]] (2009)
+* [[Alabama Miss Basketball]] (2005)
+| wnba_profile = whitney_boddie
+}}
+'''Whitney Boddie''' (born January 23, 1987) is a professional [[women's basketball]] player who most recently played for the [[Sacramento Monarchs]].
+
+== High school career ==
+Boddie graduated in 2005 from Florence High School of Florence, Alabama and was named 2005 [[Alabama Miss Basketball]].<ref>{{cite news|last=Reynolds|first=Gina|title=Even as youth, player's talent turned heads|url=https://news.google.com/newspapers?id=4FMeAAAAIBAJ&sjid=QsgEAAAAIBAJ&pg=2575,931738&dq=whitney+boddie&hl=en|accessdate=8 December 2010|newspaper=Times Daily|date=8 April 2005}}</ref>
+
+In 2004, she was as honored as the [[Alabama Sports Writers Association]] 6A Player of the Year.<ref name=":0">{{Cite web |title=Whitney Boddie - Women's Basketball 2005-06 |url=https://auburntigers.com/sports/womens-basketball/roster/player/whitney-boddie |access-date=2025-09-14 |website=Auburn Tigers - Official Athletics Website |language=en-US}}</ref>
+
+== College career ==
+She played women's basketball for [[Auburn University]].<ref name=":0" /> Boddie started 80 games for Auburn from 2005 to 2009.<ref name=":1">{{Cite web |title='Auburn lives through me forever': Whitney Boddie, SEC 2020 Women's Legend |url=https://auburntigers.com/news/2020/02/20/auburn-lives-through-me-forever-whitney-boddie-sec-2020-womens-legend |access-date=2025-09-14 |website=Auburn Tigers - Official Athletics Website |language=en-US}}</ref>
+
+In 2009, she earned AP Honorable Mention All-American, [[U.S. Basketball Writers Association|USBWA]] Honorable Mention All-American, All-SEC First Team (AP and Coaches), and SEC All-Tournament Team.<ref name=":0" />
+
+== WNBA career ==
+Boddie was drafted by the [[Sacramento Monarchs]] in the [[2009 WNBA draft]] but she was waived before the season began. When Monarchs guard [[Chelsea Newton]] had surgery in August 2009, the Monarchs signed Boddie to a seven-day contract.<ref>{{cite web|title=Monarchs Sign Whitney Boddie to Contract|url=http://www.oursportscentral.com/services/releases/?id=3886000&FORM=ZZNR8|publisher=OurSports Central|accessdate=8 December 2010|date=14 August 2009}}</ref>
+
+Boddie also participated in training camp with the [[New York Liberty]].
+
+== International career ==
+Boddie played overseas with [[Utex Row Rybnik]] (Poland), [[Botasspor Adana]] (Turkey) and Helios (Switzerland).<ref name=":0" />
+
+== Personal life ==
+Boddie is the head girls basketball coach at [[South Broward High School]] in [[Hollywood, Florida]].
+
+She has a sociology degree from Auburn University.<ref name=":1" />
+
+==Career statistics==
+
+===WNBA===
+{{WNBA player statistics legend}}
+====Regular season====
+{{WNBA player statistics start}}
+|-
+| align="left" | [[2009 WNBA season|2009]]
+| align="left" | [[2009 Sacramento Monarchs season|Sacramento]]
+|4||0||2.3||100.0||0.0||0.0||0.0||0.0||0.3||0.0||0.3||0.5
+|-
+| align="left" | Career
+| align="left" | 1 year, 1 team
+|4||0||2.3||100.0||0.0||0.0||0.0||0.0||0.3||0.0||0.3||0.5
+{{S-end}}
+
+===College===
+Source<ref name="NCAA Player stats"/>
+{| class="toccolours" style="font-size: 92%; white-space: nowrap;"
+|+ '''Legend'''
+|-
+| style="background-color: #F2F2F2; border: 1px solid black;" | &nbsp;&nbsp;GP
+| Games played
+| style="background-color: #F2F2F2; border: 1px solid black" | &nbsp;&nbsp;GS&nbsp;
+| Games started
+| style="background-color: #F2F2F2; border: 1px solid black" | &nbsp;MPG&nbsp;
+| Minutes per game
+| style="background-color: #F2F2F2; border: 1px solid black;" | &nbsp;FG%&nbsp;
+| [[Field goal (basketball)|Field goal]] percentage
+| style="background-color: #F2F2F2; border: 1px solid black" | &nbsp;3P%&nbsp;
+| [[Three-point field goal|3-point field goal]] percentage
+|-
+| style="background-color: #F2F2F2; border: 1px solid black" | &nbsp;FT%&nbsp;
+| [[Free throw]] percentage
+| style="background-color: #F2F2F2; border: 1px solid black;" | &nbsp;RPG&nbsp;
+| [[Rebound (basketball)|Rebounds]] per game
+| style="background-color: #F2F2F2; border: 1px solid black" | &nbsp;APG&nbsp;
+| [[Assist (basketball)|Assists]] per game
+| style="background-color: #F2F2F2; border: 1px solid black" | &nbsp;SPG&nbsp;
+| [[Steal (basketball)|Steals]] per game
+| style="background-color: #F2F2F2; border: 1px solid black;" | &nbsp;BPG&nbsp;
+| [[Block (basketball)|Blocks]] per game
+|-
+| style="background-color: #F2F2F2; border: 1px solid black" | &nbsp;TO&nbsp;
+| [[Turnover (basketball)|Turnovers]] per game
+| style="background-color: #F2F2F2; border: 1px solid black" | &nbsp;PPG&nbsp;
+| Points per game
+| style="background-color: #F2F2F2; border: 1px solid black" | &nbsp;'''Bold'''&nbsp;
+| Career high
+| style="background-color: #cfecec; border: 1px solid black" | &nbsp;*&nbsp;
+| Led Division I
+|}
+{|class="wikitable"
+  !Year
+  !Team
+  !GP
+  !Points
+  !FG%
+  !3P%
+  !FT%
+  !RPG
+  !APG
+  !SPG
+  !BPG
+  !PPG
+ 
+ |-
+  |2005-06
+  |[[Auburn Tigers women's basketball|Auburn]]
+  |26
+  |196
+  |41.7
+  | -
+  |'''86.2'''
+  |4.2
+  |4.6
+  |1.7
+  |0.2
+  |7.5
+ 
+ |-
+  |2006-07
+  |Auburn&nbsp;
+  |'''33'''
+  |269
+  |40.0
+  | -
+  |77.0
+  |4.3
+  |4.8
+  |1.6
+  |0.2
+  |8.2
+ 
+ |-
+  |2007-08
+  |Auburn&nbsp;
+  |11
+  |117
+  |41.7
+  | -
+  |75.6
+  |'''6.4'''
+  |5.8
+  |'''2.1'''
+  | -
+  |10.6
+ 
+ |-
+  |2008-09
+  |Auburn&nbsp;
+  |'''33'''
+  |'''369'''
+  |'''47.5'''
+  | -
+  |73.5
+  |4.6
+  |bgcolor=#cfecec|*'''7.9'''
+  |1.9
+  |0.2
+  |'''11.2'''
+ 
+ |-
+  |Career
+  |Auburn&nbsp;
+  |103
+  |951
+  |43.5
+  |0.0
+  |77.7
+  |4.6
+  |5.9
+  |1.8
+  |0.2
+  |9.2
+ |}
+
+== References ==
+<references>
+
+<ref name="NCAA Player stats">{{cite web|last1=|first1=|title=Women's Basketball Player stats|date=|url=http://web1.ncaa.org/stats/StatsSrv/careersearch|website=NCAA|accessdate=1 October 2015}}</ref>
+
+</references>
+
+{{2009 WNBA draft}}
+
+{{DEFAULTSORT:Boddie, Whitney}}
+[[Category:1987 births]]
+[[Category:Living people]]
+[[Category:American women's basketball players]]
+[[Category:Auburn Tigers women's basketball players]]
+[[Category:Basketball players from Alabama]]
+[[Category:Sportspeople from Florence, Alabama]]
+[[Category:Sacramento Monarchs players]]
+[[Category:Guards (basketball)]]
+[[Category:21st-century American women]]
+
+{{US-women-basketball-bio-stub}}

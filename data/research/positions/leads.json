@@ -1,0 +1,69 @@
+{
+ "note": "rows from leads a reader or Drew gave, one page each, with the line that says it",
+ "rows": [
+  {
+   "id": "202629",
+   "name": "Miranda Ayim",
+   "pos": "F",
+   "label": "Forward",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://www.basketball-reference.com/wnba/players/a/ayimmi01w.html",
+     "quote": "Position: Forward",
+     "note": "Basketball-Reference's WNBA player page for Miranda Ayim, the Position field under her name; a lead Drew gave on 2026-10-20. Basketball-Reference is a receipts-only source here (its terms bar bulk use), one page per lead.",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "202665",
+   "name": "Chastity Reed",
+   "pos": "F",
+   "label": "Forward",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://www.basketball-reference.com/wnba/players/r/reedch01w.html",
+     "quote": "Chastity Reed Position: Forward",
+     "note": "Basketball-Reference's WNBA player page, the Position field under her name; a lead Drew gave on 2026-10-20. A combo like Guard-Forward folds to its first word.",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "202639",
+   "name": "Felicia Chester-Wootton",
+   "pos": "F",
+   "label": "Forward",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://www.wnba.com/player/202639/felicia-chester-wootton/profile",
+     "quote": "Felicia Chester-Wootton Forward",
+     "note": "WNBA.com's player profile, the position under her name in the header; a lead Drew gave on 2026-10-20. A combo like Guard-Forward folds to its first word.",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "203030",
+   "name": "Julie Wojta",
+   "pos": "G",
+   "label": "Guard-Forward",
+   "grade": "label",
+   "receipts": [
+    {
+     "url": "https://www.wnba.com/player/203030",
+     "quote": "Julie Wojta Guard-Forward",
+     "note": "WNBA.com's player profile, the position under her name in the header; a lead Drew gave on 2026-10-20. A combo like Guard-Forward folds to its first word.",
+     "retrieved": "2026-10-20"
+    }
+   ]
+  }
+ ],
+ "rejections": [],
+ "tried": [],
+ "leads": [],
+ "unverified": []
+}
