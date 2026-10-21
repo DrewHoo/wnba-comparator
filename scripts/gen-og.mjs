@@ -11,7 +11,7 @@
 // Text is drawn as glyph outlines through opentype.js (pinned to 1.3.4; 2.x
 // emits NaN path data), because sharp's librsvg never finds Graduate or Plex
 // Mono. The TTFs are committed under scripts/fonts/ (OFL).
-import { mkdirSync, readFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import opentype from 'opentype.js'
@@ -27,11 +27,19 @@ const outDir = resolve(ROOT, 'public')
 mkdirSync(outDir, { recursive: true })
 
 const font = (f) => opentype.parse(readFileSync(resolve(ROOT, 'scripts/fonts', f)).buffer.slice(0))
+// The title is Georgia Bold, the same face Hostile Territory's poster uses, read from
+// the Mac's own copy (not redistributable, so never committed here).
+const GEORGIA_BOLD = '/System/Library/Fonts/Supplemental/Georgia Bold.ttf'
+const titleFont = () => {
+  if (!existsSync(GEORGIA_BOLD)) throw new Error(`title font missing: ${GEORGIA_BOLD} (run gen:og on a Mac, or point GEORGIA_BOLD at a Georgia Bold TTF)`)
+  return opentype.parse(readFileSync(GEORGIA_BOLD).buffer.slice(0))
+}
 const FONT = {
   Graduate: font('Graduate-Regular.ttf'),
   Mono: font('IBMPlexMono-Regular.ttf'),
   MonoBold: font('IBMPlexMono-SemiBold.ttf'),
   Serif: font('SourceSerif4-Regular.ttf'),
+  Title: titleFont(),
 }
 const width = (str, name, size, spacing = 0) => FONT[name].getAdvanceWidth(str, size, { kerning: true, letterSpacing: spacing / size })
 function text(str, { x, y, font: name, size, fill, anchor = 'start', spacing = 0, opacity }) {
@@ -58,7 +66,7 @@ function render(W, H) {
   parts.push(`<rect width="${W}" height="${H}" fill="${BG}"/>`)
   parts.push(`<rect width="${W}" height="${H}" fill="url(#glow)"/>`)
   parts.push(text(`${config.domain.toUpperCase()} · ${ledger.firstSeason}–${ledger.currentSeason}`, { x: W / 2, y: 58, font: 'Mono', size: 15, fill: FAINT, anchor: 'middle', spacing: 2.4 }))
-  parts.push(text(config.title, { x: W / 2, y: 132, font: 'Graduate', size: 66, fill: CREAM, anchor: 'middle', spacing: 2 }))
+  parts.push(text(config.title, { x: W / 2, y: 132, font: 'Title', size: 72, fill: CREAM, anchor: 'middle', spacing: 1 }))
   parts.push(text(queryWords(query), { x: W / 2, y: 182, font: 'Serif', size: 25, fill: INK, anchor: 'middle' }))
   parts.push(text(config.ogSubtitle, { x: W / 2, y: 214, font: 'Serif', size: 18, fill: FAINT, anchor: 'middle' }))
   // the board's header and rows
