@@ -2,9 +2,9 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Sentence } from './components/Sentence.jsx'
 import { Board, rowId } from './components/Board.jsx'
 import { Panel } from './components/Panel.jsx'
-import { Notes } from './components/Notes.jsx'
+import { Notes, KOFI_URL } from './components/Notes.jsx'
 import { PlayerFinder } from './components/PlayerFinder.jsx'
-import { ShareIcon } from './components/Icons.jsx'
+import { CoffeeIcon, ShareIcon } from './components/Icons.jsx'
 import { useShare } from './hooks/useShare.ts'
 import { decodeLedger } from './lib/ledger.ts'
 import { evaluate, normalize, DEFAULT_QUERY } from './lib/query.ts'
@@ -97,6 +97,7 @@ export default function App() {
         <span>{`drewhoover.com · ${L.firstSeason}–${L.currentSeason}`}<span className="dateline-upd"> · updated {String(L.builtAt).slice(0, 10)}</span></span>
         <span className="dateline-acts">
           <PlayerFinder current={row?.player.id ?? null} onPick={findPlayer} />
+          <a className="ico" href={KOFI_URL} onClick={() => track('kofi', { from: 'icons board' })} aria-label="Buy me a coffee"><CoffeeIcon /></a>
           <button className="ico" onClick={onShare} aria-label="Share this board"><ShareIcon /></button>
           {copied && <span className="toast">copied</span>}
         </span>
@@ -110,6 +111,11 @@ export default function App() {
       </p>
       <Board board={board} query={query} open={open} onOpen={openRow} panel={row && <Panel key={row.key} row={row} board={board} query={query} peerKey={vs} onPeer={setPeer} onClose={() => openRow(row.key)} />} />
       <Notes ledger={L} />
+      <footer>
+        <a href="https://drewhoover.com/">drewhoover.com</a> · data rebuilt daily in season ·{' '}
+        <a href="https://github.com/DrewHoo/wnba-comparator">source & receipts</a> ·{' '}
+        <a href={KOFI_URL} onClick={() => track('kofi', { from: 'footer' })}>buy me a coffee</a>
+      </footer>
     </main>
   )
 }
