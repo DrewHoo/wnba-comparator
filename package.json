@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.mjs",
+    "build": "node scripts/build-index.mjs && vite build && node scripts/prerender.mjs",
+    "index": "node scripts/build-index.mjs",
     "preview": "vite preview",
     "fetch": "node scripts/fetch-wehoop.mjs",
     "ledger": "node scripts/build-ledger.mjs",

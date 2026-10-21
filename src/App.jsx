@@ -3,6 +3,7 @@ import { Sentence } from './components/Sentence.jsx'
 import { Board, rowId } from './components/Board.jsx'
 import { Panel } from './components/Panel.jsx'
 import { Notes } from './components/Notes.jsx'
+import { PlayerFinder } from './components/PlayerFinder.jsx'
 import { ShareIcon } from './components/Icons.jsx'
 import { useShare } from './hooks/useShare.ts'
 import { decodeLedger } from './lib/ledger.ts'
@@ -44,9 +45,9 @@ export default function App() {
 
   useEffect(() => {
     if (!landOn.current || !row) return
-    const el = document.getElementById(rowId(row.key))
     landOn.current = null
-    if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - BACK_BAR })
+    const el = document.getElementById(rowId(row.key))
+    if (el) requestAnimationFrame(() => window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - BACK_BAR }))
   }, [row])
 
   // the tab says what the share worker would: the sentence, or the open comparison
@@ -68,6 +69,16 @@ export default function App() {
     writeUrl(toUrl({ query, open: next }), 'replace')
     if (next) track('open', { player: next })
   }
+  // the finder: open her row and land on it, wherever it is on the board; a player-season board opens her latest season
+  const findPlayer = (p) => {
+    const key = query.seq === 'teamGames' ? [...board.ranked, ...board.onTheWay].filter((r) => r.player.id === p.id).sort((a, b) => b.season - a.season)[0]?.key ?? null : p.id
+    if (!key) return
+    landOn.current = key
+    setOpen(key)
+    setVs(null)
+    writeUrl(toUrl({ query, open: key }), 'replace')
+    track('open', { player: key, from: 'finder' })
+  }
   // the peer the panel reads against, in the URL so a shared link opens the same comparison
   const setPeer = (key) => {
     setVs(key)
@@ -85,6 +96,7 @@ export default function App() {
       <div className="dateline">
         <span>{`drewhoover.com · ${L.firstSeason}–${L.currentSeason}`}<span className="dateline-upd"> · updated {String(L.builtAt).slice(0, 10)}</span></span>
         <span className="dateline-acts">
+          <PlayerFinder current={row?.player.id ?? null} onPick={findPlayer} />
           <button className="ico" onClick={onShare} aria-label="Share this board"><ShareIcon /></button>
           {copied && <span className="toast">copied</span>}
         </span>
