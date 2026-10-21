@@ -109,6 +109,16 @@ ruling there usually holds here.
 - **Normalize runs before every evaluate and in `parseUrl`**: a test query with no
   tests gets the stat's second threshold; a reach over seasons or team games becomes
   games.
+- **A clean-game test (max 0) needs `played`: ten minutes on the floor.** "No turnovers"
+  and "no fouls" are the only max-0 tests the picker offers, and before the floor a
+  streak of them was built from cameos: 16,840 of the ledger's 41,849 zero-turnover games
+  are under ten minutes (11,348 rows are under five). `played(g)` is `g.min >= PLAYED_MIN`
+  in `query.ts` and lives inside `holds()`, so the board, the panel's ledger ticks and
+  the worker agree; a cap above zero ("0–2 turnovers") and a plain threshold read the
+  line as it is. The NFL site's floor is the same rule with attempts, carries and
+  targets (QB 10+ attempts, RB 5+ carries + targets, WR/TE 3+ targets). The ledger's
+  `min` is the WNBA Stats minutes, rounded to the minute, and a few rows carry 0 (she
+  was in for seconds); those count as appearances and never as clean games.
 - **Nothing sits out a career field for its debut any more.** The ledger starts with the
   league, so every career's first game is its real first game. The NFL site's "joined in
   progress" rule survives here only as the starts rule above.

@@ -90,9 +90,15 @@ export function normalize(q: Query): Query {
   return out
 }
 
-/** the per-game tests all hold */
+/** the minutes a game needs for a clean line (no turnovers, no fouls) to mean something */
+export const PLAYED_MIN = 10
+
+/** the player was on the floor long enough for a clean line to mean something: a two-minute cameo passes no clean test */
+export const played = (g: Game): boolean => g.min >= PLAYED_MIN
+
+/** the per-game tests all hold; a test with max 0 ("no turnovers") also needs the game played */
 export const holds = (g: Game, tests: Test[]): boolean =>
-  tests.every((t) => { const v = statByKey(t.stat).read(g); return v >= t.min && (t.max == null || v <= t.max) })
+  tests.every((t) => { const v = statByKey(t.stat).read(g); return v >= t.min && (t.max == null || (v <= t.max && (t.max > 0 || played(g)))) })
 
 const inScope = (g: Game, scope: Scope) => scope === 'all' || !g.post
 

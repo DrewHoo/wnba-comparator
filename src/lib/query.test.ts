@@ -2,7 +2,7 @@
 // Each pin says where the data's definition differs from the publisher's.
 import { describe, expect, it } from 'vitest'
 import { decodeLedger, type LedgerFile } from './ledger.ts'
-import { crossings, curve, evaluate, toMatch, DEFAULT_QUERY, type Board } from './query.ts'
+import { crossings, curve, evaluate, holds, toMatch, DEFAULT_QUERY, PLAYED_MIN, type Board } from './query.ts'
 import file from '../data/players.json'
 
 const L = decodeLedger(file as unknown as LedgerFile)
@@ -72,6 +72,27 @@ describe('the gate', () => {
       expect(r.player.games[0].season).toBeGreaterThanOrEqual(2003)
       expect(r.games.every((g) => g.started === true)).toBe(true)
     }
+  })
+})
+
+describe('the clean-game floor', () => {
+  const game = (min: number, tov: number) => ({ ...player('Caitlin Clark').games[0], min, tov })
+  it('a no-turnover game counts only when she played ten minutes; a threshold test needs no floor', () => {
+    const clean = [{ stat: 'tov' as const, min: 0, max: 0 }]
+    expect(holds(game(PLAYED_MIN, 0), clean)).toBe(true)
+    expect(holds(game(PLAYED_MIN - 1, 0), clean)).toBe(false)
+    expect(holds(game(PLAYED_MIN - 1, 1), clean)).toBe(false)
+    // a cap above zero ("0–2 turnovers") and a plain threshold read the line as it is
+    expect(holds(game(2, 1), [{ stat: 'tov', min: 0, max: 2 }])).toBe(true)
+    expect(holds(game(2, 12), [{ stat: 'pts', min: 10 }])).toBe(true)
+  })
+  it('no streak of clean games is built from cameos', () => {
+    const clean = [{ stat: 'tov' as const, min: 0, max: 0 }]
+    const b = evaluate(L, { ...DEFAULT_QUERY, how: 'streak', tests: clean, n: 50 })
+    expect(b.ranked[0].value).toBeGreaterThan(0)
+    const cameos = b.ranked.slice(0, 20).flatMap((r) => r.games).filter((g) => g.tov === 0 && g.min < PLAYED_MIN)
+    expect(cameos.length).toBeGreaterThan(0)
+    for (const g of cameos) expect(holds(g, clean)).toBe(false)
   })
 })
 

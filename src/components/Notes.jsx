@@ -19,7 +19,9 @@ export function Notes({ ledger }) {
         board says how many sat out. A <b>win</b> is the result of a game in the sequence. "Team games of a season"
         count the team's schedule, so a player who sat one has a gap the window still counts. The All-Star game and
         the Commissioner's Cup final are not in the logs; the Cup's regular-season games are. The regular season is the
-        default; the word beside it switches the playoffs in.
+        default; the word beside it switches the playoffs in. A clean line ("no turnovers", "no fouls") counts only in
+        a game the player was on the floor for ten minutes or more, so a two-minute cameo can't build a streak of them;
+        every other test reads the box score as it is.
       </p>
       <p>
         A <b>position</b> is ESPN's where ESPN has one, else the one the WNBA's own rosters list (wehoop publishes those
