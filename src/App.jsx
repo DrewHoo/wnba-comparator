@@ -62,7 +62,7 @@ export default function App() {
         </span>
       </div>
       <h1>WNBA Comparator</h1>
-      <Sentence query={query} onChange={change} />
+      <Sentence query={query} ledger={L} onChange={change} />
       <p className="baserate">
         <span className="sr-only">{queryWords(query)}. </span>
         Same point in the career, every {query.seq === 'teamGames' ? 'season' : 'career'} since {query.since ?? L.firstSeason}.

@@ -27,14 +27,11 @@ const SCOPE_OPTIONS = [
   { value: 'all', label: 'playoffs included' },
 ]
 
-const ERA_OPTIONS = [
-  { value: 0, label: 'since 1997', hint: 'the whole league' },
-  { value: 2003, label: 'since 2003', hint: 'starts flagged' },
-  { value: 2008, label: 'since 2008' },
-  { value: 2013, label: 'since 2013' },
-  { value: 2016, label: 'since 2016' },
-  { value: 2020, label: 'since 2020' },
-  { value: 2024, label: 'since 2024' },
+// the eras: the whole ledger, the first season with the starter flag, then a few round cuts
+const eraOptions = (ledger) => [
+  { value: 0, label: `since ${ledger.firstSeason}`, hint: 'the whole league' },
+  { value: ledger.startsSince, label: `since ${ledger.startsSince}`, hint: 'starts flagged' },
+  ...[2008, 2013, 2016, 2020, 2024].filter((y) => y > ledger.startsSince && y < ledger.currentSeason).map((y) => ({ value: y, label: `since ${y}` })),
 ]
 
 const STAT_OPTIONS = STATS.map((s) => ({ value: s.key, label: s.noun }))
@@ -64,11 +61,11 @@ function NumberWord({ value, onChange, step = 1, wide, label }) {
   )
 }
 
-export function Sentence({ query, onChange }) {
+export function Sentence({ query, ledger, onChange }) {
   const set = (patch) => onChange({ ...query, ...patch })
   const seqOptions = [
     { value: 'games', label: seqWords('games', query.n) },
-    { value: 'starts', label: seqWords('starts', query.n), hint: 'flagged since 2003' },
+    { value: 'starts', label: seqWords('starts', query.n), hint: `flagged since ${ledger.startsSince}` },
     { value: 'seasons', label: seqWords('seasons', query.n) },
     { value: 'teamGames', label: `team ${seqWords('teamGames', query.n)}` },
   ]
@@ -122,7 +119,7 @@ export function Sentence({ query, onChange }) {
       <span>·</span>
       <Picker value={query.scope} options={SCOPE_OPTIONS} onChange={(scope) => set({ scope })} ariaLabel="Playoffs" />
       <span>·</span>
-      <Picker value={query.since ?? 0} options={ERA_OPTIONS} onChange={(v) => set({ since: v || null })} ariaLabel="Era" />
+      <Picker value={query.since ?? 0} options={eraOptions(ledger)} onChange={(v) => set({ since: v || null })} ariaLabel="Era" />
     </div>
   )
 }
