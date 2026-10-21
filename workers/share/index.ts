@@ -27,7 +27,7 @@ import { decodeLedger, type Ledger, type LedgerFile } from '../../src/lib/ledger
 import { evaluate, type Board, type Row } from '../../src/lib/query.ts';
 import { parseUrl, toUrl } from '../../src/lib/url.ts';
 import { queryWords } from '../../src/lib/words.ts';
-import { cardHeading, cardRows, isShared, shareDescription, shareTitle } from '../../src/lib/share.ts';
+import { cardHeading, cardRows, isShared, peerOf, shareDescription, shareTitle } from '../../src/lib/share.ts';
 import { renderCard } from './card.ts';
 
 interface Env { ORIGIN?: string; NO_REPORT?: string }
@@ -93,7 +93,7 @@ function report(env: Env, ctx: ExecutionContext, request: Request, event: string
 }
 /** The URL itself and its slots, for an event. */
 const urlProps = (url: URL) => {
-  const { query: q, open } = parseUrl(url.search);
+  const { query: q, open, vs } = parseUrl(url.search);
   return {
     url: url.href,
     $current_url: url.href,
@@ -102,6 +102,7 @@ const urlProps = (url: URL) => {
     pos: q.pos, stat: q.stat, how: q.how, n: q.n, seq: q.seq, scope: q.scope, since: q.since, dir: q.dir,
     tests: q.tests.map((t) => `${t.stat}:${t.min}${t.max != null ? `-${t.max}` : ''}`).join(',') || null,
     t: open,
+    vs: vs ?? null,
   };
 };
 
@@ -189,17 +190,25 @@ export default {
     try {
       if (request.method !== 'GET') return res;
       if (!(res.headers.get('content-type') ?? '').includes('text/html')) return res;
-      const { query, open } = parseUrl(url.search);
+      const { query, open, vs } = parseUrl(url.search);
       if (!isShared(query, open)) return res;
       const crawler = agentOf(request.headers.get('user-agent')) !== 'browser';
       if (crawler) report(env, ctx, request, 'share unfurl', urlProps(url));
-      // a crawler's description names the leader or the open player, from the ledger; a browser's is the pure sentence
-      let board: Board | null = null, openRow: Row | null = null, firstSeason = 1997;
+      // a crawler's description names the leader, or the open player read against her
+      // peer (vs=, else the leader), from the ledger; a browser's is the pure sentence,
+      // and the page sets its own title once it hydrates
+      let board: Board | null = null, openRow: Row | null = null, peer: Row | null = null, firstSeason = 1997;
       if (crawler) {
-        try { const L = await loadLedger(origin); board = evaluate(L, query); openRow = findRow(board, open); firstSeason = L.firstSeason; } catch {}
+        try {
+          const L = await loadLedger(origin);
+          board = evaluate(L, query);
+          openRow = findRow(board, open);
+          peer = openRow ? peerOf(board, openRow, vs) : null;
+          firstSeason = L.firstSeason;
+        } catch {}
       }
-      const title = shareTitle(query);
-      const description = shareDescription(query, board, openRow, firstSeason);
+      const title = shareTitle(query, openRow, peer);
+      const description = shareDescription(query, board, openRow, firstSeason, peer);
       const img = ogImageUrl(origin, url.search);
       return new HTMLRewriter()
         .on('title', { element(e) { e.setInnerContent(title); } })

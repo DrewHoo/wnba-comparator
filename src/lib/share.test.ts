@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { cardHeading, cardRows, isShared, shareDescription, shareTitle } from './share.ts'
+import { cardHeading, cardRows, isShared, peerOf, shareDescription, shareTitle } from './share.ts'
 import { decodeLedger, type LedgerFile } from './ledger.ts'
 import { evaluate, DEFAULT_QUERY } from './query.ts'
 import { parseUrl } from './url.ts'
@@ -23,7 +23,19 @@ describe('share words', () => {
     const b = evaluate(L, DEFAULT_QUERY)
     expect(shareDescription(DEFAULT_QUERY, b, null, L.firstSeason)).toMatch(/^Cynthia Cooper leads with 2,187 points through her first 100 games\. Every WNBA career since 1997/)
     const clark = [...b.ranked, ...b.onTheWay].find((r) => r.player.name === 'Caitlin Clark')!
-    expect(shareDescription(DEFAULT_QUERY, b, clark, L.firstSeason)).toMatch(/^Caitlin Clark has 1,874 points through her 93 games\./)
+    expect(shareDescription(DEFAULT_QUERY, b, clark, L.firstSeason)).toMatch(/^Caitlin Clark has 1,874 points through her 93 games, still inside the window\./)
+  })
+  it('with a peer, the description reads the open player against her: the peer\'s claim, where they met, what she needs', () => {
+    const b = evaluate(L, DEFAULT_QUERY)
+    const clark = b.onTheWay.find((r) => r.player.name === 'Caitlin Clark')!
+    const peer = peerOf(b, clark, null)!
+    expect(peer.player.name).toBe('Cynthia Cooper')
+    const d = shareDescription(DEFAULT_QUERY, b, clark, L.firstSeason, peer)
+    expect(d).toMatch(/^Caitlin Clark has 1,874 points through her 93 games, still inside the window\. Cynthia Cooper: 2,187 points through her first 100 games\. (Caitlin Clark (tied|passed|fell behind) Cynthia Cooper at game \d+, [\d,]+ points|Their curves never met)\. To match Cynthia Cooper's [\d,]+ points at game 98, Caitlin Clark needs [\d,]+ points over her next 5 games\./)
+    expect(shareTitle(DEFAULT_QUERY, clark, peer)).toBe('Caitlin Clark vs Cynthia Cooper: most points through the first 100 games · WNBA Comparator')
+    // a named peer wins; an unknown one falls back to the leader
+    expect(peerOf(b, clark, b.ranked[2].key)!.key).toBe(b.ranked[2].key)
+    expect(peerOf(b, clark, 'nobody')!.key).toBe(b.ranked[0].key)
   })
   it('the card shows the top rows, and the open player in place of the last when she is further down', () => {
     const { query, open } = parseUrl('?t=' + L.players.find((p) => p.name === 'Caitlin Clark')!.id)

@@ -11,5 +11,5 @@
     "skipLibCheck": true,
     "types": ["vite/client"]
   },
-  "include": ["src/lib/**/*.ts"]
+  "include": ["src/lib/**/*.ts", "src/hooks/**/*.ts"]
 }

@@ -1,6 +1,7 @@
 // The query in the URL, one param per slot, so every board is a link.
 // Pure: parseUrl reads a search string, toUrl writes one; the defaults are
-// omitted. `t` is the open player (the panel).
+// omitted. `t` is the open player (the panel), `vs` the peer it reads against
+// (the panel's default when absent; it rides only with `t`).
 import { DEFAULT_QUERY, normalize, type How, type Query, type Seq, type Test } from './query.ts'
 import { STATS, type StatKey } from './stats.ts'
 import { POSITIONS, type Pos } from './ledger.ts'
@@ -9,7 +10,7 @@ const HOWS: How[] = ['sum', 'count', 'every', 'streak', 'reach']
 const SEQS: Seq[] = ['games', 'starts', 'seasons', 'teamGames']
 const isStat = (s: string): s is StatKey => STATS.some((x) => x.key === s)
 
-export interface UrlState { query: Query; open: string | null }
+export interface UrlState { query: Query; open: string | null; vs?: string | null }
 
 export function parseUrl(search: string): UrlState {
   const p = new URLSearchParams(search)
@@ -30,7 +31,8 @@ export function parseUrl(search: string): UrlState {
       return m[3] == null ? { stat: m[1], min: Number(m[2]) } : { stat: m[1], min: Number(m[2]), max: Number(m[3]) }
     }).filter((t): t is Test => t != null)
   }
-  return { query: normalize(q), open: p.get('t') }
+  const open = p.get('t')
+  return { query: normalize(q), open, vs: open ? p.get('vs') : null }
 }
 
 export function toUrl(state: UrlState): string {
@@ -46,6 +48,7 @@ export function toUrl(state: UrlState): string {
   if (q.dir !== DEFAULT_QUERY.dir) p.set('dir', q.dir)
   if (q.tests.length && q.how !== 'sum' && q.how !== 'reach') p.set('tests', q.tests.map((t) => `${t.stat}:${t.min}${t.max != null ? `-${t.max}` : ''}`).join(','))
   if (state.open) p.set('t', state.open)
+  if (state.open && state.vs) p.set('vs', state.vs)
   const s = p.toString()
   return s ? `?${s}` : ''
 }
