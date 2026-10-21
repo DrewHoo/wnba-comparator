@@ -77,7 +77,12 @@ ruling there usually holds here.
   "Position: Guard" to "Chioma Nnamaka #11 Guard - Atlanta Dream"; both patterns are in it.
 - **Team codes are WNBA Stats' codes of the day** (NYL, LAS, PHO, WAS, LVA; DET for the
   Shock, SAN for the Silver Stars), not ESPN's (NY, LA, PHX, WSH, LV). `teamGames` is
-  keyed the same way, so a franchise move is two keys.
+  keyed the same way, so a franchise move is two keys. The NFL site found nflverse
+  swapping the home and away codes on some 2001–02 games (its JAC/JAX bug); nothing like
+  it has shown in the wehoop logs, whose `home` flag and team codes agree with ESPN's on
+  every date the two sources share (that agreement is how the builder maps ESPN's codes
+  to the logs' by season). If a season's fill ever maps a team to itself or a player's
+  `home`/`opp` disagree with the box score, look here first.
 - **Season lengths vary a lot**: 28 games in 1997, 30 to 32 through 2002, 34 for most of
   2003–2018, 22 in the 2020 bubble, 36, 40 (2023–24), 44 (2025–26). A `teamGames` window
   of 40 puts every pre-2023 season on the way, so a season gate picks N by the season.
@@ -129,8 +134,9 @@ ruling there usually holds here.
   40MB resident); that is inside a Worker's 128MB, and the per-isolate, per-day cache means
   one cold load. If the ledger doubles, give the worker a slimmer payload (the columns the
   stat catalog reads, nothing else) before anything else.
-- The worker is typechecked by `tsconfig.worker.json` (the Workers runtime types can't
-  share a program with the DOM lib, so it is its own config; `workers/share/env.d.ts`
+- The worker is typechecked by `workers/share/tsconfig.json` (the Workers runtime types
+  can't share a program with the DOM lib, their `CacheStorage` collide, so it is its own
+  config, NFL's exactly; `workers/share/env.d.ts`
   declares the `.ttf` imports). `npm run worker:dev` plus a card that renders is still
   the real test: satori wants `display:flex` on every div with children, and `wrangler
   dev` logs "initWasm() can be used only once" on a second render and still returns the

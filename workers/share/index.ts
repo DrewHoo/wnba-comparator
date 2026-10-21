@@ -27,7 +27,8 @@ import { decodeLedger, type Ledger, type LedgerFile } from '../../src/lib/ledger
 import { evaluate, type Board, type Row } from '../../src/lib/query.ts';
 import { parseUrl, toUrl } from '../../src/lib/url.ts';
 import { queryWords } from '../../src/lib/words.ts';
-import { cardHeading, cardRows, isShared, peerOf, shareDescription, shareTitle } from '../../src/lib/share.ts';
+import { cardHeading, cardRows, isShared, shareDescription, shareTitle } from '../../src/lib/share.ts';
+import { peerOf } from '../../src/lib/compare.ts';
 import { renderCard } from './card.ts';
 
 interface Env { ORIGIN?: string; NO_REPORT?: string }

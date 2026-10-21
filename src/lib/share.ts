@@ -1,68 +1,27 @@
-// The words a shared address unfurls with, the rows its card draws, and the
-// comparison the panel reads (a row against a peer: the curves, where they
-// met, what the subject needs to match). Pure, so the panel, the share
-// worker (workers/share), document.title and the tests say the same thing;
-// the worker adds the data.
-import type { Board, Crossing, Query, Row } from './query.ts'
-import { crossings, curve, toMatch, DEFAULT_QUERY } from './query.ts'
-import { countWords, statByKey } from './stats.ts'
+// The words a shared address carries: a board's title and description, a
+// comparison's, the share button's text, the rows a card draws. Pure, so
+// the share worker (workers/share), the share button, the tab title and the
+// tests all say the same thing; the worker adds the data. NFL Comparator has
+// the same module under the same name; the comparison itself (curves,
+// crossings, the to-match line) is compare.ts.
+import type { Board, Query, Row } from './query.ts'
+import { DEFAULT_QUERY } from './query.ts'
+import { compare, crossingWords, matchWords } from './compare.ts'
+import { statByKey } from './stats.ts'
 import { queryWords, rowName, rowWords, rankWords, seqWords, testsWords } from './words.ts'
 
 export const SITE = 'WNBA Comparator'
 
-/** the games ahead the "to match" line reads over */
-export const K = 5
-
-/** the peers a row can be read against: the rest of the board, forty at most */
-export const peersOf = (board: Board, row: Row): Row[] => [...board.ranked, ...board.onTheWay].filter((r) => r.key !== row.key).slice(0, 40)
-
-/** the peer a `vs` key names, else the first peer (the leader, or the next row) */
-export const peerOf = (board: Board, row: Row, vs: string | null | undefined): Row | null => {
-  const others = peersOf(board, row)
-  return others.find((r) => r.key === vs) ?? others[0] ?? null
-}
-
-export interface Comparison {
-  me: number[]
-  them: number[]
-  /** the last six crossings inside the window, latest first */
-  xs: Crossing[]
-  /** what the subject needs over the next K to match the peer there */
-  match: { need: number; at: number } | null
-  /** the chart's window */
-  n: number
-}
-
-/** null for a player-season board or a test board: no curve to draw */
-export function compare(row: Row, peer: Row, q: Query): Comparison | null {
-  if (q.seq === 'teamGames' || q.how === 'every' || q.how === 'count' || q.how === 'streak') return null
-  const cq = q.how === 'reach' ? { ...q, how: 'sum' as const } : q
-  const me = curve(row.player, cq), them = curve(peer.player, cq)
-  const xs = crossings(me, them).filter((c) => c.n <= Math.max(q.n, me.length)).slice(-6).reverse()
-  const match = q.how === 'sum' ? toMatch(me.slice(0, Math.max(row.reached, Math.min(me.length, q.n))), them, K) : null
-  const n = q.how === 'reach' ? Math.max(row.value ?? 0, peer.value ?? 0) : q.n
-  return { me, them, xs, match, n }
-}
-
-/** "passed Cynthia Cooper at game 46, 1,021 points" */
-export const crossingWords = (c: Crossing, peer: Row, q: Query) => `${c.kind} ${peer.player.name} at ${seqWords(q.seq, 1)} ${c.n}, ${countWords(c.value, statByKey(q.stat))}`
-
-/** "To match Cynthia Cooper's 2,187 points at game 100, Caitlin Clark needs 313 points over her next 5 games." */
-export function matchWords(row: Row, peer: Row, cmp: Comparison, q: Query): string | null {
-  if (!cmp.match) return null
-  const stat = statByKey(q.stat)
-  const m = cmp.match
-  return `To match ${peer.player.name}'s ${countWords(cmp.them[m.at - 1], stat)} at ${seqWords(q.seq, 1)} ${m.at}, ${row.player.name} needs ${countWords(Math.max(0, m.need), stat)} over her next ${K} ${seqWords(q.seq, K)}${m.need <= 0 ? ' (she is already past it)' : ''}.`
-}
-
 const unitWords = (q: Query) => (q.seq === 'teamGames' ? 'player-seasons' : 'careers')
 
-/** the row's claim as one sentence: "Caitlin Clark has 1,874 points through her 93 games, still inside the window." */
-export function claimWords(row: Row, q: Query, board: Board | null, firstSeason: number): string {
-  const since = q.since ?? firstSeason
-  const place = row.complete && row.value != null && board ? `, ${rankWords(row, board.ranked.length)} ${unitWords(q)} since ${since}` : row.value == null ? '' : ', still inside the window'
-  return `${row.player.name} has ${rowWords(row, q)}${place}.`
+/** the row's claim as one sentence: "Cynthia Cooper has 2,187 points through her first 100 games, 1st of 429 careers since 1997." */
+export function claimWords(q: Query, board: Board, row: Row): string {
+  const tail = row.complete && row.value != null ? `, ${rankWords(row, board.ranked.length)} ${unitWords(q)} since ${q.since ?? board.since}` : row.value == null ? '' : ', still inside the window'
+  return `${row.player.name} has ${rowWords(row, q)}${tail}.`
 }
+
+/** what the share button sends with the board's address: the open row's claim, else the sentence */
+export const shareText = (q: Query, board: Board | null, row: Row | null) => (board && row ? claimWords(q, board, row) : `${cap(queryWords(q))}.`)
 
 /** whether the address says more than the root page does: any slot off its default, or a player open */
 export function isShared(q: Query, open: string | null): boolean {
@@ -85,7 +44,7 @@ export function shareDescription(q: Query, board: Board | null, open: Row | null
   const unit = q.seq === 'teamGames' ? 'player-season' : 'career'
   const parts: string[] = []
   if (open) {
-    parts.push(claimWords(open, q, board, firstSeason))
+    parts.push(board ? claimWords(q, board, open) : `${open.player.name} has ${rowWords(open, q)}.`)
     if (peer) {
       if (peer.value != null) parts.push(`${rowName(peer)}: ${rowWords(peer, q)}.`)
       const cmp = compare(open, peer, q)

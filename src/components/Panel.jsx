@@ -1,13 +1,13 @@
 // The open player: the claim the row makes, a peer to read it against (the
 // leader by default; `vs` in the URL names another), where their curves
 // crossed, what the subject needs over the next games to match the peer,
-// and the window's games. The reading itself is src/lib/share.ts, shared
-// with the share worker so a link's words say what the panel shows.
+// and the window's games. The reading itself is src/lib/compare.ts, which
+// share.ts reads too, so a link's words say what the panel shows.
 import { useMemo, useState } from 'react'
 import { Picker } from './Picker.jsx'
 import { CloseIcon } from './Icons.jsx'
 import { holds } from '../lib/query.ts'
-import { compare, crossingWords, matchWords, peerOf, peersOf } from '../lib/share.ts'
+import { compare, crossingWords, matchWords, peerOf, peersOf } from '../lib/compare.ts'
 import { statByKey } from '../lib/stats.ts'
 import { rowName, rowWords, rankWords, testsWords } from '../lib/words.ts'
 import { fmtDate } from '../lib/ledger.ts'

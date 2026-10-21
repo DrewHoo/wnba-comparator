@@ -10,7 +10,8 @@ import { decodeLedger } from './lib/ledger.ts'
 import { evaluate, normalize, DEFAULT_QUERY } from './lib/query.ts'
 import { parseUrl, toUrl } from './lib/url.ts'
 import { queryWords } from './lib/words.ts'
-import { claimWords, peerOf, shareTitle } from './lib/share.ts'
+import { peerOf } from './lib/compare.ts'
+import { shareText, shareTitle } from './lib/share.ts'
 import { track } from './lib/analytics.ts'
 import { writeUrl } from './urlState.js'
 import file from './data/players.json'
@@ -28,6 +29,9 @@ export default function App() {
   const { copied, share } = useShare()
   // a `t=` deep link lands on its row once the board has rendered it
   const landOn = useRef(null)
+  const booted = useRef(false)
+  // the prerendered title, for the bare address
+  const rootTitle = useRef(null)
 
   // URL state after mount, never during render: the prerender has no window
   useEffect(() => {
@@ -36,6 +40,8 @@ export default function App() {
     setOpen(s.open)
     setVs(s.vs)
     landOn.current = s.open
+    rootTitle.current = document.title
+    booted.current = true
     track('query', { words: queryWords(s.query) })
   }, [])
 
@@ -50,8 +56,11 @@ export default function App() {
     if (el) requestAnimationFrame(() => window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - BACK_BAR }))
   }, [row])
 
-  // the tab says what the share worker would: the sentence, or the open comparison
-  useEffect(() => { document.title = shareTitle(query, row, peer) }, [query, row, peer])
+  // the tab says what the share worker would: the sentence, or the open comparison; the page's own title at the bare address
+  useEffect(() => {
+    if (!booted.current) return
+    document.title = toUrl({ query, open: row?.key ?? null, vs }) ? shareTitle(query, row, peer) : rootTitle.current
+  }, [query, row, peer, vs])
 
   const change = (q) => {
     const next = normalize(q)
@@ -86,8 +95,7 @@ export default function App() {
     track('peer', { player: open, vs: key })
   }
   const onShare = () => {
-    const text = row ? claimWords(row, query, board, L.firstSeason) : shareTitle(query)
-    share(text, window.location.href)
+    share(shareText(query, board, row), window.location.href)
     track('share', { words: queryWords(query), player: open, vs: peer?.key ?? null })
   }
 

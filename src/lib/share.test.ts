@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { cardHeading, cardRows, isShared, peerOf, shareDescription, shareTitle } from './share.ts'
+import { cardHeading, cardRows, claimWords, isShared, shareDescription, shareText, shareTitle } from './share.ts'
+import { peerOf } from './compare.ts'
 import { decodeLedger, type LedgerFile } from './ledger.ts'
 import { evaluate, DEFAULT_QUERY } from './query.ts'
 import { parseUrl } from './url.ts'
@@ -33,6 +34,9 @@ describe('share words', () => {
     const d = shareDescription(DEFAULT_QUERY, b, clark, L.firstSeason, peer)
     expect(d).toMatch(/^Caitlin Clark has 1,874 points through her 93 games, still inside the window\. Cynthia Cooper: 2,187 points through her first 100 games\. (Caitlin Clark (tied|passed|fell behind) Cynthia Cooper at game \d+, [\d,]+ points|Their curves never met)\. To match Cynthia Cooper's [\d,]+ points at game 98, Caitlin Clark needs [\d,]+ points over her next 5 games\./)
     expect(shareTitle(DEFAULT_QUERY, clark, peer)).toBe('Caitlin Clark vs Cynthia Cooper: most points through the first 100 games · WNBA Comparator')
+    // the share button's text: the open row's claim, else the sentence
+    expect(claimWords(DEFAULT_QUERY, b, b.ranked[0])).toBe('Cynthia Cooper has 2,187 points through her first 100 games, 1st of 429 careers since 1997.')
+    expect(shareText(DEFAULT_QUERY, b, null)).toBe('Players with the most points through their first 100 games.')
     // a named peer wins; an unknown one falls back to the leader
     expect(peerOf(b, clark, b.ranked[2].key)!.key).toBe(b.ranked[2].key)
     expect(peerOf(b, clark, 'nobody')!.key).toBe(b.ranked[0].key)
