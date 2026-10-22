@@ -1,6 +1,7 @@
 // What to read next, the citing ask and Ko-fi, and the Method notes: where
 // the games come from and the rulings the words rest on.
 import { track } from '../lib/analytics.ts'
+import { OTHERS } from '../../scripts/lib/siblings.mjs'
 
 export const KOFI_URL = 'https://ko-fi.com/drewhooverdotcom'
 
@@ -9,30 +10,11 @@ export function Notes({ ledger }) {
     <>
       <h2 className="notes-h">What to read next</h2>
       <div className="notes">
-        <p>
-          <a href="https://drewhoover.com/nfl-comparator/">NFL Comparator</a> — the same comparator over every NFL
-          career since 1999.
-        </p>
-        <p>
-          <a href="https://drewhoover.com/nhl-comparator/">NHL Comparator</a> — the same comparator over every NHL
-          career since 1917-18, Gretzky and Howe included.
-        </p>
-        <p>
-          <a href="https://drewhoover.com/nba-comparator/">NBA Comparator</a> — the same comparator over every NBA
-          career since 1946-47, Wilt and Jordan included, with a page for every player and what he leads.
-        </p>
-        <p>
-          <a href="https://drewhoover.com/cfb-streak-king/">College Football Streak King</a> — the longest active and
-          all-time win streaks and losing streaks in college football, under any definition, every FBS team since 1936.
-        </p>
-        <p>
-          <a href="https://drewhoover.com/hostile-territory/">Hostile Territory</a> — every head coach's true road
-          record against AP top-10 teams since 1936.
-        </p>
-        <p>
-          <a href="https://drewhoover.com/how-many-rings/">How Many Rings?</a> — every person on a
-          national-championship staff since 1990, ranked by the rings they can claim.
-        </p>
+        {OTHERS.map((s) => (
+          <p key={s.slug}>
+            <a href={s.url}>{s.name}</a> — {s.words}.
+          </p>
+        ))}
       </div>
 
       <h2 className="notes-h">Using a comparison from here</h2>

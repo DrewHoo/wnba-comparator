@@ -14,6 +14,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import config from '../site.config.js'
+import { OTHERS } from './lib/siblings.mjs'
 import pkg from '../package.json' with { type: 'json' }
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
@@ -82,7 +83,7 @@ function page({ initial, url, title, description, image, imageAlt, jsonLd }) {
     <meta name="twitter:image" content="${image}" />
 
     <!-- Cross-site chrome served by the index site: back bar, comments, analytics. -->
-    <script src="${ORIGIN}/embed/back-bar.js" async></script>
+    <script src="${ORIGIN}/embed/back-bar.js" data-section="sports" async></script>
     <script src="${ORIGIN}/embed/giscus.js" async></script>
     <script src="${ORIGIN}/embed/analytics.js" async></script>
 
@@ -158,6 +159,10 @@ ${llms.map(({ l, url, lead }) => `- [${l.h1}](${url})${lead ? `: ${lead}` : ''}`
 ## Method
 
 - [The method](${SITE}#method): what a game, a start and a win are here, where the box scores come from, and how positions were filled.
+
+## The other sports sites
+
+${OTHERS.map((s) => `- [${s.name}](${s.url}): ${s.words}.`).join('\n')}
 `)
 
 // --- the ledger, published for the share worker (workers/share), which draws a
