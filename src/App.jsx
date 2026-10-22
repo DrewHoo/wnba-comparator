@@ -69,14 +69,15 @@ export default function App({ initial = null }) {
     document.title = row ? shareTitle(query, row, peer) : l ? `${l.title} · WNBA Comparator` : toUrl({ query, open: null }) ? shareTitle(query) : rootTitle.current
   }, [query, row, peer, vs])
 
-  const change = (q) => {
+  // `track: false` is the typed number's keystrokes: the board and URL follow every one, the `query` event waits for blur
+  const change = (q, { track: tracked = true } = {}) => {
     const next = normalize(q)
     // a position change that drops the open player out of the field closes her
     const drops = row != null && next.pos !== 'ALL' && row.player.pos !== next.pos
     setQuery(next)
     if (drops) { setOpen(null); setVs(null) }
     writeUrl(toAddress({ query: next, open: drops ? null : open, vs: drops ? null : vs }), 'replace')
-    track('query', { words: queryWords(next) })
+    if (tracked) track('query', { words: queryWords(next) })
   }
   const openRow = (key) => {
     const next = open === key ? null : key

@@ -2,11 +2,13 @@
 // against whom, every word that can change a Picker. The shape of the
 // sentence follows `how` (a total, a count of games, every game, a streak,
 // a race to a number); src/lib/words.ts says the same sentence in prose.
+import { useEffect, useRef, useState } from 'react'
 import { Picker } from './Picker.jsx'
 import { Chevron } from './Icons.jsx'
 import { POSITIONS } from '../lib/ledger.ts'
 import { STATS, statByKey, isUnit } from '../lib/stats.ts'
-import { POS_WORDS, testWords, seqWords } from '../lib/words.ts'
+import { POS_WORDS, testWords, seqWords, queryWords } from '../lib/words.ts'
+import { track } from '../lib/analytics.ts'
 
 const POS_OPTIONS = POSITIONS.map((p) => ({ value: p, label: POS_WORDS[p] }))
 
@@ -50,19 +52,35 @@ const TEST_OPTIONS = testOptions()
 const testValue = (t) => `${t.stat}:${t.min}${t.max != null ? `-${t.max}` : ''}`
 const parseTest = (v) => { const m = /^([a-z]+):(\d+)(?:-(\d+))?$/.exec(v); return m[3] == null ? { stat: m[1], min: Number(m[2]) } : { stat: m[1], min: Number(m[2]), max: Number(m[3]) } }
 
-function NumberWord({ value, onChange, step = 1, wide, label }) {
+// the number in the sentence: a text box that holds what is typed (an empty box while retyping included) and
+// commits every whole number above zero as it is typed, so the board stays live; focus selects the number so
+// typing replaces it; leaving the box empty puts the value back. The `query` event fires once, on blur, and only
+// if the number changed while the box had focus; the steppers and arrow keys track per press.
+function NumberWord({ value, onChange, onTrack, step = 1, wide, label }) {
+  const [draft, setDraft] = useState(String(value))
+  const [editing, setEditing] = useState(false)
+  const atFocus = useRef(value)
+  useEffect(() => { if (!editing) setDraft(String(value)) }, [value, editing])
+  const commit = (s) => { const v = Number(s); if (s !== '' && Number.isInteger(v) && v > 0 && v !== value) onChange(v, { track: false }) }
+  const shown = editing ? draft : String(value)
   return (
     <span className="nwrap">
       <button className="nstep" onClick={() => onChange(Math.max(1, value - step))} aria-label={`${label} down`}><Chevron left /></button>
-      <input className={'nin' + (wide ? ' wide' : '')} type="number" min="1" value={value} aria-label={label}
-        onChange={(e) => { const v = Number(e.target.value); if (Number.isInteger(v) && v > 0) onChange(v) }} />
+      <input className={'nin' + (wide ? ' wide' : '')} type="text" inputMode="numeric" pattern="[0-9]*" value={shown} aria-label={label}
+        style={{ width: `${Math.max(wide ? 5 : 3, shown.length + 1)}ch` }}
+        onFocus={(e) => { setEditing(true); setDraft(String(value)); atFocus.current = value; e.target.select() }}
+        onChange={(e) => { const s = e.target.value.replace(/[^0-9]/g, ''); setDraft(s); commit(s) }}
+        onBlur={() => { setEditing(false); commit(draft); if (value !== atFocus.current) onTrack() }}
+        onKeyDown={(e) => { if (e.key === 'Enter') e.currentTarget.blur(); else if (e.key === 'ArrowUp') { e.preventDefault(); onChange(value + step) } else if (e.key === 'ArrowDown') { e.preventDefault(); onChange(Math.max(1, value - step)) } }} />
       <button className="nstep" onClick={() => onChange(value + step)} aria-label={`${label} up`}><Chevron /></button>
     </span>
   )
 }
 
 export function Sentence({ query, ledger, onChange }) {
-  const set = (patch) => onChange({ ...query, ...patch })
+  const set = (patch, opts) => onChange({ ...query, ...patch }, opts)
+  // the typed number's one `query` event, on blur; `query` here is the committed one, the board already shows it
+  const trackTyped = () => track('query', { words: queryWords(query) })
   const seqOptions = [
     { value: 'games', label: seqWords('games', query.n) },
     { value: 'starts', label: seqWords('starts', query.n), hint: `flagged since ${ledger.startsSince}` },
@@ -85,7 +103,7 @@ export function Sentence({ query, ledger, onChange }) {
       <Picker value={`${query.how}:${query.dir}`} options={HOW_OPTIONS} onChange={(v) => { const [how, dir] = v.split(':'); set({ how, dir }) }} ariaLabel="How the games count" />
       {query.how === 'reach' && (
         <>
-          <NumberWord value={query.n} onChange={(n) => set({ n })} step={stat.thresholds[0] >= 10 ? 100 : 10} wide label="The target" />
+          <NumberWord value={query.n} onChange={(n, opts) => set({ n }, opts)} onTrack={trackTyped} step={stat.thresholds[0] >= 10 ? 100 : 10} wide label="The target" />
           <Picker value={query.stat} options={STAT_OPTIONS} onChange={(stat) => set({ stat })} ariaLabel="The stat" />
           <span>by</span>
           <Picker value={query.seq} options={reachSeq} onChange={(seq) => set({ seq })} ariaLabel="Counting what" />
@@ -112,7 +130,7 @@ export function Sentence({ query, ledger, onChange }) {
       )}
       {query.how !== 'reach' && (
         <>
-          <NumberWord value={query.n} onChange={(n) => set({ n })} label="The window" />
+          <NumberWord value={query.n} onChange={(n, opts) => set({ n }, opts)} onTrack={trackTyped} label="The window" />
           <Picker value={query.seq} options={seqOptions} onChange={(seq) => set({ seq })} ariaLabel="Counting what" />
         </>
       )}

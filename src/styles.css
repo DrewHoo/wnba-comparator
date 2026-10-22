@@ -90,12 +90,11 @@ h1.h1-q { font-size: clamp(22px, 3.6vw, 36px); letter-spacing: 0.01em; max-width
 .nwrap { display: inline-flex; align-items: center; gap: 2px; }
 .nin {
   font: inherit; font-weight: 600; color: var(--cream); background: transparent; border: none;
-  border-bottom: 1px dashed var(--ink-faint); padding: 0 0 1px; width: 4.2ch; text-align: center;
-  -moz-appearance: textfield; appearance: textfield;
+  border-bottom: 1px dashed var(--ink-faint); padding: 0 0 1px; min-width: 3ch; text-align: center;
 }
 .nin::-webkit-outer-spin-button, .nin::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 .nin:focus { outline: none; border-bottom-style: solid; border-bottom-color: var(--cream); }
-.nin.wide { width: 6.5ch; }
+.nin.wide { min-width: 5ch; }
 .nstep {
   background: transparent; border: none; color: var(--ink-faint); cursor: pointer; padding: 4px 3px;
   display: inline-flex; border-radius: 4px; font: inherit;
