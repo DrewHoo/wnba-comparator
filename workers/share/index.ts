@@ -9,10 +9,12 @@
 //                   src/lib/share.ts (pure); a crawler's request also gets
 //                   the leader or the open player's claim, read from the
 //                   ledger.
-//   /share/og.png   the board drawn on demand (card.ts): the worker fetches
+//   /share/og.png   the card drawn on demand (card.ts): the worker fetches
 //                   the ledger the prerender publishes (dist/share/players.json),
 //                   runs the site's own evaluate, and renders the top of the
-//                   board. Cached at the edge.
+//                   board, or, with a player open (t=), her against her peer
+//                   (vs=, else the leader): both sides, the panel's curves and
+//                   its lines (share.ts cardComparison). Cached at the edge.
 //
 // Anything else — and anything that goes wrong — passes through untouched:
 // this worker must never be the reason the site is down.
@@ -28,7 +30,7 @@ import { evaluate, type Board, type Row } from '../../src/lib/query.ts';
 import { toUrl } from '../../src/lib/url.ts';
 import { parseLocation } from '../../src/lib/landing.ts';
 import { queryWords } from '../../src/lib/words.ts';
-import { cardHeading, cardRows, isShared, shareDescription, shareTitle } from '../../src/lib/share.ts';
+import { cardComparison, cardHeading, cardRows, isShared, shareDescription, shareTitle } from '../../src/lib/share.ts';
 import { peerOf } from '../../src/lib/compare.ts';
 import { renderCard } from './card.ts';
 
@@ -114,7 +116,7 @@ const urlProps = (url: URL) => {
 };
 
 /** Bump on any change to what the card draws or how a URL reads; it keys the edge cache. */
-const CARD_VERSION = '2026-10-21a';
+const CARD_VERSION = '2026-10-22c';
 
 const edge = (ttl: number) => ({ cf: { cacheEverything: true, cacheTtlByStatus: { '200-299': ttl, '400-599': 30 } } }) as RequestInit;
 // a fresh cache key each UTC day: GitHub Pages ignores query strings, and a
@@ -142,14 +144,21 @@ const findRow = (board: Board, key: string | null): Row | null => (key ? [...boa
 
 async function ogCard(origin: string, search: string): Promise<Response> {
   const L = await loadLedger(origin);
-  const { query, open } = parseLocation('', search);
+  const { query, open, vs } = parseLocation('', search);
   const board = evaluate(L, query);
-  const res = renderCard({
-    heading: cardHeading(query),
-    words: queryWords(query),
-    rows: cardRows(board, query, open),
-    footer: `${query.since ?? L.firstSeason}–${L.currentSeason} · ${board.ranked.length.toLocaleString('en-US')} ${query.seq === 'teamGames' ? 'player-seasons' : 'careers'} with the whole window · drewhoover.com`,
-  });
+  // an open player is read against her peer (vs=, else the leader), as the panel does
+  const row = findRow(board, open);
+  const peer = row ? peerOf(board, row, vs) : null;
+  const field = `${board.ranked.length.toLocaleString('en-US')} ${query.seq === 'teamGames' ? 'player-seasons' : 'careers'} with the whole window`;
+  const comparison = row && peer ? cardComparison(query, board, row, peer) : null;
+  const res = renderCard(comparison
+    ? { heading: comparison.heading, words: queryWords(query), comparison, footer: `${query.since ?? L.firstSeason}–${L.currentSeason} · ${field} · drewhoover.com` }
+    : {
+      heading: cardHeading(query),
+      words: queryWords(query),
+      rows: cardRows(board, query, open),
+      footer: `${query.since ?? L.firstSeason}–${L.currentSeason} · ${field} · drewhoover.com`,
+    });
   // buffer the render: workers-og streams lazily, and a failure mid-stream
   // would otherwise ship a 200 with an empty body
   const png = await res.arrayBuffer();
@@ -178,7 +187,7 @@ export default {
         const canon = toUrl(parseLocation('', url.search));
         const key = new Request(`${url.origin}${url.pathname}?v=${CARD_VERSION}&${canon.slice(1)}`, { method: 'GET' });
         const cached = await caches.default.match(key);
-        report(env, ctx, request, 'share card', { ...urlProps(url), cached: !!cached });
+        report(env, ctx, request, 'share card', { ...urlProps(url), cached: !!cached, kind: url.searchParams.has('t') ? 'comparison' : 'board' });
         if (cached) return cached;
         const res = await ogCard(origin, url.search);
         ctx.waitUntil(caches.default.put(key, res.clone()));

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { cardHeading, cardRows, claimWords, isShared, shareDescription, shareText, shareTitle } from './share.ts'
+import { cardComparison, cardHeading, cardRows, claimWords, isShared, shareDescription, shareText, shareTitle } from './share.ts'
 import { peerOf } from './compare.ts'
 import { decodeLedger, type LedgerFile } from './ledger.ts'
 import { evaluate, DEFAULT_QUERY } from './query.ts'
@@ -47,5 +47,22 @@ describe('share words', () => {
     expect(rows).toHaveLength(6)
     expect(rows[0].name).toBe('Cynthia Cooper')
     expect(rows[5]).toMatchObject({ name: 'Caitlin Clark', rank: '—', span: 'thru 93', live: true, hi: true })
+  })
+  it('a comparison card reads the open player against her peer: both sides, where they met, the curves', () => {
+    const b = evaluate(L, DEFAULT_QUERY)
+    const clark = b.onTheWay.find((r) => r.player.name === 'Caitlin Clark')!
+    const c = cardComparison(DEFAULT_QUERY, b, clark, peerOf(b, clark, null)!)
+    expect(c.heading).toBe('Caitlin Clark vs Cynthia Cooper')
+    expect(c.sides[0]).toEqual({ name: 'Caitlin Clark', value: '1,874', unit: 'points', claim: 'inside the window · through her 93 games' })
+    expect(c.sides[1]).toEqual({ name: 'Cynthia Cooper', value: '2,187', unit: 'points', claim: '1st of 429 · through her first 100 games' })
+    expect(c.lines[1]).toMatch(/^To match Cynthia Cooper's [\d,]+ points at game 98, Caitlin Clark needs/)
+    expect(c.chart!.n).toBe(100)
+    expect(c.chart!.me.length).toBeGreaterThanOrEqual(93)
+    // a player-season board has no curve: the lines are the two claims
+    const q = { ...DEFAULT_QUERY, seq: 'teamGames' as const, n: 40 }
+    const sb = evaluate(L, q)
+    const s = cardComparison(q, sb, sb.ranked[1], sb.ranked[0])
+    expect(s.chart).toBeNull()
+    expect(s.lines).toHaveLength(2)
   })
 })

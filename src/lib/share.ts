@@ -7,7 +7,7 @@
 import type { Board, Query, Row } from './query.ts'
 import { DEFAULT_QUERY } from './query.ts'
 import { compare, crossingWords, matchWords } from './compare.ts'
-import { statByKey } from './stats.ts'
+import { countWords, statByKey } from './stats.ts'
 import { queryWords, rowName, rowWords, rankWords, seqWords, testsWords } from './words.ts'
 
 export const SITE = 'WNBA Comparator'
@@ -108,4 +108,52 @@ export function cardRows(board: Board, q: Query, open: string | null, n = 6): Ca
     live: way(r),
     hi: r.key === open,
   }))
+}
+
+/** one side of a comparison card: the name, the value, its unit, the claim in small print */
+export interface CardSide {
+  name: string
+  value: string
+  /** "points", "games" */
+  unit: string
+  /** "1st of 429 · through her first 100 games" */
+  claim: string
+}
+
+/** the comparison card's words: both sides, the panel's lines under them, the curves when there are any */
+export interface CardComparison {
+  heading: string
+  sides: [CardSide, CardSide]
+  lines: string[]
+  chart: { me: number[]; them: number[]; n: number; unit: string } | null
+}
+
+/** the card a `t=` link draws: the open row against her peer, as the panel reads them */
+export function cardComparison(q: Query, board: Board, row: Row, peer: Row): CardComparison {
+  const stat = statByKey(q.stat)
+  const unit = q.how === 'reach' ? seqWords(q.seq, 2) : q.how === 'sum' ? stat.noun : 'games'
+  const field = board.ranked.length
+  const place = (r: Row) => (r.complete && r.value != null ? rankWords(r, field) : 'inside the window')
+  const claim = (r: Row) =>
+    r.value == null ? `${r.reached} ${seqWords(q.seq, r.reached)} so far`
+      : r.season != null ? `${r.team}'s first ${q.n} games of ${r.season}`
+      : q.how === 'reach' ? `to ${countWords(q.n, stat)}`
+      : `through ${r.complete ? 'her first' : 'her'} ${r.reached} ${seqWords(q.seq, r.reached)}`
+  const side = (r: Row): CardSide => ({ name: rowName(r), value: r.value == null ? '—' : r.value.toLocaleString('en-US'), unit, claim: `${place(r)} · ${claim(r)}` })
+  const cmp = compare(row, peer, q)
+  const lines: string[] = []
+  if (cmp) {
+    lines.push(cmp.xs[0] ? `${row.player.name} ${crossingWords(cmp.xs[0], peer, q)}.` : 'Their curves never met.')
+    const m = matchWords(row, peer, cmp, q)
+    if (m) lines.push(m)
+  } else {
+    lines.push(`${rowName(row)}: ${rowWords(row, q)}.`)
+    if (peer.value != null) lines.push(`${rowName(peer)}: ${rowWords(peer, q)}.`)
+  }
+  return {
+    heading: `${row.player.name} vs ${peer.player.name}`,
+    sides: [side(row), side(peer)],
+    lines,
+    chart: cmp ? { me: cmp.me, them: cmp.them, n: cmp.n, unit: seqWords(q.seq, 1) } : null,
+  }
 }
