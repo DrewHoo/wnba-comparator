@@ -60,6 +60,8 @@ export interface Row {
   to: number
   /** the team of a player-season */
   team: string | null
+  /** the player's age at the window's last game, where her birth date is known */
+  age: number | null
   rank: number
   /** competition rank with ties: "T-3rd" */
   tied: boolean
@@ -172,8 +174,8 @@ export function evaluate(ledger: Ledger, raw: Query): Board {
   const ranked: Row[] = []
   const onTheWay: Row[] = []
   let gapped = 0
-  const push = (r: Row) => (r.complete && r.value != null ? ranked : onTheWay).push(r)
-  const blank = { rank: 0, tied: false }
+  const push = (r: Row) => { r.age = ageAtWindow(r); (r.complete && r.value != null ? ranked : onTheWay).push(r) }
+  const blank = { rank: 0, tied: false, age: null }
 
   for (const p of ledger.players) {
     if (!inField(p, q.pos)) continue

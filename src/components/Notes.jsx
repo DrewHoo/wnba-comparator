@@ -39,7 +39,7 @@ export function Notes({ ledger }) {
           publishes, CC BY 4.0, {ledger.firstSeason} to {ledger.currentSeason}, every game of every season, rebuilt from
           the files of {String(ledger.builtAt).slice(0, 10)}. The league's first season is {ledger.firstSeason}, so a
           claim here holds for the whole league. The sections below say where the games come from, what the box score
-          records and since when, and what the words mean.
+          records and since when, what the words mean, and why the old names sit where they do.
         </p>
 
         <details>
@@ -84,7 +84,28 @@ export function Notes({ ledger }) {
             Ranks are competition ranks, ties included. "Still inside the window" lists the players who haven't played the
             whole window yet, with their total so far. The panel reads a row against a peer: where their curves met, and
             what the player needs over the next five games to match the peer there; the peer rides in the url, so a shared
-            link opens the same comparison.
+            link opens the same comparison. On a "fastest to" board the small text under the number is the player's
+            age at the game she got there, where her birth date is known.
+          </p>
+        </details>
+
+        <details>
+          <summary>Why the old names sit where they do, and the eras</summary>
+          <p>
+            A career window favors the league's first seasons. The founding stars arrived as finished pros (Cynthia
+            Cooper played her first WNBA game at 34, with a decade in Europe behind her), the first seasons were 28 to 32
+            games against 40 and 44 now, and eight teams held all the talent. So "fastest to 1,000 points" reads Cooper
+            first, and the modern names on these boards are the ones who were great from game one. The board shows a
+            player's age where her birth date is known. The bios that carry it begin with the 2003 box scores, so many
+            of the founding players have none, Cooper among them.
+          </p>
+          <p>
+            The era word in the sentence is how to ask the fair question. Its cuts are the league's own: {ledger.startsSince},
+            the first season with an ESPN box score for every game, so the starts fields begin there; 2006, four
+            10-minute quarters in place of two 20-minute halves and the 24-second shot clock in place of the 30; 2013,
+            the three-point line moved out to the FIBA distance and the defensive three-second rule; 2020, the new
+            collective bargaining agreement and the 22-game bubble season in Bradenton; 2024, charter flights for every
+            team and the draft class that brought the league its record crowds.
           </p>
         </details>
 

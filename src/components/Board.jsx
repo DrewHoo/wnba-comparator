@@ -16,7 +16,7 @@ function ValueCell({ r, q }) {
   return (
     <span className={'bval' + (r.complete ? '' : ' otl')}>
       {n.toLocaleString('en-US')}
-      <small>{q.how === 'reach' ? seqWords(q.seq, n) : r.complete ? (q.how === 'every' ? `of ${q.n}` : '') : `thru ${r.reached}`}</small>
+      <small>{q.how === 'reach' ? `${seqWords(q.seq, n)}${r.age != null ? ` · age ${r.age}` : ''}` : r.complete ? (q.how === 'every' ? `of ${q.n}` : '') : `thru ${r.reached}`}</small>
     </span>
   )
 }

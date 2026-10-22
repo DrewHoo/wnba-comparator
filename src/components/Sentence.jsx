@@ -29,11 +29,18 @@ const SCOPE_OPTIONS = [
   { value: 'all', label: 'playoffs included' },
 ]
 
-// the eras: the whole ledger, the first season with the starter flag, then a few round cuts
+// the eras: the whole ledger, then the league's own breakpoints, each a change in how the game was played or
+// recorded; the first is the ledger's box-score wall (the starter flag), read from the ledger, never typed
+export const ERAS = [
+  [2006, 'four 10-minute quarters, the 24-second clock'],
+  [2013, 'the FIBA three-point line, defensive three seconds'],
+  [2020, 'the new CBA, the bubble season'],
+  [2024, 'charter flights, the 2024 draft class'],
+]
 const eraOptions = (ledger) => [
   { value: 0, label: `since ${ledger.firstSeason}`, hint: 'the whole league' },
-  { value: ledger.startsSince, label: `since ${ledger.startsSince}`, hint: 'starts flagged' },
-  ...[2008, 2013, 2016, 2020, 2024].filter((y) => y > ledger.startsSince && y < ledger.currentSeason).map((y) => ({ value: y, label: `since ${y}` })),
+  { value: ledger.startsSince, label: `since ${ledger.startsSince}`, hint: 'the ESPN box score: starts flagged' },
+  ...ERAS.filter(([y]) => y > ledger.startsSince && y < ledger.currentSeason).map(([y, hint]) => ({ value: y, label: `since ${y}`, hint })),
 ]
 
 const STAT_OPTIONS = STATS.map((s) => ({ value: s.key, label: s.noun }))

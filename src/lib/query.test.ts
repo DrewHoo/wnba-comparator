@@ -31,6 +31,11 @@ describe('the gate', () => {
     expect(w.complete).toBe(true)
   })
 
+  it("a row carries the age at its window's last game, where the birth date is known", () => {
+    expect(row(season('pts', 40), "A'ja Wilson", 2024)!.age).toBe(28) // born Aug 8, 1996; the 2024 season ended in September
+    expect(row(season('pts', 28), 'Cynthia Cooper', 1997)!.age).toBeNull() // no ESPN bio
+  })
+
   it('Caitlin Clark had 337 assists in 2024, the single-season record at the time (WNBA)', () => {
     const c = row(season('ast', 40), 'Caitlin Clark', 2024)!
     expect(c.value).toBe(337)
