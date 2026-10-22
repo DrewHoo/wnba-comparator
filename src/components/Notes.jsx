@@ -14,6 +14,10 @@ export function Notes({ ledger }) {
           career since 1999.
         </p>
         <p>
+          <a href="https://drewhoover.com/nba-comparator/">NBA Comparator</a> — the same comparator over every NBA
+          career since 1946-47, Wilt and Jordan included, with a page for every player and what he leads.
+        </p>
+        <p>
           <a href="https://drewhoover.com/cfb-streak-king/">College Football Streak King</a> — the longest active and
           all-time win streaks and losing streaks in college football, under any definition, every FBS team since 1936.
         </p>
@@ -77,7 +81,7 @@ export function Notes({ ledger }) {
           link opens the same comparison.
         </p>
         <p>
-          A sibling of <a href="https://drewhoover.com/nfl-comparator/">NFL Comparator</a> and{' '}
+          A sibling of <a href="https://drewhoover.com/nfl-comparator/">NFL Comparator</a>, <a href="https://drewhoover.com/nba-comparator/">NBA Comparator</a> and{' '}
           <a href="https://drewhoover.com/cfb-streak-king/">College Football Streak King</a>.
         </p>
       </section>
