@@ -21,7 +21,16 @@ const mount = (app) => {
 // needs no ledger, so the board (and the 2MB ledger it bundles) loads only
 // for the board
 const player = /^player\/([^/]+)\/?$/.exec(rel)
-if (player) {
+// a team page at team/<id>/<position>/ and the index at team/ carry their data the same way
+const team = /^team\/(?:([^/]+)\/([^/]+)\/?)?$/.exec(rel)
+const embedded = (id) => { try { const el = document.getElementById(id); return el ? JSON.parse(el.textContent) : null } catch { return null } }
+if (team) {
+  import('./components/GroupPage.jsx').then(({ GroupPage, GroupIndex }) => {
+    const preload = embedded('group-data')
+    if (!team[1]) return mount(<GroupIndex preload={preload} />)
+    import('./lib/groups.ts').then(({ posFromSlug }) => mount(<GroupPage id={decodeURIComponent(team[1]).toUpperCase()} pos={posFromSlug(team[2])} preload={preload} />))
+  })
+} else if (player) {
   const data = document.getElementById('player-data')
   let preload = null
   try { preload = data ? JSON.parse(data.textContent) : null } catch {}

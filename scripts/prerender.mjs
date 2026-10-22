@@ -20,6 +20,7 @@ import config from '../site.config.js'
 import { OTHERS } from './lib/siblings.mjs'
 import { toPng } from './lib/og.mjs'
 import { playerCard } from './lib/og-player.mjs'
+import { groupCard } from './lib/og-group.mjs'
 import pkg from '../package.json' with { type: 'json' }
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
@@ -40,6 +41,8 @@ const vite = await createServer({
 })
 const { default: App } = await vite.ssrLoadModule('/src/App.jsx')
 const { PlayerPage } = await vite.ssrLoadModule('/src/components/PlayerPage.jsx')
+const { GroupPage, GroupIndex } = await vite.ssrLoadModule('/src/components/GroupPage.jsx')
+const { FRANCHISES, GROUP_POS, POS_SLUG, groupData, groupDescription, groupH1, groupLead, groupPath, groupTitle } = await vite.ssrLoadModule('/src/lib/groups.ts')
 const { decodePlayer, page: playerFamilies } = await vite.ssrLoadModule('/src/lib/records.ts')
 const { placeWords, recordWords } = await vite.ssrLoadModule('/src/lib/words.ts')
 const { LANDINGS } = await vite.ssrLoadModule('/src/lib/landing.ts')
@@ -69,7 +72,7 @@ if (!template.includes('<div id="root"></div>')) throw new Error('prerender: cou
 if (!/<title>[^<]*<\/title>/.test(template)) throw new Error('prerender: could not find <title> in dist/index.html')
 
 /** one page: the app rendered with its own query (or `element`, a player's page), and a head that says what the page is; `embed` rides in the HTML for the hydrate */
-function page({ initial, element, embed, url, title, description, image, imageAlt, jsonLd }) {
+function page({ initial, element, embed, embedId = 'player-data', url, title, description, image, imageAlt, jsonLd }) {
   const appHtml = renderToString(element ?? React.createElement(App, { initial }))
   const head = `
     <meta name="description" content="${esc(description)}" />
@@ -100,7 +103,7 @@ function page({ initial, element, embed, url, title, description, image, imageAl
   let html = template.replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`)
   html = html.replace('</head>', head)
   html = html.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`)
-  if (embed) html = html.replace('<script type="module"', `<script id="player-data" type="application/json">${JSON.stringify(embed).replace(/</g, '\\u003c')}</script>\n    <script type="module"`)
+  if (embed) html = html.replace('<script type="module"', `<script id="${embedId}" type="application/json">${JSON.stringify(embed).replace(/</g, '\\u003c')}</script>\n    <script type="module"`)
   return { html, words: appHtml.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length }
 }
 
@@ -191,6 +194,64 @@ for (const entry of index) {
 await Promise.all(pending)
 console.log(`prerendered ${players} player pages, each with its card, in ${((Date.now() - t0) / 1000).toFixed(1)}s`)
 
+// --- the team pages: the best guards, forwards and centers of every franchise, with a card each, and the index
+// that reaches them all; a name links to her page where she has one
+const pages = index.filter((e) => e.n).map((e) => e.id)
+const hasPage = new Set(pages)
+const teamIndex = []
+const llmsTeams = []
+let teams = 0
+const t1 = Date.now()
+for (const f of FRANCHISES) {
+  const entry = { id: f.id, name: f.name, active: f.active, pos: [] }
+  for (const pos of GROUP_POS) {
+    const d = groupData(L, f, pos)
+    if (!d.rows.length) continue
+    const url = `${SITE}${groupPath(f.id, pos).slice(1)}`
+    const title = groupTitle(d, config.title)
+    const description = groupDescription(d)
+    // the page links only the players it lists
+    const embed = { data: d, pages: d.rows.filter((r) => hasPage.has(r.id)).map((r) => r.id) }
+    const { html } = page({
+      element: React.createElement(GroupPage, { id: f.id, pos, preload: embed }), embed, embedId: 'group-data',
+      url, title, description, image: `${url}og.png`, imageAlt: `${groupH1(d)}: ${groupLead(d)} On a dark background.`,
+      jsonLd: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          { ...webPage(url, title, description), about: { '@type': 'SportsTeam', name: f.name.replace(/ \(.*\)$/, ''), sport: 'Basketball', memberOf: { '@type': 'SportsOrganization', name: 'WNBA' } } },
+          breadcrumb([[config.domain, `${ORIGIN}/`], [config.title, SITE], ['Every team', `${SITE}team/`], [groupH1(d), url]]),
+          { '@type': 'ItemList', name: groupH1(d), itemListOrder: 'https://schema.org/ItemListOrderDescending', numberOfItems: Math.min(10, d.rows.length), itemListElement: d.rows.slice(0, 10).map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: `${r.name}: ${r.totals[0].toLocaleString('en-US')} ${d.metrics[0] === 'pts' ? 'points' : d.metrics[0]}`, ...(hasPage.has(r.id) ? { url: `${SITE}player/${encodeURIComponent(r.id)}/` } : {}) })) },
+        ],
+      },
+    })
+    const dir = path.join(ROOT, 'dist/team', f.id.toLowerCase(), POS_SLUG[pos])
+    fs.mkdirSync(dir, { recursive: true })
+    fs.writeFileSync(path.join(dir, 'index.html'), html)
+    await draw(groupCard(d), path.join(dir, 'og.png'))
+    urls.push(url)
+    entry.pos.push(pos)
+    if (f.active && pos === 'G') llmsTeams.push({ h1: groupH1(d), url, lead: groupLead(d) })
+    teams++
+  }
+  if (entry.pos.length) teamIndex.push(entry)
+}
+{
+  const url = `${SITE}team/`
+  const title = `Every WNBA team's best players by position · ${config.title}`
+  const description = `The best guards, forwards and centers in the history of every WNBA franchise, its earlier cities included, and of the teams that folded, each with the players' numbers drawn game by game.`
+  const embed = { items: teamIndex }
+  const { html } = page({
+    element: React.createElement(GroupIndex, { preload: embed }), embed, embedId: 'group-data',
+    url, title, description, image: `${SITE}og.png`, imageAlt: config.ogImageAlt,
+    jsonLd: { '@context': 'https://schema.org', '@graph': [webPage(url, title, description), breadcrumb([[config.domain, `${ORIGIN}/`], [config.title, SITE], ['Every team', url]])] },
+  })
+  fs.mkdirSync(path.join(ROOT, 'dist/team'), { recursive: true })
+  fs.writeFileSync(path.join(ROOT, 'dist/team/index.html'), html)
+  urls.push(url)
+}
+await Promise.all(pending)
+console.log(`prerendered ${teams} team pages (${teamIndex.length} franchises) with cards, and the index, in ${((Date.now() - t1) / 1000).toFixed(1)}s`)
+
 // --- the sitemap: every page, with lastmod; the index site's sitemap index lists it
 const lastmod = new Date().toISOString().slice(0, 10)
 fs.writeFileSync(path.join(ROOT, 'dist/sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
@@ -217,6 +278,12 @@ ${llms.map(({ l, url, lead }) => `- [${l.h1}](${url})${lead ? `: ${lead}` : ''}`
 Every player who leads a comparison at some point in her career has a page at ${SITE}player/<id>/ (${players} of them): every comparison she leads, or a record she set that was later broken, each linked to its board. The pages with the strongest claims:
 
 ${llmsPlayers.map((p) => `- [${p.name}](${p.url}): ${p.lead}.`).join('\n')}
+
+## Teams
+
+Every franchise's best guards, forwards and centers, its earlier cities included, and the folded teams': ${teams} pages from ${SITE}team/. The guards of the current teams:
+
+${llmsTeams.map((t) => `- [${t.h1}](${t.url}): ${t.lead}`).join('\n')}
 
 ## Method
 
