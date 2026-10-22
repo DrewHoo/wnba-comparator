@@ -146,7 +146,7 @@ ruling there usually holds here.
   a card; a browser gets the pure sentence as its title and the page sets `document.title`
   itself once it hydrates, so a person never waits on the 8MB decode.
 - The finder's index (`public/players/index.json`) is gitignored and written by
-  `npm run index` (and first thing in `npm run build`); the dev server 404s it until
+  `npm run records` (and first thing in `npm run build`); the dev server 404s it until
   then and the finder says "loading…" forever. A Radix dropdown hands focus back to its
   trigger when it closes, which scrolls the page to the dateline; the finder's menu
   sets `onCloseAutoFocus` to prevent that so a pick can land on the row.

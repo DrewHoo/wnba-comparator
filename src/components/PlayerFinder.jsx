@@ -1,6 +1,6 @@
 // Find a player: a filter box over every player in the ledger, in a dropdown
 // (Streak King's team picker, without the phone sheet). The list is
-// public/players/index.json (scripts/build-index.mjs), fetched the first
+// public/players/index.json (scripts/build-records.mjs), fetched the first
 // time the menu opens; a pick opens her row on the board (there are no
 // player pages yet).
 import { useEffect, useMemo, useState } from 'react'
