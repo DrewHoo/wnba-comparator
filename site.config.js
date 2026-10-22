@@ -6,6 +6,8 @@ import { FIRST_SEASON } from './scripts/lib/window.mjs'
 export default {
   domain: 'drewhoover.com',
   title: 'WNBA Comparator',
+  // the root's <title> and og:title: the query the page can win, then the name
+  pageTitle: 'Compare WNBA players at the same point in their careers · WNBA Comparator',
   // the year is the ledger's first season (scripts/lib/window.mjs), never typed here
   description:
     `Compare WNBA players at the same point in their careers: points through the first 100 games, assists through a rookie season, fastest to 1,000 points, 30-point games in a season's first 20. Build the comparison, see who stacks up, every career since ${FIRST_SEASON}.`,

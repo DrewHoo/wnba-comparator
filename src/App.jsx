@@ -8,7 +8,9 @@ import { CoffeeIcon, ShareIcon } from './components/Icons.jsx'
 import { useShare } from './hooks/useShare.ts'
 import { decodeLedger } from './lib/ledger.ts'
 import { evaluate, normalize, DEFAULT_QUERY } from './lib/query.ts'
-import { parseUrl, toUrl } from './lib/url.ts'
+import { toUrl } from './lib/url.ts'
+import { landingFor, parseLocation, toAddress } from './lib/landing.ts'
+import { Landings } from './components/Landings.jsx'
 import { queryWords } from './lib/words.ts'
 import { peerOf } from './lib/compare.ts'
 import { shareText, shareTitle } from './lib/share.ts'
@@ -21,9 +23,13 @@ const L = decodeLedger(file)
 
 /** the open row's top, clear of the index site's sticky back bar */
 const BACK_BAR = 64
+const BASE = import.meta.env.BASE_URL
+/** the path relative to the site's base: "fastest-to-1000-points/" on a landing, "" at the root */
+const relPath = (pathname) => (pathname.startsWith(BASE) ? pathname.slice(BASE.length) : pathname.replace(/^\//, ''))
 
-export default function App() {
-  const [query, setQuery] = useState(DEFAULT_QUERY)
+/** `initial` is the page's own query (a landing's, from its path; the prerender and main.jsx pass the same one, so the hydrate matches) */
+export default function App({ initial = null }) {
+  const [query, setQuery] = useState(initial?.query ?? DEFAULT_QUERY)
   const [open, setOpen] = useState(null)
   const [vs, setVs] = useState(null)
   const { copied, share } = useShare()
@@ -35,7 +41,7 @@ export default function App() {
 
   // URL state after mount, never during render: the prerender has no window
   useEffect(() => {
-    const s = parseUrl(window.location.search)
+    const s = parseLocation(relPath(window.location.pathname), window.location.search)
     setQuery(s.query)
     setOpen(s.open)
     setVs(s.vs)
@@ -56,10 +62,11 @@ export default function App() {
     if (el) requestAnimationFrame(() => window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - BACK_BAR }))
   }, [row])
 
-  // the tab says what the share worker would: the sentence, or the open comparison; the page's own title at the bare address
+  // the tab says what the share worker would: the open comparison, a landing's own title, the sentence; the page's own title at the bare address
   useEffect(() => {
     if (!booted.current) return
-    document.title = toUrl({ query, open: row?.key ?? null, vs }) ? shareTitle(query, row, peer) : rootTitle.current
+    const l = landingFor(query)
+    document.title = row ? shareTitle(query, row, peer) : l ? `${l.title} · WNBA Comparator` : toUrl({ query, open: null }) ? shareTitle(query) : rootTitle.current
   }, [query, row, peer, vs])
 
   const change = (q) => {
@@ -68,14 +75,14 @@ export default function App() {
     const drops = row != null && next.pos !== 'ALL' && row.player.pos !== next.pos
     setQuery(next)
     if (drops) { setOpen(null); setVs(null) }
-    writeUrl(toUrl({ query: next, open: drops ? null : open, vs: drops ? null : vs }), 'replace')
+    writeUrl(toAddress({ query: next, open: drops ? null : open, vs: drops ? null : vs }), 'replace')
     track('query', { words: queryWords(next) })
   }
   const openRow = (key) => {
     const next = open === key ? null : key
     setOpen(next)
     setVs(null)
-    writeUrl(toUrl({ query, open: next }), 'replace')
+    writeUrl(toAddress({ query, open: next }), 'replace')
     if (next) track('open', { player: next })
   }
   // the finder: open her row and land on it, wherever it is on the board; a player-season board opens her latest season
@@ -85,19 +92,21 @@ export default function App() {
     landOn.current = key
     setOpen(key)
     setVs(null)
-    writeUrl(toUrl({ query, open: key }), 'replace')
+    writeUrl(toAddress({ query, open: key }), 'replace')
     track('open', { player: key, from: 'finder' })
   }
   // the peer the panel reads against, in the URL so a shared link opens the same comparison
   const setPeer = (key) => {
     setVs(key)
-    writeUrl(toUrl({ query, open, vs: key }), 'replace')
+    writeUrl(toAddress({ query, open, vs: key }), 'replace')
     track('peer', { player: open, vs: key })
   }
   const onShare = () => {
     share(shareText(query, board, row), window.location.href)
     track('share', { words: queryWords(query), player: open, vs: peer?.key ?? null })
   }
+
+  const landing = landingFor(query)
 
   return (
     <main>
@@ -110,7 +119,7 @@ export default function App() {
           {copied && <span className="toast">copied</span>}
         </span>
       </div>
-      <h1>WNBA Comparator</h1>
+      {landing ? <><p className="kicker"><a href={BASE}>WNBA Comparator</a></p><h1 className="h1-q">{landing.h1}</h1></> : <h1>WNBA Comparator</h1>}
       <Sentence query={query} ledger={L} onChange={change} />
       <p className="baserate">
         <span className="sr-only">{queryWords(query)}. </span>
@@ -118,6 +127,7 @@ export default function App() {
         {board.ranked[0] && board.ranked[0].value != null && <> The leader: <b>{board.ranked[0].player.name}</b>, {board.ranked[0].value.toLocaleString('en-US')}.</>}
       </p>
       <Board board={board} query={query} open={open} onOpen={openRow} panel={row && <Panel key={row.key} row={row} board={board} query={query} peerKey={vs} onPeer={setPeer} onClose={() => openRow(row.key)} />} />
+      <Landings current={landing?.slug ?? null} />
       <Notes ledger={L} />
       <footer>
         <a href="https://drewhoover.com/">drewhoover.com</a> · data rebuilt daily in season ·{' '}

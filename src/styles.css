@@ -41,6 +41,21 @@ h1 {
 h2 { font-family: Georgia, 'Source Serif 4', 'Times New Roman', serif; font-weight: 700; font-size: 19px; letter-spacing: 0.02em; margin: 40px 0 4px; color: var(--cream); }
 a { color: var(--cream); }
 
+h1.h1-q { font-size: clamp(22px, 3.6vw, 36px); letter-spacing: 0.01em; max-width: 760px; margin: 4px auto 0; }
+.kicker { margin: 10px 0 0; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; }
+.kicker a { color: var(--rust); text-decoration: none; }
+.kicker a:hover { color: var(--cream); }
+
+/* the named definition pages, listed under the board */
+.landings { max-width: 700px; margin: 28px auto 0; padding-top: 12px; border-top: 1px dotted var(--line); }
+.landings h2, .notes h2 { font-family: 'Graduate', serif; font-weight: 400; font-size: 20px; letter-spacing: 0.04em; color: var(--cream); margin: 0 0 8px; }
+.landings ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 24px; }
+.landings li { break-inside: avoid; padding: 3px 0; font-size: 14px; }
+.landings a { color: var(--ink-muted); text-decoration: underline dotted; text-underline-offset: 3px; }
+.landings a:hover { color: var(--cream); }
+.landings [aria-current] { color: var(--cream); }
+@media (max-width: 600px) { .landings ul { columns: 1; } }
+
 /* dateline: provenance on the left, share on the right */
 .dateline {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;

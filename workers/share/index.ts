@@ -25,7 +25,8 @@
 
 import { decodeLedger, type Ledger, type LedgerFile } from '../../src/lib/ledger.ts';
 import { evaluate, type Board, type Row } from '../../src/lib/query.ts';
-import { parseUrl, toUrl } from '../../src/lib/url.ts';
+import { toUrl } from '../../src/lib/url.ts';
+import { parseLocation } from '../../src/lib/landing.ts';
 import { queryWords } from '../../src/lib/words.ts';
 import { cardHeading, cardRows, isShared, shareDescription, shareTitle } from '../../src/lib/share.ts';
 import { peerOf } from '../../src/lib/compare.ts';
@@ -92,9 +93,14 @@ function report(env: Env, ctx: ExecutionContext, request: Request, event: string
     }).then((r) => r.body?.cancel()).catch(() => {}));
   } catch {}
 }
+/** the path relative to the site's base: "fastest-to-1000-points/" on a landing, "" at the root */
+const relPath = (url: URL) => (url.pathname.startsWith(`${BASE}/`) ? url.pathname.slice(BASE.length + 1) : '');
+/** the state an address says: a landing's query from its path, the search over it */
+const stateOf = (url: URL) => parseLocation(relPath(url), url.search);
+
 /** The URL itself and its slots, for an event. */
 const urlProps = (url: URL) => {
-  const { query: q, open, vs } = parseUrl(url.search);
+  const { query: q, open, vs } = stateOf(url);
   return {
     url: url.href,
     $current_url: url.href,
@@ -136,7 +142,7 @@ const findRow = (board: Board, key: string | null): Row | null => (key ? [...boa
 
 async function ogCard(origin: string, search: string): Promise<Response> {
   const L = await loadLedger(origin);
-  const { query, open } = parseUrl(search);
+  const { query, open } = parseLocation('', search);
   const board = evaluate(L, query);
   const res = renderCard({
     heading: cardHeading(query),
@@ -154,7 +160,7 @@ async function ogCard(origin: string, search: string): Promise<Response> {
 }
 
 /** The og image URL for a board URL: the same slots, in the one order toUrl writes them. */
-const ogImageUrl = (origin: string, search: string) => `${origin}${BASE}/share/og.png${toUrl(parseUrl(search))}`;
+const ogImageUrl = (origin: string, url: URL) => `${origin}${BASE}/share/og.png${toUrl(stateOf(url))}`;
 
 const content = (text: string) => ({
   element(e: Element) { e.setAttribute('content', text); },
@@ -169,7 +175,7 @@ export default {
     // card an older worker drew for the same URL can't outlive the deploy
     if (url.pathname === `${BASE}/share/og.png`) {
       try {
-        const canon = toUrl(parseUrl(url.search));
+        const canon = toUrl(parseLocation('', url.search));
         const key = new Request(`${url.origin}${url.pathname}?v=${CARD_VERSION}&${canon.slice(1)}`, { method: 'GET' });
         const cached = await caches.default.match(key);
         report(env, ctx, request, 'share card', { ...urlProps(url), cached: !!cached });
@@ -196,8 +202,10 @@ export default {
     try {
       if (request.method !== 'GET') return res;
       if (!(res.headers.get('content-type') ?? '').includes('text/html')) return res;
-      const { query, open, vs } = parseUrl(url.search);
-      if (!isShared(query, open)) return res;
+      const { query, open, vs, landing } = stateOf(url);
+      // a landing page at its own path is prerendered with its own head; only a player open on it
+      // needs words. A root address carrying a landing's query gets the landing's title below.
+      if (!isShared(query, open) || (landing && relPath(url) && !open)) return res;
       const crawler = agentOf(request.headers.get('user-agent')) !== 'browser';
       if (crawler) report(env, ctx, request, 'share unfurl', urlProps(url));
       // a crawler's description names the leader, or the open player read against her
@@ -213,9 +221,9 @@ export default {
           firstSeason = L.firstSeason;
         } catch {}
       }
-      const title = shareTitle(query, openRow, peer);
+      const title = openRow ? shareTitle(query, openRow, peer) : landing ? `${landing.title} · WNBA Comparator` : shareTitle(query);
       const description = shareDescription(query, board, openRow, firstSeason, peer);
-      const img = ogImageUrl(origin, url.search);
+      const img = ogImageUrl(origin, url);
       return new HTMLRewriter()
         .on('title', { element(e) { e.setInnerContent(title); } })
         .on('meta[name="description"]', content(description))
