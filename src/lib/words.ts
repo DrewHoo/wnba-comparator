@@ -67,3 +67,53 @@ export function rowWords(r: Row, q: Query): string {
 
 /** "1st of 212", "T-3rd of 212" */
 export const rankWords = (r: Row, field: number) => `${r.tied ? 'T-' : ''}${ord(r.rank)} of ${field}`
+
+// ---- a record row (src/lib/records.ts): the claim, its place, its run
+
+import type { RecordRow } from './records.ts'
+import { fmtDate } from './ledger.ts'
+
+const fmt = (n: number) => n.toLocaleString('en-US')
+
+/** "16 games with 30+ points in her first 100 games", "1,000 points in 45 games", "1,021 points through LVA's first 40 games of 2024" */
+export function recordWords(r: RecordRow): string {
+  const s = r.shape, stat = statByKey(s.stat)
+  const win = s.seq === 'teamGames' ? `${r.team}'s first ${r.at} games of ${r.season}` : `her first ${fmt(r.at)} ${seqWords(s.seq, r.at)}`
+  const scope = s.scope === 'all' ? ', playoffs included' : ''
+  if (s.how === 'sum') return `${countWords(r.value, stat)} through ${win}${scope}`
+  if (s.how === 'reach') return `${countWords(r.at, stat)} in ${fmt(r.value)} ${seqWords(s.seq, r.value)}${scope}`
+  const t = testsWords(s.tests)
+  if (s.how === 'every') return `${t} in each of ${win}${scope}`
+  if (s.how === 'streak') return `${fmt(r.value)} straight ${r.value === 1 ? 'game' : 'games'} with ${t} in ${win}${scope}`
+  return `${fmt(r.value)} ${r.value === 1 ? 'game' : 'games'} with ${t} in ${win}${scope}`
+}
+
+/** "1st of 429 careers, next 2,127 points", "one of 4, of 957 careers", "a record when she got there, 1st of 154 careers" */
+export function placeWords(r: RecordRow): string {
+  const stat = statByKey(r.shape.stat)
+  const f = (v: number) => (r.shape.how === 'reach' ? `${fmt(v)} ${seqWords(r.shape.seq, v)}` : r.shape.how === 'sum' ? countWords(v, stat) : fmt(v))
+  const who = r.season != null ? 'player-seasons' : 'careers'
+  if (r.kind === 'set') return `a record when she got there, 1st of ${fmt(r.field)} ${who}${r.second != null ? `, past ${f(r.second)}` : ''}`
+  if (r.ties > 1) return `one of ${r.ties}, of ${fmt(r.field)} ${who}`
+  return `1st of ${fmt(r.field)} ${who}${r.second != null ? `, next ${f(r.second)}` : ''}`
+}
+
+/** "leads from game 30 to 120", "fastest to every milestone from 1,000 to 2,500 points", "at game 14 only", "and counting" */
+export function runWords(r: RecordRow, minN: number): string {
+  const s = r.shape, stat = statByKey(s.stat)
+  const unit = s.seq === 'teamGames' ? 'game' : seqWords(s.seq, 1)
+  if (s.how === 'reach') return r.lo === r.hi ? '' : `fastest to every milestone from ${fmt(r.from ?? r.at)} to ${countWords(r.at, stat)}`
+  const verb = r.kind === 'set' ? 'held' : 'leads'
+  const holes = r.holes ? ` (${r.holes} ${r.holes === 1 ? 'gap' : 'gaps'})` : ''
+  if (r.lo === r.hi) return `at ${unit} ${r.at} only`
+  const from = r.lo <= minN ? 'from the start' : `from ${unit} ${r.lo}`
+  return r.live ? `${verb} ${from}, and counting${holes}` : `${verb} ${from} to ${r.hi}${holes}`
+}
+
+/** "broken by Caitlin Clark 2024, 337 assists, Sep 19, 2024" */
+export function breakerWords(r: RecordRow): string {
+  if (!r.breaker) return ''
+  const stat = statByKey(r.shape.stat)
+  const v = r.shape.how === 'sum' ? countWords(r.breaker.value, stat) : String(r.breaker.value)
+  return `broken by ${r.breaker.name}${r.breaker.season ? ` ${r.breaker.season}` : ''}, ${v}, ${fmtDate(r.breaker.date)}`
+}

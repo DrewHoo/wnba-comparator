@@ -247,3 +247,50 @@ footer a { color: var(--ink-muted); }
 .notes summary:hover { color: var(--cream); }
 .notes details[open] > summary { margin-bottom: 4px; }
 .notes details > p { margin: 8px 0 8px 14px; }
+
+/* a player's page: families of what she leads (NBA Comparator's) */
+.morebtn {
+  font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.06em;
+  background: transparent; color: var(--ink-faint); border: none; cursor: pointer;
+  text-decoration: underline dotted; text-underline-offset: 3px; padding: 10px 8px 2px; display: block; margin: 0 auto;
+}
+.morebtn:hover { color: var(--cream); }
+.empty { color: var(--ink-faint); font-style: italic; padding: 14px 2px; }
+.loading { color: var(--ink-faint); font-style: italic; padding: 14px 2px; text-align: center; }
+.dateline a { color: var(--ink-faint); text-decoration: none; }
+.dateline a:hover { color: var(--cream); }
+.pmeta { margin: 6px 0 0; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
+.fam { margin-top: 18px; border-top: 1px dotted var(--line); padding-top: 2px; }
+.fam-h {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint);
+  padding: 8px 2px 4px;
+}
+.rrow {
+  display: grid; grid-template-columns: 58px minmax(0, 1fr) auto; gap: 0 12px; align-items: center;
+  padding: 8px 6px; border-bottom: 1px dotted var(--line); border-radius: 4px;
+}
+.rrow.live { background: rgba(195, 108, 54, 0.06); }
+.rkind { font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); line-height: 1.2; }
+.rkind.held { color: var(--cream); }
+.rrow.live .rkind { color: var(--rust); }
+.rkind.set { color: var(--ink-muted); }
+.rbody { display: flex; flex-direction: column; line-height: 1.3; min-width: 0; gap: 2px; }
+.rclaim { font-weight: 600; font-size: 15px; color: var(--ink); text-decoration: none; }
+.rclaim:hover { color: var(--cream); text-decoration: underline dotted; text-underline-offset: 3px; }
+.rbody small { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.02em; color: var(--ink-faint); }
+.ralso { color: var(--ink-faint); opacity: 0.8; }
+.rval { font-family: 'Graduate', serif; font-size: 22px; color: var(--cream); line-height: 1; letter-spacing: -0.02em; text-align: right; }
+.rval.otl { color: var(--rust); }
+.rval small { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 9px; letter-spacing: 0.04em; color: var(--ink-faint); margin-top: 3px; }
+.terms { display: flex; flex-wrap: wrap; gap: 2px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--ink-muted); margin-top: 2px; }
+.terms i { font-style: normal; color: var(--ink-faint); }
+.tuner { margin-top: 18px; padding: 8px 12px 12px; border-radius: 6px; background: rgba(243, 226, 188, 0.04); box-shadow: 0 0 0 1px var(--line); }
+.knobs { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 14px; }
+.knob { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--ink-muted); }
+.knob.on { color: var(--cream); }
+.knob input { width: 5.5ch; font: inherit; color: var(--cream); background: transparent; border: none; border-bottom: 1px dashed var(--ink-faint); text-align: right; }
+.knob input:focus { outline: none; border-bottom-style: solid; }
+.tuner-acts { display: flex; gap: 10px; justify-content: flex-end; }
+.tuner-acts .morebtn { margin: 0; }
+@media (max-width: 600px) { .rrow { grid-template-columns: 48px minmax(0, 1fr) auto; gap: 0 8px; } .rclaim { font-size: 14px; } }

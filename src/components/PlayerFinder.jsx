@@ -1,8 +1,8 @@
 // Find a player: a filter box over every player in the ledger, in a dropdown
 // (Streak King's team picker, without the phone sheet). The list is
 // public/players/index.json (scripts/build-records.mjs), fetched the first
-// time the menu opens; a pick opens her row on the board (there are no
-// player pages yet).
+// time the menu opens; a pick goes to her page when she has one (`n` rows
+// in the records mine), else opens her row on the board.
 import { useEffect, useMemo, useState } from 'react'
 import * as DM from '@radix-ui/react-dropdown-menu'
 import { SearchIcon } from './Icons.jsx'
@@ -13,7 +13,10 @@ let cached = null
 /** every player in the ledger, fetched once per load */
 export const loadIndex = () => (cached ? Promise.resolve(cached) : fetch(`${BASE}players/index.json`).then((r) => (r.ok ? r.json() : [])).catch(() => []).then((list) => (cached = list)))
 
-export function PlayerFinder({ current = null, onPick }) {
+/** a player's page */
+export const playerUrl = (id) => `${BASE}player/${encodeURIComponent(id)}/`
+
+export function PlayerFinder({ current = null, onPick = null }) {
   const [open, setOpen] = useState(false)
   const [q, setQ] = useState('')
   const [all, setAll] = useState(cached)
@@ -33,7 +36,12 @@ export function PlayerFinder({ current = null, onPick }) {
     return [...starts, ...within].slice(0, 40)
   }, [all, want])
   const change = (o) => { setOpen(o); if (!o) setQ('') }
-  const pick = (p) => { change(false); onPick(p) }
+  const pick = (p) => {
+    change(false)
+    if (p.n > 0) window.location.href = playerUrl(p.id)
+    else if (onPick) onPick(p)
+    else window.location.href = `${BASE}?t=${encodeURIComponent(p.id)}`
+  }
   return (
     <DM.Root open={open} onOpenChange={change} modal={false}>
       <DM.Trigger asChild>

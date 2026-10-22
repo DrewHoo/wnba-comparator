@@ -8,7 +8,8 @@ import type { Board, Query, Row } from './query.ts'
 import { DEFAULT_QUERY } from './query.ts'
 import { compare, crossingWords, matchWords } from './compare.ts'
 import { countWords, statByKey } from './stats.ts'
-import { queryWords, rowName, rowWords, rankWords, seqWords, testsWords } from './words.ts'
+import { placeWords, queryWords, recordWords, rowName, rowWords, rankWords, seqWords, testsWords } from './words.ts'
+import type { RecordRow } from './records.ts'
 
 export const SITE = 'WNBA Comparator'
 
@@ -156,4 +157,16 @@ export function cardComparison(q: Query, board: Board, row: Row, peer: Row): Car
     lines,
     chart: cmp ? { me: cmp.me, them: cmp.them, n: cmp.n, unit: seqWords(q.seq, 1) } : null,
   }
+}
+
+/** a player page's lead line: her best claim, or what the page is */
+export function playerLead(name: string, face: RecordRow | null | undefined, firstSeason: number): string {
+  return face ? `${name}: ${recordWords(face)}, ${placeWords(face)}.` : `Every comparison ${name} leads among WNBA players at the same point in the career, since ${firstSeason}.`
+}
+
+/** a player page's head; the title is the fact people type: "A'ja Wilson: every comparison she leads at the same point in a career · WNBA Comparator" */
+export function playerText(name: string, face: RecordRow | null | undefined, firstSeason: number): { title: string; description: string } {
+  const lead = playerLead(name, face, firstSeason)
+  const rest = ` Every comparison she leads among WNBA players at the same point in the career, since ${firstSeason}.`
+  return { title: `${name}: every comparison she leads at the same point in a career · ${SITE}`, description: face ? `${lead}${rest}` : lead }
 }
