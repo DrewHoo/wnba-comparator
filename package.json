@@ -19,7 +19,8 @@
     "receipts": "node scripts/check-receipts.mjs --pages data/research/positions/pages --offline data/research/positions/wikipedia.json data/research/positions/wayback.json data/research/positions/leads.json data/ref/positions.json",
     "merge:positions": "node scripts/merge-positions.mjs",
     "worker:dev": "npx wrangler dev -c workers/share/wrangler.jsonc --local --var ORIGIN:http://localhost:4173 --var NO_REPORT:1",
-    "worker:deploy": "npx wrangler deploy -c workers/share/wrangler.jsonc"
+    "worker:deploy": "npx wrangler deploy -c workers/share/wrangler.jsonc",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.24",

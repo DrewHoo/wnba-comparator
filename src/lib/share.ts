@@ -38,6 +38,16 @@ export function shareTitle(q: Query, open: Row | null = null, peer: Row | null =
   return `${cap(queryWords(q))} · ${SITE}`
 }
 
+/** "Cynthia Cooper leads with 2,187 points through her first 100 games." (ties: "A and B lead with …"); empty when nobody has the window */
+export function leaderWords(board: Board, q: Query): string {
+  const top = board.ranked[0]
+  if (!top || top.value == null) return ''
+  const tied = board.ranked.filter((r) => r.value === top.value)
+  const names = tied.slice(0, 3).map(rowName)
+  const who = tied.length > 3 ? `${names.slice(0, 2).join(', ')} and ${tied.length - 2} others` : names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}` : names[0]
+  return `${who} ${tied.length > 1 ? 'lead' : 'leads'} with ${rowWords(top, q)}.`
+}
+
 /** the description: the leader when the board is known; the open player's claim, read against her peer, when one is */
 export function shareDescription(q: Query, board: Board | null, open: Row | null, firstSeason: number, peer: Row | null = null): string {
   const since = q.since ?? firstSeason
@@ -54,7 +64,7 @@ export function shareDescription(q: Query, board: Board | null, open: Row | null
         if (m) parts.push(m)
       }
     }
-  } else if (board?.ranked[0] && board.ranked[0].value != null) parts.push(`${rowName(board.ranked[0])} leads with ${rowWords(board.ranked[0], q)}.`)
+  } else if (board) { const w = leaderWords(board, q); if (w) parts.push(w) }
   parts.push(`Every WNBA ${unit} since ${since} ranked at the same point: ${queryWords(q)}. Open a row to read it against a peer.`)
   return parts.join(' ')
 }

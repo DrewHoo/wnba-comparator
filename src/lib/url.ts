@@ -12,9 +12,10 @@ const isStat = (s: string): s is StatKey => STATS.some((x) => x.key === s)
 
 export interface UrlState { query: Query; open: string | null; vs?: string | null }
 
-export function parseUrl(search: string): UrlState {
+/** the query a search string says, over a base (the default, or a landing's query); a param that reads moves its slot */
+export function parseUrl(search: string, base: Query = DEFAULT_QUERY): UrlState {
   const p = new URLSearchParams(search)
-  const q: Query = { ...DEFAULT_QUERY, tests: [] }
+  const q: Query = { ...base, tests: [...base.tests] }
   const pos = p.get('pos'); if (pos && (POSITIONS as string[]).includes(pos)) q.pos = pos as Pos
   const stat = p.get('stat'); if (stat && isStat(stat)) q.stat = stat
   const how = p.get('how'); if (how && (HOWS as string[]).includes(how)) q.how = how as How
