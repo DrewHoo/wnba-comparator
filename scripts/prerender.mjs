@@ -291,7 +291,7 @@ ${llmsTeams.map((t) => `- [${t.h1}](${t.url}): ${t.lead}`).join('\n')}
 
 ## The other sports sites
 
-${OTHERS.map((s) => `- [${s.name}](${s.url}): ${s.words}.`).join('\n')}
+${OTHERS.map((s) => `- [${s.name}](${s.url}): ${s.words}.${s.links ? ' ' + s.links.map((l) => `[${l.name}](${l.url})`).join(' | ') : ''}`).join('\n')}
 `)
 
 // --- the ledger, published for the share worker (workers/share), which draws a
